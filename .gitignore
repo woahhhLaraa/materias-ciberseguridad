@@ -1,0 +1,16 @@
+# --- Estado local de Obsidian (es por dispositivo, no debe sincronizarse) ---
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
+*~
+
+# --- Binarios pesados (se quedan en disco, fuera del repo) ---
+Enrutamiento basico/Presentacion 1.pdf
+Sistemas Operativos/Fundamentos de Sistemas Operativos - 7ma Edición - Abraham Silberschatz, Peter Baer Galvin & Greg Gagne.pdf
+Sistemas Operativos/Sistemas_Operativos_Modernos-ATanenbaum.pdf
+Sistemas Operativos/Modern Operating Systems (4th Edition) ( PDFDrive ).pdf
+Desarrollo de Habilidades Informativas/ACT08_PedroLara.mp4
