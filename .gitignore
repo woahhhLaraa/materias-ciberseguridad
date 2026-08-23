@@ -1,0 +1,16 @@
+# Obsidian: estado local de la UI (no debe sincronizarse)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json.bak
+
+# Papelera del vault
+.trash/
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
+*~
+
+# PDFs: material pesado, no se versiona (101 MB de los 113 MB del vault)
+*.pdf

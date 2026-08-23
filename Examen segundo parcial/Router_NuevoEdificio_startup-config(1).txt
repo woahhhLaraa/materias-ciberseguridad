@@ -1,0 +1,35 @@
+hostname Router_NuevoEdificio
+!
+no ip domain-lookup
+spanning-tree mode pvst
+!
+interface FastEthernet0/0
+ description LAN Laboratorio de Redes
+ ip address 172.16.37.1 255.255.255.224
+ no shutdown
+!
+interface FastEthernet0/1
+ description LAN Laboratorio de TC (Telecomunicaciones)
+ ip address 172.16.37.33 255.255.255.224
+ no shutdown
+!
+interface Serial0/0/0
+ description Enlace WAN hacia Router_CC (DTE)
+ ip address 172.16.37.162 255.255.255.252
+ no shutdown
+!
+interface Ethernet1/0
+ description LAN Laboratorio de IS (Ingenieria de Software)
+ ip address 172.16.37.65 255.255.255.224
+ no shutdown
+!
+ip classless
+!
+ip route 0.0.0.0 0.0.0.0 172.16.37.161
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+!
+end

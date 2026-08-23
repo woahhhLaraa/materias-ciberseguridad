@@ -1,0 +1,48 @@
+hostname Router_CC
+!
+no ip domain-lookup
+spanning-tree mode pvst
+!
+interface FastEthernet0/0
+ description LAN Administrativos y Academicos (Cubiculos)
+ ip address 172.16.30.1 255.255.254.0
+ no shutdown
+!
+interface FastEthernet0/1
+ description LAN Estudiantes (Hacia Router Inalambrico AP)
+ ip address 172.16.32.1 255.255.252.0
+ no shutdown
+!
+interface Serial0/0/0
+ description Enlace WAN hacia Nuevo Edificio (DCE)
+ ip address 172.16.37.161 255.255.255.252
+ clock rate 64000
+ no shutdown
+!
+interface Ethernet1/0
+ description LAN Centro de Computo
+ ip address 172.16.36.1 255.255.255.0
+ no shutdown
+!
+interface Ethernet1/1
+ description LAN LINAE
+ ip address 172.16.37.97 255.255.255.224
+ no shutdown
+!
+interface Ethernet1/2
+ description LAN Laboratorio de Electronica
+ ip address 172.16.37.129 255.255.255.224
+ no shutdown
+!
+ip classless
+!
+ip route 172.16.37.0 255.255.255.224 172.16.37.162
+ip route 172.16.37.32 255.255.255.224 172.16.37.162
+ip route 172.16.37.64 255.255.255.224 172.16.37.162
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+!
+end
