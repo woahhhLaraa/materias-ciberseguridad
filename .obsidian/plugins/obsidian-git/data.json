@@ -1,0 +1,31 @@
+{
+  "commitMessage": "Respaldo del vault: {{date}}",
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "autoSaveInterval": 10,
+  "autoPushInterval": 10,
+  "autoPullInterval": 0,
+  "autoPullOnBoot": true,
+  "disablePush": false,
+  "pullBeforePush": true,
+  "disablePopups": false,
+  "disablePopupsForNoChanges": true,
+  "listChangedFilesInMessageBody": true,
+  "showStatusBar": true,
+  "showBranchStatusBar": true,
+  "changedFilesInStatusBar": true,
+  "updateSubmodules": false,
+  "syncMethod": "merge",
+  "gitPath": "",
+  "customMessageOnAutoBackup": false,
+  "autoBackupAfterFileChange": false,
+  "treeStructure": true,
+  "refreshSourceControl": true,
+  "refreshSourceControlTimer": 7000,
+  "basePath": "",
+  "differentIntervalCommitAndPush": false,
+  "setLastSaveToLastCommit": false,
+  "showedMobileNotice": true,
+  "lineAuthor": {
+    "show": false
+  }
+}
