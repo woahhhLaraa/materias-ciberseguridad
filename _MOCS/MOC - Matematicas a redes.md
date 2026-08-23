@@ -103,17 +103,17 @@ Como se trata de una relación de equivalencia, sus clases de equivalencia son:
 
 El "1" está presente en las posiciones (1,1), (1,2) y (1,5). Recorriendo cada elemento:
 
-| Elemento | Clase |
-|---|---|
-| 1 | {1, 2, 5} |
-| 2 | {1, 2, 5} |
-| 3 | {3, 4} |
-| 4 | {3, 4} |
-| 5 | {1, 2, 5} |
+| Elemento | Clase     |
+| -------- | --------- |
+| 1        | {1, 2, 5} |
+| 2        | {1, 2, 5} |
+| 3        | {3, 4}    |
+| 4        | {3, 4}    |
+| 5        | {1, 2, 5} |
 
 Cuando se repiten los elementos en cada clase, decimos que tenemos **particiones**. Aquí hay dos: **{1, 2, 5}** y **{3, 4}**.
 
-### Por qué esto importa en redes 🔌
+### Por qué esto importa en redes 
 
 La profesora lo señaló explícitamente: las relaciones de equivalencia son importantes porque **es una propiedad que deben tener las redes**.
 
