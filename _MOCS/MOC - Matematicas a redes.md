@@ -1,8 +1,18 @@
 ---
 tipo: moc
 hilo: matematicas-redes
-tags: [moc, matematicas, grafos, redes, topologia]
-semestres: [1, 2]
+tags:
+  - moc
+  - matematicas
+  - grafos
+  - redes
+  - topologia
+semestres:
+  - 1
+  - 2
+sr-due: 2026-08-26
+sr-interval: 3
+sr-ease: 250
 ---
 #review
 # MOC — Matemáticas → redes

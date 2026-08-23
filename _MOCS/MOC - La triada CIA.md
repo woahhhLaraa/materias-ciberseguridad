@@ -1,8 +1,17 @@
 ---
 tipo: moc
 hilo: triada-cia
-tags: [moc, cia, fundamentos, normativa]
-semestres: [1, 2]
+tags:
+  - moc
+  - cia
+  - fundamentos
+  - normativa
+semestres:
+  - 1
+  - 2
+sr-due: 2026-08-26
+sr-interval: 3
+sr-ease: 250
 ---
 #review
 # MOC — La tríada CIA
