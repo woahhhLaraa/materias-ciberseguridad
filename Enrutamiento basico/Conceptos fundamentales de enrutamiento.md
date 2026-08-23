@@ -13,9 +13,10 @@ tags: [redes, enrutamiento, routers]
 
 Unidad con **datos** y **dirección de origen y destino**. Contiene la información que se manda de una red a otra a través del enrutamiento hecho por los routers.
 
-## El principio del salto siguiente
+## Enrutamiento por saltos
 
-Los enrutadores **solo necesitan saber el siguiente punto de destino** para llegar a la dirección final. No conocen la ruta completa.
+Los enrutadores **solo necesitan saber el siguiente punto de destino**
+para llegar a la dirección final. No conocen la ruta completa.
 
 Esa es la idea que hace escalable a internet: ningún router tiene el mapa entero.
 
