@@ -40,6 +40,11 @@ Clasificados en
 	Tiempo real duro: Donde cumplir el limite de tiempo es OBLIGATORIO
 	Tiempo real blando: donde se puede permitr un pequeño retraso
 
+
+LynxOX: Arquitecturas 32 y 64 bits en microprocesadores 
+	Orientado a plataformas que requieren determinados recursos de memoria y hardware
+	
+
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
 >
 > Al estudiar para el parcial: selecciona cada bloque que sea un concepto y usa `Ctrl+P` → **Extraer selección actual**. Obsidian crea la nota y deja el enlace aquí. Cuando este archivo quede solo con enlaces, el parcial está repasado.
