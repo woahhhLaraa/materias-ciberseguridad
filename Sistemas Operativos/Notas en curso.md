@@ -114,6 +114,10 @@ Multitarea real(Buscar):
 
 
 
+24 de agosto 2026
+Capas o subsistemas de un sistema operativo
+
+
 
 
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
