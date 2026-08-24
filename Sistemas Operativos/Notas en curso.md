@@ -17,8 +17,16 @@ Diseñados para funcionar en dispositivos especializados, microondas, refrigerad
 
 Normalmente se cargan en memorias flash o de poco almacenamiento (Como dentro de la placa), y no suelen ser cambiados una vez se cargan
 
-	
+Los tipos de sistemas operativos embebidos mas conocidos son
+	Emebbeded linux: Routers, camaras, televisroes inteligentes, sistemas multimedia, ejecutados en un procesador
+		Usado por Sony: en equipos multimedia
+		Garmin: Dispositivos de navegacion nautica
+		Cisco: Equipos de red y dispostivos de infraestructura
+	OpenWRT: Basado en linux principalmente para routners y dispositivos de red
+	TinyOS: Diseñado especialmente para IoT
 
+
+Tipos en Teimp
 
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
 >
