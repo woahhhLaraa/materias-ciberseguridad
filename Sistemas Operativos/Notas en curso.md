@@ -77,6 +77,14 @@ Tipos en las capacidades que ofrece al usuario
 			Ojo, no debe confundirse con multinucleos
 
 
+
+Tipos segun su construccion
+	Estructura monolitica
+		Todo corre como un solo gran programa en modo kernel, todos los servicios estan en el mismo espacio
+
+
+
+
  Teoricamente un sistema podria ser multiusuario y monotarea, pero cada vez que un usuario haga algo, tomaria el control absoluto del sistema, y solo pasaria al siguiente usuario hasta terminarla
  
 Tiempo de CPU o Rafaga de CPU:
