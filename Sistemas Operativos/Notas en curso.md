@@ -70,9 +70,9 @@ Tipos en las capacidades que ofrece al usuario
 		Multiprocesador
 			Aquel capaz de manejar mas de un procesador y usarlos para distribuir su carga de trabajo, pudiendo trabajar con ellos de forma
 				Simetrica
-					El sistema toma todos los nucleos o procesadores fisicos (donde todos tienen acceso a memoria) y gestiona su c
+					El sistema toma todos los nucleos o procesadores fisicos (donde todos tienen acceso a memoria) y gestiona su carga en igualdad de condiciones
 				Asimetrica
-					El sistema toma todos los nucleos o procesadores fisicos (donde todos tienen acceso a memoria) 
+					El sistema toma un cpu o nucleo y lo designa como maestro, el maestro se encargara de gestionar a los demas (esclavos)
 			(WINDOWS 10,11,macOS, LINUX, ANDROID e IOS)
 		Ojo, no debe confundirse con multinucleos
 
