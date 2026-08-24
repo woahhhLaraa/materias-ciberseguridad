@@ -32,7 +32,7 @@ Muchos de estos tambien son embebidos pues se meten en microcontroladores, dise√
 
 Utilizados en automoviles, robots, aeronaves, y equipos de control, etc.
 
-Como en los 
+Como en los RC cars de los que mandan a la luna o marte en la NASA
 
 Son parte de un sistema mas grande (no son el sistema principal), pues solo se dedican a hacer una cosa en especifico
 
