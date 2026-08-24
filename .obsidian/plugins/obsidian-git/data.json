@@ -61,8 +61,12 @@
       "b": 255
     },
     "textColorCss": "var(--text-muted)",
+<<<<<<< HEAD
     "ignoreWhitespace": false,
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
+=======
+    "ignoreWhitespace": false
+>>>>>>> origin/main
   }
 }
