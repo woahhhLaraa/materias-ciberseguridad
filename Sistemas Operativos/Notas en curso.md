@@ -72,9 +72,9 @@ Tipos en las capacidades que ofrece al usuario
 				Simetrica
 					El sistema toma todos los nucleos o procesadores fisicos (donde todos tienen acceso a memoria) y gestiona su carga en igualdad de condiciones
 				Asimetrica
-					El sistema toma un cpu o nucleo y lo designa como maestro, el maestro se encargara de gestionar a los demas (esclavos)
+					El sistema toma un cpu o nucleo y lo designa como maestro, el maestro se encargara de gestionar a los demas (esclavos), esto puede generar cuellos de botella por parte del maestro, si el maestro falla, los esclavos también
 			(WINDOWS 10,11,macOS, LINUX, ANDROID e IOS)
-		Ojo, no debe confundirse con multinucleos
+			Ojo, no debe confundirse con multinucleos
 
 
  Teoricamente un sistema podria ser multiusuario y monotarea, pero cada vez que un usuario haga algo, tomaria el control absoluto del sistema, y solo pasaria al siguiente usuario hasta terminarla
