@@ -41,7 +41,7 @@ Clasificados en
 	Tiempo real blando: donde se puede permitr un pequeño retraso
 
 
-LynxOX: Arquitecturas 32 y 64 bits en microprocesadores 
+LynxOS: Arquitecturas 32 y 64 bits en microprocesadores 
 	Orientado a plataformas que requieren determinados recursos de memoria y hardware, utilizaod en sistemas de aeronauticas y aeroespaciales en plataformas militares
 
 FreeRTOS
@@ -50,6 +50,19 @@ FreeRTOS
 	Usado en chips ESP32
 
 
+
+Tipos en las capacidades que ofrece al usuario
+	Numero de usuarios
+		Monousuario
+			Solo puede ser utilizado por un solo usuario al mismo tiempo, sin importar el numero de procesadores que tenga, o el numero de tareas que pueda eje
+		Multiusuario
+			Puede ser utilizado por varios usuarios al mismo tiempo
+	Numero de tareas
+		Monotarea
+		Multitarea
+	Numero de procesadores
+		Monoprocesadore
+		Multiprocesador
 
 
 
