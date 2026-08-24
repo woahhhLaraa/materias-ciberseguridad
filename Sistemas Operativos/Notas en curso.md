@@ -86,6 +86,10 @@ Tipos segun su construccion (investigar mas,notebook, modo usuario, modo kernel,
 		Aqui, el nucleo solo contiene la implementacion de servicios basicos como el soporte de acceso a memoria de bajo nivel, el control de memoria. la administracion de procesos y la comunicacion entre procesos. Todo lo demas (drivers, sistema de archivos, red) se ejecuta como procesos en espacio de usuario, en el kernel solamente se ejecute lo meramente escencial para que el sistema funcione.
 		Puede generar dificultades de sincronizacion entre componentes, y un bajo rendimiento por las continuas llamadas entre modulos y el constante cmabio entre modos de ejecucion, y codigo mas embromoso.
 			Minix, QNX Neutrino, HongMeng Kernel
+	Hibridos
+		Combinan el monolitico y Kernel, es un esquema de micronucleo que implementa codigo para hacerlo mas rapido, aunque una buena parte de las funciones del sistema operativo siguen ejecutandose en modo usuario
+		Obtiene el alto rendimiento del monolitico, y la modularidad y estabilidad del micronucleo.
+		Mantiene lo critico en el nucleo para un buen rendmiento y lo no escencial lo mueve al espacio del usuario (controladores, sistemas de archivos)
 
 
 
