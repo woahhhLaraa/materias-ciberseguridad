@@ -70,9 +70,11 @@ Tipos en las capacidades que ofrece al usuario
 		Multiprocesador
 			Aquel capaz de manejar mas de un procesador y usarlos para distribuir su carga de trabajo, pudiendo trabajar con ellos de forma
 				Simetrica
+					El sistema toma todos los nucleos o procesadores fisicos (donde todos tienen acceso a memoria) y gestiona su c
 				Asimetrica
+					El sistema toma todos los nucleos o procesadores fisicos (donde todos tienen acceso a memoria) 
 			(WINDOWS 10,11,macOS, LINUX, ANDROID e IOS)
-		Ojo, no debe ocnfu
+		Ojo, no debe confundirse con multinucleos
 
 
  Teoricamente un sistema podria ser multiusuario y monotarea, pero cada vez que un usuario haga algo, tomaria el control absoluto del sistema, y solo pasaria al siguiente usuario hasta terminarla
