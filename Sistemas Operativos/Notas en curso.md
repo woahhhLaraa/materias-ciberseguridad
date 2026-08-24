@@ -80,7 +80,8 @@ Tipos en las capacidades que ofrece al usuario
 
 Tipos segun su construccion
 	Estructura monolitica
-		Todo corre como un solo gran programa en modo kernel, todos los servicios estan en el mismo espacio
+		Todo corre como un solo gran programa en modo kernel, todos los servicios estan en el mismo espacio (sistema de archivos, gestion de memoria, gestion de procesos, drivers)
+		Algunos sistemas como GNU/LINUX modernos, pueden cargar modulos ejectuables de forma dinamica, permitiendole actuar, de cierto modo, como un micronucleo
 
 
 
@@ -109,5 +110,5 @@ Multitarea real(Buscar):
 >
 > Al estudiar para el parcial: selecciona cada bloque que sea un concepto y usa `Ctrl+P` → **Extraer selección actual**. Obsidian crea la nota y deja el enlace aquí. Cuando este archivo quede solo con enlaces, el parcial está repasado.
 >
-> Índice de la materia: [[Sistemas Operativos]]
+> Índice de la materia: [[Sistemas Operativos (materia)]]
 
