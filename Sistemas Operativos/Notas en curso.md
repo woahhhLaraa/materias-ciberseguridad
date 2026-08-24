@@ -47,6 +47,11 @@ LynxOX: Arquitecturas 32 y 64 bits en microprocesadores
 FreeRTOS
 	Ligero y deiseñado para microcontroladores y recursos limitados, su nuclero utiliza muy poca memoria y tambien es ampliamente utilizaod en IoT
 	Lo creo Richard Barry en 2003 y fue comprado por Amazon en 2017
+	Usado en chips ESP32
+
+
+
+
 
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
 >
