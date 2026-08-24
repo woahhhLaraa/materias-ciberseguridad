@@ -65,7 +65,8 @@ Tipos en las capacidades que ofrece al usuario
 		Multitarea
 			Permite gestionar y realizar varias labaores simultaneamente. Y esto puede darse de maneara simulada (concurrencia) o de manera real (paralelismo). Los sistemas actuales (windows, distribuciones linux, macOS) son multitarea
 	Numero de procesadores
-		Monoprocesadore
+		Monoprocesador
+			
 		Multiprocesador
 
 
@@ -78,7 +79,12 @@ Quantums de tiempo:
 La cantidad de milisegundos que un cpu puede dar a una tarea
 
 Cambio de contexto:
-El momento del cambio de una tarea a otra durante la multiprogramacion con tiempo de cpu, cuando vuelve a 
+El momento del cambio de una tarea a otra durante la multiprogramacion con tiempo de cpu, cuando vuelve a la misma tarea que dejo, la inicia desde el momento en que se quedo la ultima vez.
+
+Paralelismo (buscar):
+
+
+Multitarea real(Buscar):
 
 
 
