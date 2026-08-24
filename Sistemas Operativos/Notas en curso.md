@@ -69,6 +69,8 @@ Tipos en las capacidades que ofrece al usuario
 		Multiprocesador
 
 
+Tiempo de CPU o Rafaga de CPU:
+Los sistemas con multiprogramacion, llevaron a que un CPU pudiera ejecutar varias tareas de manera simultanea, lo comparten por tiempo (quantums de tiempo, la cnatidad de milisegundos que un cpu puede dar a una tarea)
 
  Teoricamente un sistema podria ser multiusuario y monotarea, pero cada vez que un usuario haga algo, tomaria el control absoluto del sistema, y solo pasaria al siguiente usuario hasta terminarla
 
