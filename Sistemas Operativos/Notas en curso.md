@@ -78,12 +78,12 @@ Tipos en las capacidades que ofrece al usuario
 
 
 
-Tipos segun su construccion
-	Estructura monolitica (investigar mas,notebook)
+Tipos segun su construccion (investigar mas,notebook, modo usuario, modo ) 
+	Estructura monolitica 
 		Todo corre como un solo gran programa en modo kernel, todos los servicios estan en el mismo espacio (sistema de archivos, gestion de memoria, gestion de procesos, drivers)
 		Algunos sistemas como GNU/LINUX modernos, pueden cargar modulos ejectuables de forma dinamica, permitiendole actuar, de cierto modo, como un micronucleo
 	MicroKernel o MicroNucleo
-		Aqui los sistem
+		Aqui, el nucleo solo contiene la implementacion de servicios basicos como el soporte de acceso a memoria de bajo nivel, el control de memoria. la administracion de procesos y la comunicacion entre procesos. Todo lo demas (drivers, sistema de archivos, red) se ejecuta como procesos en espacio de usuario, en el kernel solamente se ejecute lo meramente escencial para que el sistema funcione.
 
 
 
