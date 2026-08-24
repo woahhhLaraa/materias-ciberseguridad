@@ -66,8 +66,13 @@ Tipos en las capacidades que ofrece al usuario
 			Permite gestionar y realizar varias labaores simultaneamente. Y esto puede darse de maneara simulada (concurrencia) o de manera real (paralelismo). Los sistemas actuales (windows, distribuciones linux, macOS) son multitarea
 	Numero de procesadores
 		Monoprocesador
-			
+			Aquel capaz de manejar solamente un procesador de la computadora, si tuviera mas de uno, nisiquiera lo reconoce. (MS DOS, WINDOWS 3.1, 10 HOME Y 11 HOME)
 		Multiprocesador
+			Aquel capaz de manejar mas de un procesador y usarlos para distribuir su carga de trabajo, pudiendo trabajar con ellos de forma
+				Simetrica
+				Asimetrica
+			(WINDOWS 10,11,macOS, LINUX, ANDROID e IOS)
+		Ojo, no debe ocnfu
 
 
  Teoricamente un sistema podria ser multiusuario y monotarea, pero cada vez que un usuario haga algo, tomaria el control absoluto del sistema, y solo pasaria al siguiente usuario hasta terminarla
