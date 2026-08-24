@@ -13,9 +13,11 @@ Mas tipos de sistemas operativos
 
 Tipos embebidos
 
-Diseñados para funcionar en dispositivos especializados, microondas, refrigeradores, dispositivos medicos, sistemas de control y otros. pensados para funciones especificas. Normalmente sobre microcontroladores y en hardware sin mucha potencia
+Diseñados para funcionar en dispositivos especializados, microondas, refrigeradores, dispositivos medicos, sistemas de control y otros. pensados para funciones especificas. Normalmente sobre microcontroladores (no microcontroladores) y en hardware sin mucha potencia
 
+Normalmente se cargan en memorias flash o de poco almacenamiento (Como dentro de la placa), y no suelen ser cambiados una vez se cargan
 
+	
 
 
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
