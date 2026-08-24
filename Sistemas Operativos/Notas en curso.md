@@ -54,9 +54,11 @@ FreeRTOS
 Tipos en las capacidades que ofrece al usuario
 	Numero de usuarios
 		Monousuario
-			Solo puede ser utilizado por un solo usuario al mismo tiempo, sin importar el numero de procesadores que tenga, o el numero de tareas que pueda eje
+			Solo puede ser utilizado por un solo usuario al mismo tiempo, sin importar el numero de procesadores que tenga, o el numero de tareas que pueda ejecutar a mismo tiempo.
+				Windows xp,7,vista,8,10,11. (son multicuenta, no multiusuario)
 		Multiusuario
-			Puede ser utilizado por varios usuarios al mismo tiempo
+			Puede ser utilizado por varios usuarios al mismo tiempo, ya sea por medio de varias terminales o sesiones remotas dentro de una red de comunicaciones(SSH, Por ejemplo), sin importar el numero de procesos o procesadores
+				Servidores, windows server, algunas distribuciones linux y macOS
 	Numero de tareas
 		Monotarea
 		Multitarea
