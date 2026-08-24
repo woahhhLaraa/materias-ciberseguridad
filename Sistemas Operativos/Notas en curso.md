@@ -61,11 +61,16 @@ Tipos en las capacidades que ofrece al usuario
 				Servidores, windows server, algunas distribuciones linux y macOS
 	Numero de tareas
 		Monotarea
+			Una sola tarea al mismo tiempo, cuando un programa o tarea se ejecuta, toma el control absoluto de la CPU. (MS DOS, APPLE MACINTROSH Y ATARI TOS)
 		Multitarea
+			Permite gestionar y realizar varias labaores simultaneamente. Y esto puede darse de maneara simulada (concurrencia) o de manera real (paralelismo). Los sistemas actuales 
 	Numero de procesadores
 		Monoprocesadore
 		Multiprocesador
 
+
+
+ Teoricamente un sistema podria ser multiusuario y monotarea, pero cada vez que un usuario haga algo, tomaria el control absoluto del sistema, y solo pasaria al siguiente usuario hasta terminarla
 
 
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
