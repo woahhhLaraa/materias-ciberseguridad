@@ -4,7 +4,6 @@ semestre: 3
 tipo: captura
 tags: [captura, sin-procesar]
 ---
-
 # Enrutamiento basico — notas en curso
 
 
