@@ -69,10 +69,19 @@ Tipos en las capacidades que ofrece al usuario
 		Multiprocesador
 
 
-Tiempo de CPU o Rafaga de CPU:
-Los sistemas con multiprogramacion, llevaron a que un CPU pudiera ejecutar varias tareas de manera simultanea, lo comparten por tiempo (quantums de tiempo, la cnatidad de milisegundos que un cpu puede dar a una tarea)
-
  Teoricamente un sistema podria ser multiusuario y monotarea, pero cada vez que un usuario haga algo, tomaria el control absoluto del sistema, y solo pasaria al siguiente usuario hasta terminarla
+ 
+Tiempo de CPU o Rafaga de CPU:
+Los sistemas con multiprogramacion, llevaron a que un CPU pudiera ejecutar varias tareas de manera simultanea (mediante un cambio de contexto), lo comparten por tiempo quantums.
+
+Quantums de tiempo:
+La cantidad de milisegundos que un cpu puede dar a una tarea
+
+Cambio de contexto:
+El momento del cambio de una tarea a otra durante la multiprogramacion con tiempo de cpu, cuando vuelve a 
+
+
+
 
 
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
