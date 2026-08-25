@@ -28,5 +28,5 @@ Estos criterios son **necesarios pero no suficientes**: sirven sobre todo para *
 
 ## Relacionadas
 
-- [[Teoria de grafos]]
-- [[Circuitos de Euler y Hamilton]]
+- [[Teoria de grafos]] — el vocabulario con el que están escritos los criterios: vértices, lados, valencias, conexo
+- [[Circuitos de Euler y Hamilton]] — "tener o no circuito de Euler" es uno de los criterios de descarte de esta lista

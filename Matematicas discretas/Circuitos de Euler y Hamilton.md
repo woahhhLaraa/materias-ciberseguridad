@@ -38,5 +38,5 @@ Similar a Euler, con la diferencia de que en lugar de pasar por todos los **lado
 
 ## Relacionadas
 
-- [[Teoria de grafos]]
-- [[Isomorfismo de grafos]]
+- [[Teoria de grafos]] — de ahí salen conexo y valencia, las dos condiciones que deciden si hay circuito de Euler
+- [[Isomorfismo de grafos]] — la existencia de circuito de Euler se usa allá para descartar que dos grafos sean isomorfos

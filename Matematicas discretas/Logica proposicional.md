@@ -65,4 +65,4 @@ La conjunción solo es verdadera cuando **ambas** proposiciones lo son.
 
 ## Relacionadas
 
-- [[Relaciones y sus propiedades]]
+- [[Relaciones y sus propiedades]] — donde el condicional deja de ser un ejemplo de clase y pasa a definir propiedades de una relación

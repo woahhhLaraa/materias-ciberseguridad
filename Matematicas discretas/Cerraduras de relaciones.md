@@ -37,5 +37,5 @@ Se aplican en este orden precisamente porque cada cerradura puede romper lo que 
 
 ## Relacionadas
 
-- [[Relaciones de equivalencia y particiones]]
-- [[Relaciones y sus propiedades]]
+- [[Relaciones de equivalencia y particiones]] — el destino de las tres cerraduras: volver de equivalencia una relación que no lo era
+- [[Relaciones y sus propiedades]] — las tres propiedades que cada cerradura añade, una por una y en ese orden
