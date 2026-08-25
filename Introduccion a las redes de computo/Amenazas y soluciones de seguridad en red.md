@@ -58,5 +58,5 @@ Ver [[Normas de seguridad fisica]] para la última capa, y [[Clasificaciones de 
 ## Relacionadas
 
 - [[Caso Pemex - DoppelPaymer]] — una amenaza externa real
-- [[Redes confiables]]
-- [[Triada CIA]]
+- [[Redes confiables]] — la seguridad es la cuarta de las cuatro características de una red confiable; aquí está desarrollada
+- [[Triada CIA]] — los tres objetivos que estas soluciones defienden, definidos en primer semestre

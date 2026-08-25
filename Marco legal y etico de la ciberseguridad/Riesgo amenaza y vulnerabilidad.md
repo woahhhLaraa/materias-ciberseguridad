@@ -41,7 +41,7 @@ Amenazas que surgen de acciones, errores o conductas de las personas, intenciona
 
 ## Relacionadas
 
-- [[Tipos de atacantes]]
-- [[Normas de seguridad fisica]]
+- [[Tipos de atacantes]] — quién está detrás de la amenaza, con nombre y motivación
+- [[Normas de seguridad fisica]] — las medidas concretas contra el riesgo humano y el natural, organizadas por capas
 - [[NIST CSF]] — el marco entero se organiza alrededor de la gestión de riesgo
 - [[Comportamiento y conducta]] — por qué el factor humano falla

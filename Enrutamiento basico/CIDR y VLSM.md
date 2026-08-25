@@ -32,4 +32,4 @@ Con CIDR, la clase ya no está implícita en la dirección. Por eso los protocol
 ## Relacionadas
 
 - [[Capa de red - IPv4 e IPv6]] — CIDR y NAT como parches al agotamiento de IPv4
-- [[Direccionamiento IP con clases]]
+- [[Direccionamiento IP con clases]] — el sistema de bloques fijos A, B y C que CIDR vino a sustituir

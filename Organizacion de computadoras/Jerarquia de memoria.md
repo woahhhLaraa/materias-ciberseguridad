@@ -60,6 +60,6 @@ Espacios de memoria asignados a distintos propósitos:
 ## Relacionadas
 
 - [[Definicion y funciones del sistema operativo]] — gestionar memoria es una de sus funciones principales
-- [[Arreglos de discos RAID]]
+- [[Arreglos de discos RAID]] — el disco donde vive la memoria virtual, y cómo se le da redundancia
 - [[MOC - Estructura interna de un CPU]] — los componentes del procesador al que la caché sirve de intermediario
 - [[Generaciones de computadoras]] — la caché L1/L2/L3 aparece en la sexta generación

@@ -39,6 +39,6 @@ Nótese que el hardware se elige **al final**, coherente con [[Metodologia de di
 
 ## Relacionadas
 
-- [[Cableado estructurado]]
-- [[Clasificacion de redes]]
-- [[Proyecto red ECONEX]]
+- [[Cableado estructurado]] — la parte física del paso 6: qué se instala y con qué elementos
+- [[Clasificacion de redes]] — la topología que el paso 2 obliga a determinar
+- [[Proyecto red ECONEX]] — estos seis pasos aplicados a un edificio real de la UV

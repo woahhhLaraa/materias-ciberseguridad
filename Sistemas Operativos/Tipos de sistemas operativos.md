@@ -62,5 +62,5 @@ Aquellos Sistemas operativos que se utilizan en sistemas de hardware especializa
 
 ## Relacionadas
 
-- [[Definicion y funciones del sistema operativo]]
-- [[Generaciones de sistemas operativos]]
+- [[Definicion y funciones del sistema operativo]] — lo que todos comparten por debajo de la clasificación: administrar recursos
+- [[Generaciones de sistemas operativos]] — de dónde viene cada tipo; el de servidor hereda del mainframe de segunda generación

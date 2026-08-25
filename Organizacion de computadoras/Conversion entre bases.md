@@ -62,5 +62,5 @@ Marcados pero sin resolver en los apuntes:
 
 ## Relacionadas
 
-- [[Sistemas numericos]]
-- [[Aritmetica binaria]]
+- [[Sistemas numericos]] — las cuatro bases entre las que se convierte, y por qué son esas cuatro
+- [[Aritmetica binaria]] — qué hacer con el binario una vez convertido: sumarlo con acarreo

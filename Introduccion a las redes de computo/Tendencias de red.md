@@ -41,5 +41,5 @@ Solución inalámbrica a través de satélite o antena.
 
 ## Relacionadas
 
-- [[Redes confiables]]
-- [[Tecnologias de acceso a internet]]
+- [[Redes confiables]] — las cuatro características que estas tendencias tensionan, sobre todo escalabilidad y seguridad
+- [[Tecnologias de acceso a internet]] — de dónde sale el ancho de banda que estas tendencias exigen

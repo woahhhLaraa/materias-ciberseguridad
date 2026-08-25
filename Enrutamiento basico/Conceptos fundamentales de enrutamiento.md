@@ -46,6 +46,6 @@ Una década después, con la reducción rápida de direcciones IP, nace **CIDR**
 
 ## Relacionadas
 
-- [[Direccionamiento IP con clases]]
-- [[Capa de red - IPv4 e IPv6]]
-- [[Sintaxis basica de comandos IOS]]
+- [[Direccionamiento IP con clases]] — cómo se lee la dirección de destino con la que el router decide el siguiente salto
+- [[Capa de red - IPv4 e IPv6]] — el paquete y el enrutamiento vistos desde la capa 3, en segundo semestre
+- [[Sintaxis basica de comandos IOS]] — la CLI con la que todo esto se configura en un router Cisco

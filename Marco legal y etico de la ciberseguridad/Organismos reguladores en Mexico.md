@@ -77,4 +77,4 @@ En México la ciberseguridad se estructura alrededor del **CERT-MX** y la **Poli
 
 ## Relacionadas
 
-- [[Gestion de incidentes y reportes]]
+- [[Gestion de incidentes y reportes]] — el proceso formal que el CERT-MX ejecuta sobre lo que se le reporta, y cómo se redacta

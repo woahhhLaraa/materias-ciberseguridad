@@ -42,6 +42,6 @@ Por eso el hexadecimal se usa como **notación abreviada de números binarios**.
 
 ## Relacionadas
 
-- [[Conversion entre bases]]
-- [[Aritmetica binaria]]
+- [[Conversion entre bases]] — cómo pasar de una de estas bases a otra: directa, indirecta o divisiones sucesivas
+- [[Aritmetica binaria]] — cómo se opera dentro del binario una vez elegido el sistema
 - [[Direccionamiento IP con clases]] — donde el binario y el hexadecimal se usan de verdad

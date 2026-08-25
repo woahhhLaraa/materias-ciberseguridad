@@ -46,6 +46,6 @@ Las tres coinciden en el núcleo: **administrar recursos**. Difieren en el énfa
 
 ## Relacionadas
 
-- [[Generaciones de sistemas operativos]]
-- [[Tipos de sistemas operativos]]
+- [[Generaciones de sistemas operativos]] — cómo fueron apareciendo estas funciones, generación por generación
+- [[Tipos de sistemas operativos]] — las mismas funciones repartidas según el sistema: servidor, escritorio, móvil
 - [[Jerarquia de memoria]] — cómo el SO gestiona la memoria a nivel hardware

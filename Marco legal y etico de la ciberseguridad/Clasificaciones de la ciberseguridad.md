@@ -31,5 +31,5 @@ Que no exista clasificación oficial es en sí un punto examinable: si una pregu
 
 ## Relacionadas
 
-- [[Normas de seguridad fisica]]
-- [[Estandares de seguridad]]
+- [[Normas de seguridad fisica]] — la mitad física de la ecuación que abre esta nota, desarrollada por capas de disuasión, retraso y respuesta
+- [[Estandares de seguridad]] — el contrapeso: aquí las clasificaciones son convencionales, allá son normativas y auditables

@@ -49,4 +49,4 @@ Primeras computadoras eléctricas con **tubos de vacío**.
 ## Relacionadas
 
 - [[Generaciones de computadoras]] — la misma línea temporal desde el hardware, en [[Organizacion de computadoras]]
-- [[Tipos de sistemas operativos]]
+- [[Tipos de sistemas operativos]] — en qué desembocó la evolución: la variedad de sistemas que existe hoy

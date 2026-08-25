@@ -43,5 +43,5 @@ El paso 2 no es opcional en los exámenes de esta materia: se pide la comprobaci
 
 ## Relacionadas
 
-- [[Sistemas numericos]]
-- [[Conversion entre bases]]
+- [[Sistemas numericos]] — qué es el binario y por qué solo tiene dos dígitos, antes de ponerse a operar con ellos
+- [[Conversion entre bases]] — cómo llegar al binario desde decimal; aquí se opera una vez que ya estás en él

@@ -31,5 +31,5 @@ No está en los apuntes, pero es la pregunta natural: Token Ring era técnicamen
 
 ## Relacionadas
 
-- [[Clasificacion de redes]]
-- [[CSMA-CD y colisiones]]
+- [[Clasificacion de redes]] — la topología de anillo y la familia "paso de testigo", los dos cortes donde cae Token Ring
+- [[CSMA-CD y colisiones]] — el rival que ganó: escucha con colisiones frente a testigo sin colisiones

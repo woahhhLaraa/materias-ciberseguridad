@@ -118,4 +118,4 @@ Duración total aproximada: ~3.5 minutos
 
 ## Relacionadas
 
-- [[Desarrollo de Habilidades Informativas]]
+- [[Desarrollo de Habilidades Informativas]] — el índice de la materia, con esta actividad y sus entregables

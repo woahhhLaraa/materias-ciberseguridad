@@ -44,5 +44,5 @@ Ese es precisamente el problema que [[Token Ring]] resuelve.
 
 ## Relacionadas
 
-- [[Clasificacion de redes]]
-- [[Protocolos y modelos]]
+- [[Clasificacion de redes]] — CSMA/CD es la familia "sistemas con escucha" de esa clasificación por protocolo
+- [[Protocolos y modelos]] — qué es un protocolo en general; CSMA/CD es uno concreto de control de acceso al medio

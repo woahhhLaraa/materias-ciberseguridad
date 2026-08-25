@@ -30,5 +30,5 @@ El símbolo del prompt indica el modo:
 
 ## Relacionadas
 
-- [[Componentes de red]]
+- [[Componentes de red]] — los dispositivos intermedios que se configuran con esta CLI
 - [[Enrutamiento basico]] — donde la configuración se practica a fondo

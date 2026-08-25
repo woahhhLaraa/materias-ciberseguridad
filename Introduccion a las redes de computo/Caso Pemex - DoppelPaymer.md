@@ -52,8 +52,8 @@ El caso se convirtió en punto de referencia en el país para discutir la seguri
 
 ## Relacionadas
 
-- [[Amenazas y soluciones de seguridad en red]]
-- [[Tipos de atacantes]]
+- [[Amenazas y soluciones de seguridad en red]] — el ransomware como amenaza externa, y las capas de solución que le habrían hecho frente
+- [[Tipos de atacantes]] — dónde caen Indrik Spider y TA505: crimen organizado con motivación económica
 - [[Gestion de incidentes y reportes]] — el marco formal para responder a algo así
 - [[Organismos reguladores en Mexico]] — el CERT-MX es quien atiende estos casos
 - [[Guerra de los mundos - analisis de ciberseguridad]] — el mismo análisis sobre ficción

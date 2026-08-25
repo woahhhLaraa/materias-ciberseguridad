@@ -37,7 +37,7 @@ Mirar el **primer octeto en decimal** y compararlo con la tabla. En binario, con
 
 ## Relacionadas
 
-- [[Tarea 1 - Separar red y host]]
-- [[Tarea 2 - Clases IP y direcciones de red]]
-- [[Enmascaramiento y subnetting]]
+- [[Tarea 1 - Separar red y host]] — los ejercicios de separar red y host para direcciones de cada clase
+- [[Tarea 2 - Clases IP y direcciones de red]] — los ejercicios de identificar la clase y calcular la dirección de red
+- [[Enmascaramiento y subnetting]] — cómo partir una de estas clases en subredes tomando bits prestados al host
 - [[Sistemas numericos]] — el binario y el hexadecimal que se usan aquí

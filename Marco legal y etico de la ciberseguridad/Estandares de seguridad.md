@@ -52,4 +52,4 @@ Las normas de seguridad se dividen en tres grupos:
 
 ## Relacionadas
 
-- [[Riesgo amenaza y vulnerabilidad]]
+- [[Riesgo amenaza y vulnerabilidad]] — el punto de partida de todos ellos: la gestión de seguridad empieza siempre por el riesgo

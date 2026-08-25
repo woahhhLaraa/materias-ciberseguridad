@@ -51,6 +51,6 @@ Ejercicios de [[Direccionamiento IP con clases]] y [[Enmascaramiento y subnettin
 
 ## Relacionadas
 
-- [[Direccionamiento IP con clases]]
-- [[Enmascaramiento y subnetting]]
-- [[Tarea 1 - Separar red y host]]
+- [[Direccionamiento IP con clases]] — los rangos de cada clase que la primera parte pide identificar
+- [[Enmascaramiento y subnetting]] — el cálculo de máscaras que exige la segunda parte de la tarea
+- [[Tarea 1 - Separar red y host]] — la tarea anterior, de la que esta es continuación directa

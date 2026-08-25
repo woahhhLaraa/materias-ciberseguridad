@@ -58,5 +58,5 @@ Se llama así porque se instala en el piso o el techo por medio de contenedores.
 
 ## Relacionadas
 
-- [[Medios de red]]
-- [[Diseno de red LAN]]
+- [[Medios de red]] — de dónde sale el límite de 100 m del cobre que aquí se recorta a 90
+- [[Diseno de red LAN]] — los pasos de ubicación y selección de hardware donde este cableado se planifica

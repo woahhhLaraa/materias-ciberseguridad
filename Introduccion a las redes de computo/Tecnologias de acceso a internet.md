@@ -43,5 +43,5 @@ Este concepto es la razón de ser de la **calidad de servicio (QoS)**: si voz, v
 
 ## Relacionadas
 
-- [[Clasificacion de redes]]
-- [[Tendencias de red]]
+- [[Clasificacion de redes]] — el alcance geográfico —LAN, MAN, WAN— que cada una de estas tecnologías cubre
+- [[Tendencias de red]] — la demanda que empuja a estas tecnologías: video, nube y colaboración en línea

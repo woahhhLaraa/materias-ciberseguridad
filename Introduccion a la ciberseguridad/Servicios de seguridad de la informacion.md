@@ -32,5 +32,5 @@ Si alguna de estas funciones falla, el resultado se paga fuera del plano técnic
 
 ## Relacionadas
 
-- [[Triada CIA]]
-- [[La seguridad informatica como proceso]]
+- [[Triada CIA]] — los tres primeros de los ocho; los otros cinco son la ampliación
+- [[La seguridad informatica como proceso]] — el ciclo que mantiene vivos estos ocho servicios en el tiempo

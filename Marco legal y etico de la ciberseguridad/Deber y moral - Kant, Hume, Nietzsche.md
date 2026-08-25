@@ -62,6 +62,6 @@ Su desenlace es la refutación literaria de la tesis: aunque la razón autorice 
 
 ## Relacionadas
 
-- [[El placer como motor de la conducta]]
-- [[El problema del mal]]
-- [[Tolerancia y pluralismo]]
+- [[El placer como motor de la conducta]] — la respuesta rival a qué mueve la conducta; el sentimiento de Hume y el principio del placer de Freud se tocan ahí
+- [[El problema del mal]] — la pregunta que ninguna de las tres posturas alcanza a cerrar
+- [[Tolerancia y pluralismo]] — hasta dónde obliga la moral frente a quien no la comparte

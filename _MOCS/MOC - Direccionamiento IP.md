@@ -197,6 +197,6 @@ Con CIDR, la clase ya no está implícita en la dirección. Por eso los protocol
 
 - [[00 - Indice]] — el índice maestro con todos los hilos
 - [[Enmascaramiento y subnetting]] — la práctica del cálculo
-- [[Conceptos fundamentales de enrutamiento]]
-- [[Protocolos y modelos]]
-- [[Examen segundo parcial - Redes]]
+- [[Conceptos fundamentales de enrutamiento]] — qué hace el router con la dirección una vez que sabe leerla: decidir el siguiente salto
+- [[Protocolos y modelos]] — dónde encaja IP dentro del modelo por capas
+- [[Examen segundo parcial - Redes]] — este hilo aplicado en el examen práctico: esquema de direccionamiento y configuración de routers

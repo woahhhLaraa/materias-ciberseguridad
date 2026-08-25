@@ -29,5 +29,5 @@ Reparte los datos como RAID 0 pero usa un mecanismo de paridad para revisar erro
 
 ## Relacionadas
 
-- [[Jerarquia de memoria]]
+- [[Jerarquia de memoria]] — el disco como último escalón de la jerarquía, el que sostiene la memoria virtual
 - [[Triada CIA]] — RAID es una medida de **disponibilidad**, no de confidencialidad. Un RAID no es un respaldo.

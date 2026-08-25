@@ -48,6 +48,6 @@ La trascendencia ayuda a tomar decisiones basadas en valores, no solo en conveni
 
 ## Relacionadas
 
-- [[La verdad como fundamento de la etica]]
-- [[Deber y moral - Kant, Hume, Nietzsche]]
+- [[La verdad como fundamento de la etica]] — sobre qué se apoya el juicio de la conciencia: sin verdad no hay bien que distinguir
+- [[Deber y moral - Kant, Hume, Nietzsche]] — de dónde viene la obligación que la conciencia siente: razón, sentimiento o control social
 - [[Comportamiento y conducta]] — el mismo problema desde la psicología, en tercer semestre

@@ -73,6 +73,6 @@ Estrategia de ciberseguridad, gestión organizacional del riesgo, políticas y r
 
 ## Relacionadas
 
-- [[Estandares de seguridad]]
+- [[Estandares de seguridad]] — el panorama donde encaja, junto a ISO 27001, los controles CIS y PCI DSS
 - [[Gestion de incidentes y reportes]] — el NIST también define las fases de respuesta a incidentes
 - [[La seguridad informatica como proceso]] — la misma idea, versión de primer semestre

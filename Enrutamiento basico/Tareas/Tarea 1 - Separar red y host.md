@@ -50,6 +50,6 @@ Ejercicios de [[Direccionamiento IP con clases]].
 
 ## Relacionadas
 
-- [[Direccionamiento IP con clases]]
-- [[Tarea 2 - Clases IP y direcciones de red]]
+- [[Direccionamiento IP con clases]] — la teoría que estos ejercicios aplican: rangos y bits iniciales de cada clase
+- [[Tarea 2 - Clases IP y direcciones de red]] — la continuación: identificar la clase y calcular la dirección de red
 - [[Conversion entre bases]] — el método de conversión a binario y hexadecimal

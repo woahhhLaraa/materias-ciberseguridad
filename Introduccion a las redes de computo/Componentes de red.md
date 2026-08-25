@@ -37,6 +37,6 @@ Interconectan dispositivos finales: switches, puntos de acceso inalámbrico, rou
 
 ## Relacionadas
 
-- [[Medios de red]]
-- [[Representaciones de red y topologias]]
-- [[Clasificacion de redes]]
+- [[Medios de red]] — por dónde viajan los datos entre los dispositivos que esta nota enumera
+- [[Representaciones de red y topologias]] — cómo se dibuja cada uno de estos dispositivos en un diagrama
+- [[Clasificacion de redes]] — cómo se agrupan estas redes por alcance, topología y protocolo, en Arquitectura de redes

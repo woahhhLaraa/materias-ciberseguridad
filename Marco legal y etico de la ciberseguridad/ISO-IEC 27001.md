@@ -67,6 +67,6 @@ ISO/IEC 27001 es un estándar internacional, para implementar un SGSI, basado en
 
 ## Relacionadas
 
-- [[Familia ISO 27000]]
-- [[Estandares de seguridad]]
+- [[Familia ISO 27000]] — las normas que la rodean: 27002 los controles, 27005 el riesgo, 27701 la privacidad
+- [[Estandares de seguridad]] — el panorama completo donde esta norma es una fila de la tabla
 - [[NIST CSF]] — el equivalente estadounidense, no certificable
