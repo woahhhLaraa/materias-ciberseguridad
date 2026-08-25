@@ -44,4 +44,4 @@ Materia de primer semestre, iniciada el 19/08/2025.
 
 ## Conexiones
 
-Esta materia es el sustrato de hardware de [[Sistemas Operativos]] en tercer semestre: [[Jerarquia de memoria]] explica físicamente lo que el SO administra, y [[Tecnicas de entrada y salida]] adelanta el tema de E/S del temario de SO.
+Esta materia es el sustrato de hardware de [[Sistemas Operativos (materia)]] en tercer semestre: [[Jerarquia de memoria]] explica físicamente lo que el SO administra, y [[Tecnicas de entrada y salida]] adelanta el tema de E/S del temario de SO.
