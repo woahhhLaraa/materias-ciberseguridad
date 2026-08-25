@@ -7,7 +7,7 @@ tags: [hardware, memoria, cache]
 
 # Jerarquía de memoria
 
-Dentro de un procesador tenemos la unidad lógica, la unidad de control y los registros.
+Dentro de un procesador tenemos la unidad lógica, la unidad de control y los registros. Ver [[MOC - Estructura interna de un CPU]].
 
 ## Memoria caché
 
@@ -61,4 +61,5 @@ Espacios de memoria asignados a distintos propósitos:
 
 - [[Definicion y funciones del sistema operativo]] — gestionar memoria es una de sus funciones principales
 - [[Arreglos de discos RAID]]
+- [[MOC - Estructura interna de un CPU]] — los componentes del procesador al que la caché sirve de intermediario
 - [[Generaciones de computadoras]] — la caché L1/L2/L3 aparece en la sexta generación

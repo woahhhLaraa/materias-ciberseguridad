@@ -66,6 +66,18 @@ Nace con el **transistor**, que sustituye a las válvulas de vacío actuando com
 
 **Impacto:** se usó para el primer simulador de vuelo, la primera vez que la computación salía de la investigación pura.
 
+
+### Tercera Generacion
+Se empiezan a utilizar los chips de silicio, dando cabida a procesadores mas pequenos, con menos consumo energetico y mas poder de procesamiento
+
+**Características:**
+- Nacimiento del a multiprogramacion
+- Nacimiento de los lenguajes de programacion (Se dejan de usar tarjetas perforadas)
+- El nacimiento de los primeros OS
+
+**Eventos importantes
+- Uso de chips de silicio
+
 ### Cuarta generación (1971-1984)
 
 > Las fuentes varían en la fecha de cierre. Todas coinciden en que inicia en 1971.
@@ -107,7 +119,7 @@ Nacen también las minicomputadoras.
 
 *Fuente: [[Jerarquia de memoria]] — Organización de computadoras, sem. 1*
 
-Dentro de un procesador tenemos la unidad lógica, la unidad de control y los registros.
+Dentro de un procesador tenemos la unidad lógica, la unidad de control y los registros. Ver [[MOC - Estructura interna de un CPU]].
 
 ### Memoria caché
 
@@ -170,7 +182,7 @@ Tres formas de mover datos entre un dispositivo y la memoria. Las dos primeras p
 El procesador envía una orden al módulo de E/S y después **debe hacer comprobaciones periódicas programadas** hasta que la operación concluya. El módulo no realiza ninguna acción para avisar al procesador.
 
 - Es **síncrona**
-- ❌ Se desperdicia mucho tiempo de CPU en esperar (*polling*)
+- Se desperdicia mucho tiempo de CPU en esperar (*polling*)
 
 ### 2. E/S mediante interrupciones
 

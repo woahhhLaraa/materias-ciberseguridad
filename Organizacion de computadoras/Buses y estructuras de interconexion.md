@@ -63,6 +63,7 @@ Según el tipo de bus:
 
 ## Relacionadas
 
+- [[MOC - Estructura interna de un CPU]] — lo que los buses conectan del lado del procesador
 - [[Puertos y conectores]]
 - [[Jerarquia de memoria]]
 - [[Arquitectura de entrada y salida]]

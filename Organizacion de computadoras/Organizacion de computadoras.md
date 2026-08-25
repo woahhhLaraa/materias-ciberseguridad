@@ -26,6 +26,7 @@ Materia de primer semestre, iniciada el 19/08/2025.
 
 ### Tema 1 — Evolución
 - [[Generaciones de computadoras]]
+- [[MOC - Estructura interna de un CPU]]
 
 ### Tema 2 — Representación de datos
 - [[Sistemas numericos]]

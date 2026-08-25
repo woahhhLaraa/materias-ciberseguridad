@@ -64,7 +64,7 @@ Merece nota propia si cumple **al menos uno**:
 
 ## Hilos transversales
 
-Mantener actualizada la sección correspondiente de `00 - Indice.md`. Los hilos vivos son: tríada CIA, ciclo de gestión de seguridad, factor humano, direccionamiento IP, hardware→SO, matemáticas→redes. Cuando un tema nuevo se enganche a uno de ellos, añadirlo a la cadena.
+Mantener actualizada la sección correspondiente de `00 - Indice.md`. Los hilos vivos son: tríada CIA, ciclo de gestión de seguridad, factor humano, direccionamiento IP, hardware→SO, matemáticas→redes, estructura interna del CPU. Cuando un tema nuevo se enganche a uno de ellos, añadirlo a la cadena.
 
 ### Los documentos consolidados de `_MOCS/`
 

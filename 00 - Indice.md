@@ -59,6 +59,11 @@ Cada hilo tiene además un **documento consolidado** en `_MOCS/` que reúne el c
 
 [[Generaciones de computadoras]] (sem. 1) → [[Jerarquia de memoria]] (sem. 1) → [[Tecnicas de entrada y salida]] (sem. 1) → [[Generaciones de sistemas operativos]] (sem. 3)
 
+### Estructura interna de un CPU
+📄 [[MOC - Estructura interna de un CPU]] ⚠️ en construcción
+
+[[Jerarquia de memoria]] (sem. 1)
+
 ### Matemáticas → redes
 📄 [[MOC - Matematicas a redes]]
 

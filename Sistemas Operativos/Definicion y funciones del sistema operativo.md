@@ -17,7 +17,7 @@ tags: [sistemas-operativos, fundamentos]
 
 Las tres coinciden en el núcleo: **administrar recursos**. Difieren en el énfasis — Tanenbaum en la intermediación, Silberschatz en el servicio a las aplicaciones.
 
-## Funciones principales
+## Funciones principales (Escenciales de un sistema)
 
 - Administrar la CPU
 - Gestionar memoria

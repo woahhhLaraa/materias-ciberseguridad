@@ -45,6 +45,9 @@ Smartphones y tabletas.
 
 ### SO embebidos
 
+Aquellos Sistemas operativos que se utilizan en sistemas de hardware especializados, donde la eficiencia y el bajo consumo son la norma. Un microondas, un refrigerador, sistema medico. No suelen correr en procesadores, mas bien en microcontroladores.
+
+
 ## 2. Según servicios y capacidades
 
 - Número de tareas que pueden procesar
