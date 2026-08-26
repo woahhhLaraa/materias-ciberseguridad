@@ -48,7 +48,7 @@ K₄: valencia 3 en cada vértice, y 4(3)/2 = **6 lados**. ✓
 
 ## Relacionadas
 
-- [[Circuitos de Euler y Hamilton]]
-- [[Isomorfismo de grafos]]
+- [[Circuitos de Euler y Hamilton]] — los dos recorridos que se definen sobre un grafo; el de Euler se decide con la valencia de los vértices
+- [[Isomorfismo de grafos]] — cuándo dos grafos de aspecto distinto son el mismo; se decide comparando vértices, lados y valencias
 - [[Clasificacion de redes]] — la topología de red es un grafo
-- [[Relaciones de equivalencia y particiones]]
+- [[Relaciones de equivalencia y particiones]] — el otro eslabón del hilo hacia redes: reflexiva, simétrica y transitiva son los requisitos de conectividad que el grafo dibuja

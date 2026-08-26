@@ -42,5 +42,5 @@ Ante un ataque combinado de tecnología y desinformación es fundamental mantene
 ## Relacionadas
 
 - [[Caso Pemex - DoppelPaymer]] — el mismo análisis sobre un incidente real mexicano
-- [[Tipos de atacantes]]
+- [[Tipos de atacantes]] — la categoría donde caería el invasor: actor externo contra infraestructura crítica
 - [[Comportamiento y conducta]] — por qué la ingeniería social funciona

@@ -132,9 +132,9 @@ Ver [[Guerra de los mundos - analisis de ciberseguridad]].
 
 - [[00 - Indice]] — el índice maestro con todos los hilos
 - [[MOC - El ciclo de gestion de seguridad]] — el riesgo humano como entrada del ciclo
-- [[CyBOK]]
+- [[CyBOK]] — el área 4 del cuerpo de conocimiento es exactamente este hilo, formalizado
 - [[Conciencia y trascendencia]] — el mismo problema desde la filosofía
 - [[LFPDPPP - Ley de proteccion de datos]] — el plano legislativo en México
-- [[Normas de seguridad fisica]]
+- [[Normas de seguridad fisica]] — las medidas concretas contra el riesgo humano: control de acceso, capacitación, 2FA
 - [[Caso Pemex - DoppelPaymer]] — un actor externo real, con nombre
 - [[Actividad 1 - Buenas practicas de ciberseguridad]] — el caso propio: saber la buena práctica y no cumplirla

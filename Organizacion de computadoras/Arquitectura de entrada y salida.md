@@ -39,6 +39,6 @@ El punto 4 existe por la misma razón que la caché: los dispositivos externos y
 
 ## Relacionadas
 
-- [[Tecnicas de entrada y salida]]
-- [[Buses y estructuras de interconexion]]
-- [[Puertos y conectores]]
+- [[Tecnicas de entrada y salida]] — las tres formas de mover los datos que estos módulos transportan: programada, interrupciones y DMA
+- [[Buses y estructuras de interconexion]] — por dónde se conecta el módulo de E/S con el resto de la máquina
+- [[Puertos y conectores]] — los conectores físicos concretos por los que entran estos periféricos

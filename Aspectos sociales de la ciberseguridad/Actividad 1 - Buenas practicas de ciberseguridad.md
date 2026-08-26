@@ -29,5 +29,5 @@ La respuesta a la última pregunta describe la **motivación para cumplir**, no 
 
 ## Relacionadas
 
-- [[Comportamiento y conducta]]
+- [[Comportamiento y conducta]] — el modelo que explica la brecha: la conducta responde a la motivación del momento, no al conocimiento
 - [[Servicios de seguridad de la informacion]] — la reutilización de contraseñas rompe autenticación y consistencia

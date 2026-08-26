@@ -39,6 +39,6 @@ Este límite de 100 m es el que determina la distancia máxima del cableado hori
 
 ## Relacionadas
 
-- [[Componentes de red]]
-- [[Cableado estructurado]]
-- [[Representaciones de red y topologias]]
+- [[Componentes de red]] — los dispositivos que estos medios conectan
+- [[Cableado estructurado]] — donde el límite de 100 m se vuelve norma: 90 m de cableado horizontal para dejar margen
+- [[Representaciones de red y topologias]] — los medios son las aristas del diagrama; los dispositivos, los vértices

@@ -62,6 +62,6 @@ No necesita saber por qué medio va a viajar; solamente pone la etiqueta. La cap
 
 ## Relacionadas
 
-- [[Protocolos y modelos]]
+- [[Protocolos y modelos]] — el encapsulamiento y el modelo por capas que esta nota da por sabidos
 - [[Direccionamiento IP con clases]] — el detalle de IPv4, en [[Enrutamiento basico]]
 - [[CIDR y VLSM]] — la respuesta intermedia al agotamiento de IPv4

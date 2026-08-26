@@ -27,5 +27,5 @@ Es útil verlo junto a los marcos de [[Estandares de seguridad]]: ISO y NIST dic
 
 ## Relacionadas
 
-- [[Comportamiento y conducta]]
+- [[Comportamiento y conducta]] — el contenido concreto del área 4, la única que este curso desarrolla a fondo
 - [[Certificaciones en ciberseguridad]] — cómo se acredita ese cuerpo de conocimiento

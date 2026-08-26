@@ -113,5 +113,5 @@ Conectores: **tipo A** (el común), **tipo C** (mini), **tipo D** (micro), **tip
 
 ## Relacionadas
 
-- [[Buses y estructuras de interconexion]]
-- [[Arquitectura de entrada y salida]]
+- [[Buses y estructuras de interconexion]] — qué es un bus y por qué PCIe da un carril privado en vez de compartir el medio
+- [[Arquitectura de entrada y salida]] — el módulo de E/S que hay detrás de cada uno de estos conectores

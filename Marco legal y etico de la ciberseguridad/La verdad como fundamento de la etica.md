@@ -61,5 +61,5 @@ Este marco no es decorativo para la carrera. La **desinformación** como vector 
 
 ## Relacionadas
 
-- [[Conciencia y trascendencia]]
+- [[Conciencia y trascendencia]] — la facultad que aplica esa verdad al juicio propio: la inteligencia calcula, la conciencia juzga
 - [[Tolerancia y pluralismo]] — el relativismo como negación de esta postura

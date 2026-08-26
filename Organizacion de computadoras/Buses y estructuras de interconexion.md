@@ -64,6 +64,6 @@ Según el tipo de bus:
 ## Relacionadas
 
 - [[MOC - Estructura interna de un CPU]] — lo que los buses conectan del lado del procesador
-- [[Puertos y conectores]]
-- [[Jerarquia de memoria]]
-- [[Arquitectura de entrada y salida]]
+- [[Puertos y conectores]] — PCI, PCI-X y PCIe: estos mismos buses en su forma física
+- [[Jerarquia de memoria]] — la caché existe porque el bus de la memoria principal corre a otra frecuencia que el procesador
+- [[Arquitectura de entrada y salida]] — lo que los buses conectan del lado de los periféricos

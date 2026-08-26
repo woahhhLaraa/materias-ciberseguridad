@@ -37,5 +37,5 @@ La solución fue permitir máscaras variables, introduciendo la técnica **VLSM*
 
 ## Relacionadas
 
-- [[Direccionamiento IP con clases]]
+- [[Direccionamiento IP con clases]] — las clases A, B y C de cuya porción de host se toman los bits prestados
 - [[Conversion entre bases]] — el binario necesario para calcular máscaras

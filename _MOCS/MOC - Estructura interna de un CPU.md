@@ -1,6 +1,6 @@
 ---
 tipo: moc
-hilo: cpu-interno
+hilo: estructura-cpu
 tags: [moc, hardware, arquitectura, cpu, memoria]
 semestres: [1]
 ---
@@ -13,23 +13,23 @@ Documento de estudio corrido. Reúne el contenido completo de las notas del hilo
 
 > Las notas originales siguen vivas en sus carpetas de materia. Este archivo es una copia consolidada: si corriges algo aquí, corrígelo también en la nota fuente.
 
-> ⚠️ MOC en construcción. Solo [[Jerarquia de memoria]] está consolidada; las demás secciones son el esqueleto del tema y siguen vacías. **El arco del hilo** se escribe cuando haya al menos dos notas en la cadena.
+⚠️ Hilo en construcción. De momento solo la jerarquía de memoria tiene nota; las secciones 2 a 7 son el esqueleto de lo que falta capturar de Organización de computadoras.
 
-## Modelo de von Neumann
+## El arco del hilo
 
-## Componentes del procesador
+El procesador no es una caja que ejecuta instrucciones: es un conjunto de piezas que trabajan a velocidades distintas, y casi todo su diseño interno sale de administrar esa diferencia.
 
-### Unidad aritmético-lógica (ALU)
+La **jerarquía de memoria** es el caso más visible del problema. El procesador corre más rápido que la memoria principal, así que sin un intermediario pasaría el tiempo esperando: de ahí la caché, y de ahí que tenga niveles. La misma lógica reaparece en la **arquitectura de entrada y salida**, donde los dispositivos externos son todavía más lentos y hacen falta módulos que amortigüen la diferencia.
 
-### Unidad de control
+Las secciones pendientes son las otras piezas de ese mismo reparto: la **ALU** y la **unidad de control** como las que ejecutan y coordinan, los **registros** como el escalón más rápido de la jerarquía, la **segmentación** como forma de que ninguna pieza quede ociosa, y **RISC/CISC** y **multinúcleo** como las dos apuestas históricas sobre cómo repartir el trabajo.
 
-### Registros
+---
 
-## Jerarquía de memoria
+## 1. Jerarquía de memoria
 
 *Fuente: [[Jerarquia de memoria]] — Organización de computadoras, sem. 1*
 
-Dentro de un procesador tenemos la unidad lógica, la unidad de control y los registros; son los componentes de la sección *Componentes del procesador* de este documento.
+Dentro de un procesador tenemos la unidad lógica, la unidad de control y los registros — las piezas que desarrollan las secciones siguientes de este documento.
 
 ### Memoria caché
 
@@ -79,22 +79,45 @@ Espacios de memoria asignados a distintos propósitos:
 - Espacio de **pila** — variables y datos temporales de los programas
 - Espacios para **dispositivos de entrada y salida**
 
-## Ciclo de instrucción
+---
 
-## Segmentación (pipeline)
+## 2. Modelo de von Neumann
 
-## Arquitecturas RISC y CISC
+⚠️ Pendiente de capturar.
 
-## Multinúcleo
+## 3. Componentes del procesador
+
+⚠️ Pendiente de capturar.
+
+### Unidad aritmético-lógica (ALU)
+
+### Unidad de control
+
+### Registros
+
+## 4. Ciclo de instrucción
+
+⚠️ Pendiente de capturar.
+
+## 5. Segmentación (pipeline)
+
+⚠️ Pendiente de capturar.
+
+## 6. Arquitecturas RISC y CISC
+
+⚠️ Pendiente de capturar.
+
+## 7. Multinúcleo
+
+⚠️ Pendiente de capturar.
+
+---
 
 ## Relacionadas
 
-- [[Jerarquia de memoria]] — la nota fuente de la sección consolidada aquí arriba
-- [[MOC - Hardware a sistema operativo]] — el otro hilo donde también vive [[Jerarquia de memoria]]; ahí se estudia junto a las generaciones de hardware y de SO
+- [[00 - Indice]] — el índice maestro con todos los hilos
+- [[MOC - Hardware a sistema operativo]] — el otro hilo que pasa por la jerarquía de memoria, encadenándola hacia el SO
 - [[Buses y estructuras de interconexion]] — los buses conectan el CPU con la memoria y los dispositivos
 - [[Arquitectura de entrada y salida]] — cómo el procesador se comunica con los módulos de E/S
 - [[Tecnicas de entrada y salida]] — E/S programada, interrupciones y DMA: cuánta carga recae en el CPU
-- [[Generaciones de computadoras]] — el microprocesador y la ejecución en paralelo aparecen en la cuarta y quinta generación; la caché L1/L2/L3, en la sexta
-- [[Definicion y funciones del sistema operativo]] — gestionar memoria es una de sus funciones principales
-- [[Arreglos de discos RAID]] — el nivel más lento de la jerarquía, ya fuera del procesador
-- [[00 - Indice]] — el índice maestro con todos los hilos
+- [[Generaciones de computadoras]] — el microprocesador y la ejecución en paralelo aparecen en la cuarta y quinta generación

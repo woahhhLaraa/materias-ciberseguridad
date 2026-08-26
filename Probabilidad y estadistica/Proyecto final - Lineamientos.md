@@ -64,5 +64,5 @@ SIN NOMBRE, SIN LOGUEAR, DEBEN SER COMPLETAMENTE ANONIMAS
 
 ## Relacionadas
 
-- [[Espacio muestral y eventos]]
+- [[Espacio muestral y eventos]] — la base teórica sobre la que se definen las variables y escalas que pide la metodología
 - Los cuatro temas propuestos son todos de ciberseguridad aplicada al factor humano — se solapan con [[Comportamiento y conducta]] y [[Actividad 1 - Buenas practicas de ciberseguridad]]

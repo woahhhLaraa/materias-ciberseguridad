@@ -33,11 +33,7 @@
 - Si algo no cuajó, preguntar al notebook de esa materia en NotebookLM
 
 **Repaso espaciado (hábito nuevo, diario, 5-10 min):**
-- Etiqueta review
-![[Recording 20260822013833.m4a]]
-
-![[Recording 20260822013840.m4a]]
- en notas completas (no flashcards)
+- Etiqueta review en notas completas (no flashcards)
 - Abrir la cola del día (ícono de repaso o barra de estado "Review: N note(s)")
 - Intentar recordar antes de abrir la nota
 - Calificar Easy / Good / Hard según qué tan bien salió

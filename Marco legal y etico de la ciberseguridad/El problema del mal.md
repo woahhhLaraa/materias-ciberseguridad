@@ -31,5 +31,5 @@ Una de las respuestas clásicas propone que existe un **orden o plan en el unive
 
 ## Relacionadas
 
-- [[Conciencia y trascendencia]]
+- [[Conciencia y trascendencia]] — la trascendencia es el marco donde un mal sin razón aparente podría tenerla a mayor escala
 - [[Deber y moral - Kant, Hume, Nietzsche]] — Nietzsche y Raskólnikov son las respuestas que rechazan el marco entero

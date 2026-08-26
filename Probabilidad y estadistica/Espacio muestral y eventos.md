@@ -27,4 +27,4 @@ Que un evento sea "cualquier subconjunto" conecta este tema directamente con la 
 
 ## Relacionadas
 
-- [[Experimentos aleatorios y deterministas]]
+- [[Experimentos aleatorios y deterministas]] — de dónde sale el espacio muestral: solo un experimento aleatorio tiene más de un resultado

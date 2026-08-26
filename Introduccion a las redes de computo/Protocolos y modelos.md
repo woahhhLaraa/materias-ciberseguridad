@@ -64,5 +64,5 @@ Este es el modelo **TCP/IP** de cuatro capas.
 
 ## Relacionadas
 
-- [[Capa de red - IPv4 e IPv6]]
+- [[Capa de red - IPv4 e IPv6]] — la capa 3 en detalle: el ejemplo concreto de todo lo que aquí se define en abstracto
 - [[CSMA-CD y colisiones]] — un protocolo de acceso al medio concreto

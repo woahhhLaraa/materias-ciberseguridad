@@ -11,4 +11,4 @@ tags: []
 
 ## Relacionadas
 
-- [[]]
+- [[]] — por qué se relaciona

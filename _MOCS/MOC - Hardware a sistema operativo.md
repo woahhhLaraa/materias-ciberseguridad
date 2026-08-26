@@ -259,7 +259,7 @@ Primeras computadoras eléctricas con **tubos de vacío**.
 
 - [[00 - Indice]] — el índice maestro con todos los hilos
 - [[Definicion y funciones del sistema operativo]] — gestionar memoria y dispositivos son funciones del SO
-- [[Tipos de sistemas operativos]]
-- [[Arquitectura de entrada y salida]]
-- [[Buses y estructuras de interconexion]]
-- [[Arreglos de discos RAID]]
+- [[Tipos de sistemas operativos]] — en qué desembocó la quinta generación: sistemas de servidor, escritorio y móviles
+- [[Arquitectura de entrada y salida]] — el módulo de E/S sobre el que operan las tres técnicas de la sección 3
+- [[Buses y estructuras de interconexion]] — el bus compartido cuya frecuencia obliga a que exista la caché
+- [[Arreglos de discos RAID]] — el disco al fondo de la jerarquía, donde se apoya la memoria virtual

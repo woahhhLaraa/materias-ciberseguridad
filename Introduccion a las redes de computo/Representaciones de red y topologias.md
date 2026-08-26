@@ -22,5 +22,5 @@ Son, formalmente, grafos: vértices (dispositivos) y aristas (enlaces). Ver [[Te
 ## Relacionadas
 
 - [[Clasificacion de redes]] — las topologías desarrolladas en [[Arquitectura de redes]]
-- [[Componentes de red]]
-- [[Medios de red]]
+- [[Componentes de red]] — qué representa cada símbolo del diagrama
+- [[Medios de red]] — qué son las líneas que unen esos símbolos

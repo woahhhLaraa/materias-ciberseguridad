@@ -34,6 +34,6 @@ Se identifican los **objetivos y restricciones de negocio**:
 
 ## Relacionadas
 
-- [[Diseno de red LAN]]
+- [[Diseno de red LAN]] — los seis pasos concretos que desarrollan las fases de diseño lógico y físico de este ciclo
 - [[Proyecto red ECONEX]] — la metodología aplicada a un caso real
 - [[Estandares de seguridad]] — el ciclo PDCA de ISO es el mismo esqueleto

@@ -62,5 +62,5 @@ El placer por sí solo no garantiza una vida plena. La historia del pensamiento 
 
 ## Relacionadas
 
-- [[Conciencia y trascendencia]]
-- [[Comportamiento y conducta]]
+- [[Conciencia y trascendencia]] — la facultad que decide si un placer se persigue o se modera: el auriga del carro alado
+- [[Comportamiento y conducta]] — el mismo conflicto en versión psicológica: saber lo correcto y aun así responder al estímulo inmediato

@@ -24,4 +24,4 @@ Toda la probabilidad se ocupa del segundo caso: si el resultado es único, no ha
 
 ## Relacionadas
 
-- [[Espacio muestral y eventos]]
+- [[Espacio muestral y eventos]] — el conjunto de esos resultados posibles y los subconjuntos que se llaman eventos

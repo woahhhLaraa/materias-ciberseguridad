@@ -42,5 +42,5 @@ La diferencia de fondo: en los sistemas con escucha cualquiera puede hablar cuan
 
 ## Relacionadas
 
-- [[Componentes de red]]
-- [[Diseno de red LAN]]
+- [[Componentes de red]] — los dispositivos concretos que estas redes conectan
+- [[Diseno de red LAN]] — la clasificación aplicada: determinar la topología es parte del paso 2

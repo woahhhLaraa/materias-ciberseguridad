@@ -26,4 +26,4 @@ Hay dos rutas claras: la **técnica** (Security+ → CEH → OSCP) y la **de ges
 
 ## Relacionadas
 
-- [[Perfiles profesionales en ciberseguridad]]
+- [[Perfiles profesionales en ciberseguridad]] — los roles a los que apunta cada certificación de la tabla

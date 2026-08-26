@@ -46,5 +46,5 @@ Esto conecta directamente con [[La verdad como fundamento de la etica]]: sin ver
 
 ## Relacionadas
 
-- [[Deber y moral - Kant, Hume, Nietzsche]]
-- [[Conciencia y trascendencia]]
+- [[Deber y moral - Kant, Hume, Nietzsche]] — el fundamento moral que el pluralismo conserva y el relativismo disuelve
+- [[Conciencia y trascendencia]] — quién decide cuándo tolerar y cuándo no: la prudencia es un juicio de conciencia

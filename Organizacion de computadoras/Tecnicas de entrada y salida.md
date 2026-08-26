@@ -42,5 +42,5 @@ El módulo lleva los datos **directamente a la memoria principal** y solo avisa 
 
 ## Relacionadas
 
-- [[Arquitectura de entrada y salida]]
+- [[Arquitectura de entrada y salida]] — el módulo de E/S y el dispositivo externo sobre los que actúan estas tres técnicas
 - [[Definicion y funciones del sistema operativo]] — la gestión de dispositivos es función del SO

@@ -21,6 +21,6 @@ Materiales del examen práctico de direccionamiento y configuración de routers.
 
 ## Relacionadas
 
-- [[Direccionamiento IP con clases]]
-- [[Enmascaramiento y subnetting]]
-- [[Sintaxis basica de comandos IOS]]
+- [[Direccionamiento IP con clases]] — la teoría de clases que el esquema de direccionamiento de la FEI aplica
+- [[Enmascaramiento y subnetting]] — el cálculo de subredes que pedía el examen práctico
+- [[Sintaxis basica de comandos IOS]] — los comandos con los que se produjeron las configuraciones guardadas de los routers

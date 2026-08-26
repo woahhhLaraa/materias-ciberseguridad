@@ -94,5 +94,5 @@ Ampliamente usado en tecnología, banca, telecomunicaciones, salud y gobierno pa
 
 ## Relacionadas
 
-- [[Estandares de seguridad]]
-- [[Gestion de incidentes y reportes]]
+- [[Estandares de seguridad]] — dónde encaja ITIL entre los demás: guía de buenas prácticas, no norma certificable
+- [[Gestion de incidentes y reportes]] — una de las prácticas concretas que el ITSM de ITIL organiza

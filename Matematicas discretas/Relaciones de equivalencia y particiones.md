@@ -59,4 +59,4 @@ Esta es la conexión formal entre esta materia y [[Introduccion a las redes de c
 ## Relacionadas
 
 - [[Cerraduras de relaciones]] — qué hacer cuando una relación *no* es de equivalencia
-- [[Teoria de grafos]]
+- [[Teoria de grafos]] — la versión visual de lo mismo: la matriz de relación y el grafo describen las mismas conexiones

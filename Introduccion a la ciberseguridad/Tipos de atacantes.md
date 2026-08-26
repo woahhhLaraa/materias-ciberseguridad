@@ -26,6 +26,6 @@ En los apuntes de clase se usa "hacker" como sinónimo de atacante. Técnicament
 
 ## Relacionadas
 
-- [[Amenazas y soluciones de seguridad en red]]
+- [[Amenazas y soluciones de seguridad en red]] — las mismas categorías, externa e interna, vistas desde la red en segundo semestre
 - [[Caso Pemex - DoppelPaymer]] — un actor externo real, con nombre
-- [[Riesgo amenaza y vulnerabilidad]]
+- [[Riesgo amenaza y vulnerabilidad]] — el atacante es quien convierte una vulnerabilidad en amenaza materializada

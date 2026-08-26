@@ -23,7 +23,7 @@ Para determinar si un grafo tiene un circuito de Euler:
 3. Al terminar, se debe haber tocado **todos los lados una sola vez cada uno**, cuidando de no desconectar el grafo
 4. Escribir en un conjunto todos los puntos recorridos
 
-> ⚠️ Los apuntes originales decían "todos los vértices tienen valencia paralelos", lo que parece un error de dictado. La condición correcta de Euler es **valencia par** en todos los vértices.
+
 
 ## Circuito de Hamilton
 
@@ -38,5 +38,5 @@ Similar a Euler, con la diferencia de que en lugar de pasar por todos los **lado
 
 ## Relacionadas
 
-- [[Teoria de grafos]]
-- [[Isomorfismo de grafos]]
+- [[Teoria de grafos]] — de ahí salen conexo y valencia, las dos condiciones que deciden si hay circuito de Euler
+- [[Isomorfismo de grafos]] — la existencia de circuito de Euler se usa allá para descartar que dos grafos sean isomorfos

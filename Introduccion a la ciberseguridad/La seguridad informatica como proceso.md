@@ -31,5 +31,5 @@ Este ciclo es la versión introductoria de lo que en segundo semestre se formali
 
 ## Relacionadas
 
-- [[Triada CIA]]
-- [[Riesgo amenaza y vulnerabilidad]]
+- [[Triada CIA]] — lo que el ciclo protege en cada vuelta
+- [[Riesgo amenaza y vulnerabilidad]] — la fase 1 en detalle: el punto de partida siempre es el riesgo

@@ -210,5 +210,5 @@ Se identifican los **objetivos y restricciones de negocio**:
 - [[MOC - El factor humano]] — el riesgo humano es la entrada del ciclo
 - [[Riesgo amenaza y vulnerabilidad]] — el punto de partida de todo el ciclo
 - [[Gestion de incidentes y reportes]] — las fases de respuesta en detalle
-- [[Familia ISO 27000]]
+- [[Familia ISO 27000]] — la 27005 cubre la fase de riesgo del ciclo y la 27002 los controles de la de prevención
 - [[Proyecto red ECONEX]] — PDIOO aplicado a un caso real

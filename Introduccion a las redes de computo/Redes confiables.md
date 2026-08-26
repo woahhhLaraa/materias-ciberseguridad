@@ -44,5 +44,5 @@ Las cuatro características se enfrentan entre sí en el diseño real: la redund
 
 ## Relacionadas
 
-- [[Amenazas y soluciones de seguridad en red]]
-- [[Tendencias de red]]
+- [[Amenazas y soluciones de seguridad en red]] — la cuarta característica, la seguridad, desarrollada aparte y por capas
+- [[Tendencias de red]] — las exigencias nuevas —BYOD, video, nube— que ponen a prueba estas cuatro características

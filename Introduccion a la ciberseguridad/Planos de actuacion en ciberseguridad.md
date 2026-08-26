@@ -18,4 +18,4 @@ La seguridad no se resuelve solo con tecnología. Actúa en cuatro planos simult
 
 - [[Comportamiento y conducta]] — el plano humano desarrollado a fondo en tercer semestre
 - [[LFPDPPP - Ley de proteccion de datos]] — el plano legislativo en México
-- [[Normas de seguridad fisica]]
+- [[Normas de seguridad fisica]] — los planos técnico y organizacional convertidos en medidas concretas, por capas

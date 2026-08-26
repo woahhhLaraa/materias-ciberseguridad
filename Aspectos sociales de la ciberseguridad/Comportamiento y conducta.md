@@ -38,6 +38,6 @@ Ver [[Guerra de los mundos - analisis de ciberseguridad]] y [[Riesgo amenaza y v
 
 ## Relacionadas
 
-- [[CyBOK]]
+- [[CyBOK]] — el área 4 de CyBOK es justamente este tema: el factor humano como cuerpo de conocimiento formal
 - [[Conciencia y trascendencia]] — el mismo problema desde la filosofía
 - [[Actividad 1 - Buenas practicas de ciberseguridad]] — el caso propio: saber la buena práctica y no cumplirla

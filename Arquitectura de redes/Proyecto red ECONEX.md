@@ -126,6 +126,6 @@ Por lo tanto, el proyecto se enfoca en:
 ## Relacionadas
 
 - [[Metodologia de diseno de redes top-down]] — la fase que este documento cubre
-- [[Diseno de red LAN]]
+- [[Diseno de red LAN]] — los seis pasos que este proyecto sigue para el edificio
 - [[Redes confiables]] — escalabilidad, QoS y seguridad son exactamente los ejes del proyecto
 - [[Tendencias de red]] — BYOD explica la necesidad de segmentación por VLAN

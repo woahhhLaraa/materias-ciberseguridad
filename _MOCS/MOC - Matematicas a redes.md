@@ -178,6 +178,6 @@ La diferencia de fondo: en los sistemas con escucha cualquiera puede hablar cuan
 
 - [[00 - Indice]] — el índice maestro con todos los hilos
 - [[Cerraduras de relaciones]] — qué hacer cuando una relación *no* es de equivalencia
-- [[Componentes de red]]
-- [[Diseno de red LAN]]
-- [[Representaciones de red y topologias]]
+- [[Componentes de red]] — los dispositivos que hacen de vértices del grafo
+- [[Diseno de red LAN]] — donde elegir la topología —es decir, el grafo— es un paso del método
+- [[Representaciones de red y topologias]] — el diagrama de red como grafo dibujado: vértices y aristas con símbolos

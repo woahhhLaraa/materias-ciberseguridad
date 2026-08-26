@@ -49,5 +49,5 @@ Ver [[Relaciones de equivalencia y particiones]].
 
 ## Relacionadas
 
-- [[Cerraduras de relaciones]]
-- [[Logica proposicional]]
+- [[Cerraduras de relaciones]] — cómo forzar estas mismas propiedades en una relación que no las cumple
+- [[Logica proposicional]] — las tres propiedades se enuncian como condicionales: "si (a,b) y (b,c), entonces (a,c)" es una conjunción seguida de →
