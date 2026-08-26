@@ -118,8 +118,7 @@ Multitarea real(Buscar):
 Capas o subsistemas de un sistema operativo
 El sistema operativo es un mediador, pero hay un conjunto de subsistemas funcionando para que el sistema operativo pueda funcionar, si bien estas capas pueden estar sueltas, trabajan entre si.
 
-Un OS lo conforma
-	Un kernel, en nucleo, su elemento mas importante que se encuentra en la capa inferior, la mas alejada de la interfaz del usuario, pero en contacto directo con el hardware
+
 
 
 
