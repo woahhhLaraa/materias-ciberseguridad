@@ -39,6 +39,10 @@ Las tres coinciden en el núcleo: **administrar recursos**. Difieren en el énfa
 - **Portabilidad** — adaptarse a diferentes tipos de dispositivos o hardware
 
 ## Componentes
+Un OS lo conforma
+- Un kernel, en nucleo, su elemento mas importante que se encuentra en la capa inferior, la mas alejada de la interfaz del usuario, pero en contacto directo con el hardware
+- La capa de usuario: donde se encuentra su interfaz ya sea en GUI o una CLI, se encuentran su aplicaciones, sus librerias
+- El hardware
 
 - **Shell** — la interfaz de usuario, tipo CLI o GUI
 - **Kernel** — establece la comunicación entre hardware y software
