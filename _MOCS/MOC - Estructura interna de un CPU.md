@@ -4,6 +4,7 @@ hilo: estructura-cpu
 tags: [moc, hardware, arquitectura, cpu, memoria]
 semestres: [1]
 ---
+#review
 
 # MOC — Estructura interna de un CPU
 

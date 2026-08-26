@@ -4,7 +4,7 @@ semestre: 3
 tipo: concepto
 tags: [sistemas-operativos, fundamentos]
 ---
-
+#review 
 # Definición y funciones del sistema operativo
 
 ## Tres definiciones

@@ -1,8 +1,18 @@
 ---
 tipo: moc
 hilo: hardware-so
-tags: [moc, hardware, sistemas-operativos, historia, memoria]
-semestres: [1, 3]
+tags:
+  - moc
+  - hardware
+  - sistemas-operativos
+  - historia
+  - memoria
+semestres:
+  - 1
+  - 3
+sr-due: 2026-08-28
+sr-interval: 3
+sr-ease: 250
 ---
 #review
 
@@ -202,11 +212,11 @@ El módulo lleva los datos **directamente a la memoria principal** y solo avisa 
 
 ### Comparación
 
-| Técnica | ¿Quién espera? | ¿Los datos pasan por la CPU? |
-|---|---|---|
-| Programada | La CPU, activamente | Sí |
-| Interrupciones | Nadie; la CPU trabaja en otra cosa | Sí |
-| DMA | Nadie | **No** |
+| Técnica        | ¿Quién espera?                     | ¿Los datos pasan por la CPU? |
+| -------------- | ---------------------------------- | ---------------------------- |
+| Programada     | La CPU, activamente                | Sí                           |
+| Interrupciones | Nadie; la CPU trabaja en otra cosa | Sí                           |
+| DMA            | Nadie                              | **No**                       |
 
 ---
 
