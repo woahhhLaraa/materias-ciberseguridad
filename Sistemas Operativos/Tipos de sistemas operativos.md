@@ -148,6 +148,11 @@ OS que tienen mas de un procesador (o un procesador con varios nucleos). Los pue
 		- Servidor de gestión de procesos (políticas de alto nivel)
 		- Servidor de autenticación/seguridad
 - **Híbridos**
+	- Combinan el monolitico y Kernel, es un esquema de micronucleo que implementa codigo para hacerlo mas rapido, aunque una buena parte de las funciones del sistema operativo siguen ejecutandose en modo usuario
+		Obtiene el alto rendimiento del monolitico, y la modularidad y estabilidad del micronucleo.
+		Mantiene lo critico en el nucleo para un buen rendmiento y lo no escencial lo mueve al espacio del usuario (controladores, sistemas de archivos)
+			Kernel de windows xp, 7, 10, 11 y servidores. XNU utilizado en macOS e iOS
+			ReactOS y BeOS
 
 ## Relacionadas
 
