@@ -9,8 +9,8 @@ tags:
 semestres:
   - 1
   - 2
-sr-due: 2026-09-03
-sr-interval: 8
+sr-due: 2026-09-16
+sr-interval: 20
 sr-ease: 250
 ---
 #review
@@ -67,16 +67,16 @@ La tríada es el criterio con el que se decide si un evento es un simple **event
 
 Los "derechos innegables" de un sistema. Amplían la tríada de tres a ocho.
 
-| Servicio | Qué garantiza |
-|---|---|
-| **Confidencialidad** | La información solo la lee el destinatario legítimo |
-| **Integridad** | Nadie no autorizado la modifica ni la elimina |
-| **Disponibilidad** | Está lista para acceder cuando se requiera |
-| **Consistencia** | El sistema se comporta como se espera: usuarios con los mismos permisos pueden hacer y ver lo mismo |
-| **Autenticación** | La identidad del usuario, mensaje o equipo es legítima (contraseña, 2FA, llaves, biometría) |
-| **Autorización** | Se controla el acceso a los servicios; no todos los usuarios tienen los mismos permisos |
-| **No repudio** | Nadie puede negar haber enviado o recibido información |
-| **Auditabilidad** | Se detectan comportamientos anómalos (intentos de contraseña, anticheat en un videojuego) |
+| Servicio             | Qué garantiza                                                                                       |
+| -------------------- | --------------------------------------------------------------------------------------------------- |
+| **Confidencialidad** | La información solo la lee el destinatario legítimo                                                 |
+| **Integridad**       | Nadie no autorizado la modifica ni la elimina                                                       |
+| **Disponibilidad**   | Está lista para acceder cuando se requiera                                                          |
+| **Consistencia**     | El sistema se comporta como se espera: usuarios con los mismos permisos pueden hacer y ver lo mismo |
+| **Autenticación**    | La identidad del usuario, mensaje o equipo es legítima (contraseña, 2FA, llaves, biometría)         |
+| **Autorización**     | Se controla el acceso a los servicios; no todos los usuarios tienen los mismos permisos             |
+| **No repudio**       | Nadie puede negar haber enviado o recibido información                                              |
+| **Auditabilidad**    | Se detectan comportamientos anómalos (intentos de contraseña, anticheat en un videojuego)           |
 
 ### Consecuencias de incumplirlos
 
@@ -167,7 +167,7 @@ Cuatro características que debe cumplir una red para considerarse confiable.
 Disminuir el impacto de una falla limitando la cantidad de dispositivos afectados. Se logra proporcionando **redundancia** mediante una red de **paquetes conmutados**.
 
 - La conmutación por paquetes divide el tráfico en paquetes que se enrutan a través de la red
-- En teoría, **cada paquete puede tomar una ruta diferente** hacia el destino
+- ==En teoría, **cada paquete puede tomar una ruta diferente** hacia el destino==
 
 Esa es exactamente la propiedad que da la tolerancia: si un enlace cae, los paquetes siguientes rodean.
 

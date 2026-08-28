@@ -10,9 +10,9 @@ tags:
 semestres:
   - 1
   - 2
-sr-due: 2026-08-26
-sr-interval: 3
-sr-ease: 250
+sr-due: 2026-09-10
+sr-interval: 14
+sr-ease: 270
 ---
 #review
 # MOC — Matemáticas → redes

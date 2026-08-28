@@ -52,7 +52,7 @@ Cada hilo tiene además un **documento consolidado** en `_MOCS/` que reúne el c
 ### Direccionamiento IP
 📄 [[MOC - Direccionamiento IP]]
 
-[[Sistemas numericos]] (sem. 1) → [[Capa de red - IPv4 e IPv6]] (sem. 2) → [[Direccionamiento IP con clases]] (sem. 3) → [[CIDR y VLSM]] (sem. 3)
+[[Sistemas numericos]] (sem. 1) → [[Capa de red - IPv4 e IPv6]] (sem. 2) → [[Funcionamiento de IPv4]] (sem. 3) → [[Direccionamiento IP con clases]] (sem. 3) → [[Enmascaramiento y subnetting]] (sem. 3) → [[CIDR y VLSM]] (sem. 3)
 
 ### Hardware → sistema operativo
 📄 [[MOC - Hardware a sistema operativo]]

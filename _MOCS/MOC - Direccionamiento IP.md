@@ -20,13 +20,13 @@ sr-ease: 230
 
 Documento de estudio corrido. Reúne el contenido completo de las notas del hilo, en orden cronológico de la carrera, para poder estudiarlo como una sola cosa.
 
-**Cadena:** [[Sistemas numericos]] (sem. 1) → [[Capa de red - IPv4 e IPv6]] (sem. 2) → [[Direccionamiento IP con clases]] (sem. 3) → [[CIDR y VLSM]] (sem. 3)
+**Cadena:** [[Sistemas numericos]] (sem. 1) → [[Capa de red - IPv4 e IPv6]] (sem. 2) → [[Funcionamiento de IPv4]] (sem. 3) → [[Direccionamiento IP con clases]] (sem. 3) → [[Enmascaramiento y subnetting]] (sem. 3) → [[CIDR y VLSM]] (sem. 3)
 
 > Las notas originales siguen vivas en sus carpetas de materia. Este archivo es una copia consolidada: si corriges algo aquí, corrígelo también en la nota fuente.
 
 ## El arco del hilo
 
-El hilo más práctico de todos, y el que más se cae en examen si falta una pieza. La herramienta (binario y hexadecimal) llega un año y medio antes que su uso real. Después el arco es una sola historia: IPv4 se diseñó con sobrecarga baja y espacio limitado → las clases A/B/C repartieron ese espacio en bloques fijos → los bloques fijos desperdiciaban direcciones →  [[CIDR y VLSM]] quitaron las clases → e IPv6 resolvió el fondo del problema. Cada nota es un capítulo del agotamiento de IPv4.
+El hilo más práctico de todos, y el que más se cae en examen si falta una pieza. La herramienta (binario y hexadecimal) llega un año y medio antes que su uso real. Después el arco es una sola historia, y toda ella cuelga de un número: **32**. IPv4 se diseñó con sobrecarga baja y un espacio de 32 bits → esos 32 bits se leen en cuatro octetos, y cada bit que se le da a la red se le quita al host → las clases A/B/C cortaron el espacio en bloques fijos → la máscara permite mover ese corte a voluntad, tomando bits prestados al host → pero el subnetting clásico obligaba a que todas las subredes midieran lo mismo, y seguía desperdiciando direcciones → CIDR y VLSM quitaron las clases y el tamaño único → e IPv6 resolvió el fondo del problema. Cada nota es un capítulo del agotamiento de IPv4.
 
 ---
 
@@ -129,7 +129,26 @@ No necesita saber por qué medio va a viajar; solamente pone la etiqueta. La cap
 
 ---
 
-## 3. Direccionamiento IP con clases
+## 3. Funcionamiento de IPv4
+
+*Fuente: [[Funcionamiento de IPv4]] — Enrutamiento básico, sem. 3*
+
+Las redes IPv4 tienen un **máximo de 32 bits** para representar la red y los hosts. Esos 32 bits son todo el espacio que hay: lo que se le da a la red se le quita al host, y al revés.
+
+### Los octetos
+
+La dirección se mide por **octetos**: cuatro grupos de 8 bits separados por puntos.
+
+```
+1111 1111 . 1111 1111 . 1111 1111 . 1111 1111
+    255   .     255   .     255   .     255
+```
+
+Cada número entre punto y punto decimal es un **octeto**. El máximo es **255** porque son 8 bits en binario y, con los 8 bits encendidos, 255 es el número más grande que se puede formar (2⁸ − 1).
+
+---
+
+## 4. Direccionamiento IP con clases
 
 *Fuente: [[Direccionamiento IP con clases]] — Enrutamiento básico, sem. 3*
 
@@ -165,7 +184,55 @@ Ejercicios: [[Tarea 1 - Separar red y host]], [[Tarea 2 - Clases IP y direccione
 
 ---
 
-## 4. CIDR y VLSM
+## 5. Enmascaramiento y subnetting
+
+*Fuente: [[Enmascaramiento y subnetting]] — Enrutamiento básico, sem. 3*
+
+### Enmascaramiento
+
+Quitar información específica de un dispositivo dentro de una IP. En este caso, para **no decirle a un enrutador a qué dispositivo exacto va un paquete** —lo que aumentaría enormemente la dificultad y la complejidad— y que solo le interese **a qué red va**. Dentro de la propia red se define el dispositivo.
+
+Las máscaras y cómo se aplican dependerán del **número de subredes** que una red necesite.
+
+#### Ejemplo de cálculo
+
+Si necesitamos **40 subredes**:
+
+```
+40 → en binario = 101000 → 6 bits
+```
+
+Se toman prestados **6 bits** de la porción de host para identificar la subred.
+
+> Regla general: con *n* bits prestados se obtienen 2ⁿ subredes. Con 6 bits: 2⁶ = 64 ≥ 40 ✓ (con 5 bits solo habría 32, insuficiente).
+
+### Subnetting
+
+Dividir una red en dos o más redes más pequeñas.
+
+#### El problema del subnetting clásico
+
+Con el subnetting de la época, **todas las subredes tenían el mismo tamaño**, lo que lleva a ineficiencia en la asignación de direcciones: una subred que necesita 5 hosts recibe el mismo bloque que una que necesita 200.
+
+La solución fue permitir máscaras variables, introduciendo la técnica **VLSM**. Ver la sección 6 de este documento.
+
+### Como funcionan las mascaras de forma practica
+
+> Punto de partida: los 32 bits y los cuatro octetos de la sección 3 de este documento — cada octeto llega como maximo a 255.
+
+Las mascaras (/24..) indican el numero de bits que son usados para representar la red (recordemos que el total de bits son 32), el resto de los bits se usan para representar el host, entonces en una mascara de red /24, 32-24 = 8, entonces nos queda un octeto entero para jugar con los hosts
+
+1111 1111 . 1111 1111 . 1111 1111 . 0000 0000 = 255. 255. 255. 000
+
+Para obtener el numero de hosts totales, usamos la formula 2(pow)n. Donde n es el numero de bits que tenemos disponibles para el host segun nuestra mascara, segun el ejemplo anterior, tenemos 8 (un octeto), disponibles. Entonces, 2(pow)8 = 256.
+
+Ese 256 es el numero total de hosts disponibles, sin embargo de esos 256, 2 de esos hosts son el broadcast y la representacion de la propia red, entonces a esos 256 restamos 2 = 254
+
+254 es el numero de hosts a nuestra disposicion para conectar computadoras u otros.
+
+---
+
+## 6. CIDR y VLSM
 
 *Fuente: [[CIDR y VLSM]] — Enrutamiento básico, sem. 3*
 
@@ -185,7 +252,7 @@ CIDR utiliza máscaras de longitud variable: **VLSM**.
 
 **Variable Length Subnet Masking** — enmascaramiento para subredes de longitud variable.
 
-Resuelve el problema del [[Enmascaramiento y subnetting|subnetting clásico]]: permite que cada subred tenga la máscara que le corresponde según su tamaño real, en lugar de imponer un tamaño único a todas.
+Resuelve el problema del **subnetting clásico** (sección 5 de este documento): permite que cada subred tenga la máscara que le corresponde según su tamaño real, en lugar de imponer un tamaño único a todas.
 
 ### Consecuencia para los protocolos
 
@@ -196,7 +263,6 @@ Con CIDR, la clase ya no está implícita en la dirección. Por eso los protocol
 ## Relacionadas
 
 - [[00 - Indice]] — el índice maestro con todos los hilos
-- [[Enmascaramiento y subnetting]] — la práctica del cálculo
 - [[Conceptos fundamentales de enrutamiento]] — qué hace el router con la dirección una vez que sabe leerla: decidir el siguiente salto
 - [[Protocolos y modelos]] — dónde encaja IP dentro del modelo por capas
 - [[Examen segundo parcial - Redes]] — este hilo aplicado en el examen práctico: esquema de direccionamiento y configuración de routers

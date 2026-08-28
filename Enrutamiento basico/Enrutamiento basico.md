@@ -10,7 +10,7 @@ tags: [materia, redes, enrutamiento, ip]
 
 Materia de tercer semestre. Inicio: 19 de agosto de 2026.
 
-- **Profesor:** Balderas
+- **Profesor:** Gustavo Balderas Rosas
 
 ## Evaluación
 
@@ -26,6 +26,7 @@ Materia de tercer semestre. Inicio: 19 de agosto de 2026.
 ## Notas
 
 - [[Conceptos fundamentales de enrutamiento]]
+- [[Funcionamiento de IPv4]]
 - [[Direccionamiento IP con clases]]
 - [[Enmascaramiento y subnetting]]
 - [[CIDR y VLSM]]

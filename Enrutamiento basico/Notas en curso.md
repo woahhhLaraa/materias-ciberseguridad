@@ -12,8 +12,8 @@ Ahorro de espacios de direcciones IP
 CIDR es el protocolo entero, usando VLSM, para que CIDR funcionara se tuvieron que modificar protocolos de enrutamiento añadiendo como info obligatoria el tamaño de las mascaras, dejando de lado RIPV1 y entrando a RIPV2, CIDR engloba TODO el cambio para el funcionamiento del direccionamiento sin clases (estudiar mas el direccionamiento sin clases)
 
 Tablas de ruteo:
-Es un resumen de un proceso de enrutamiento completo hecho por otro.
-Tiene todas las redes conocidas a las que puedo llegar, indica por donde debe ir un paquete para ir de una red A a una red Z, muestra como esta conectada ya sean seriales, fastethernet, dependiendo de la red (normalmente por su topologia) a la que vas, te manda por un camino u otro
+Es un resumen de un proceso de enrutamiento completo hecho por otra entidad.
+Tiene todas las redes conocidas a las que puedo llegar (como enrutador), indica por donde debe ir un paquete para ir de una red A a una red Z, muestra como esta conectada ya sean seriales, fastethernet, dependiendo de la red (normalmente por su topologia) a la que vas, te manda por un camino u otro
 
 Sumarizacion:
 Cuando dos redes se parecen y voy a ellas por el mismo camino, se puede hacer una "simplificacion".
