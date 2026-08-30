@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexing>
+ <paragraph index="9" node_type="writer">Actividad: Capacidades y limitaciones que influyen en la adopción de ciberseguridad</paragraph>
+ <paragraph index="10" node_type="writer">Aspectos Sociales de Ciberseguridad</paragraph>
+ <paragraph index="11" node_type="writer">Sector de población elegido: Adultos mayores</paragraph>
+ <object index="12" name="Tabla1" object_type="table"/>
+ <paragraph index="14" node_type="writer" parent_index="12">Población</paragraph>
+ <paragraph index="17" node_type="writer" parent_index="12">Capacidad / Limitación</paragraph>
+ <paragraph index="20" node_type="writer" parent_index="12">Mecanismo de ciberseguridad</paragraph>
+ <paragraph index="23" node_type="writer" parent_index="12">¿Cómo puede influir?</paragraph>
+ <paragraph index="26" node_type="writer" parent_index="12">Adultos mayores</paragraph>
+ <paragraph index="29" node_type="writer" parent_index="12">Confianza en figuras de autoridad y desconocimiento de técnicas de ingeniería social</paragraph>
+ <paragraph index="32" node_type="writer" parent_index="12">Capacitación en detección de phishing y llamadas fraudulentas (vishing)</paragraph>
+ <paragraph index="35" node_type="writer" parent_index="12">Sin esta capacitación, son blanco fácil de estafas que suplantan bancos, familiares o instituciones de gobierno.</paragraph>
+ <paragraph index="38" node_type="writer" parent_index="12">Adultos mayores</paragraph>
+ <paragraph index="41" node_type="writer" parent_index="12">Baja alfabetización digital: desconocen cómo configurar privacidad, verificar enlaces o identificar apps falsas</paragraph>
+ <paragraph index="44" node_type="writer" parent_index="12">Gestores de contraseñas y autenticación multifactor (2FA)</paragraph>
+ <paragraph index="47" node_type="writer" parent_index="12">La dificultad para usar estas herramientas hace que muchos las eviten, dejando cuentas expuestas con contraseñas débiles o reutilizadas.</paragraph>
+ <paragraph index="50" node_type="writer" parent_index="12">Adultos mayores</paragraph>
+ <paragraph index="53" node_type="writer" parent_index="12">Aislamiento social, que aumenta la dependencia emocional de contactos en línea</paragraph>
+ <paragraph index="56" node_type="writer" parent_index="12">Protocolos familiares de verificación (contacto de confianza, 'detenerse y verificar')</paragraph>
+ <paragraph index="59" node_type="writer" parent_index="12">Facilita que ciberdelincuentes usen manipulación emocional para lograr transferencias de dinero o entrega de datos.</paragraph>
+ <paragraph index="62" node_type="writer" parent_index="12">Adultos mayores</paragraph>
+ <paragraph index="65" node_type="writer" parent_index="12">Deterioro sensorial y motriz (vista, audición, destreza fina)</paragraph>
+ <paragraph index="68" node_type="writer" parent_index="12">Seguridad usable: interfaces simples, alertas legibles, letra grande, menos pasos</paragraph>
+ <paragraph index="71" node_type="writer" parent_index="12">Sin diseño accesible, ignoran advertencias de seguridad o cometen errores al configurar protecciones.</paragraph>
+ <paragraph index="75" node_type="writer">Fuentes</paragraph>
+ <paragraph index="76" node_type="writer">Gaceta UNAM (2022). Se profundiza la brecha digital en la tercera edad. https://www.gaceta.unam.mx/se-profundiza-la-brecha-digital-en-la-tercera-edad/</paragraph>
+ <paragraph index="77" node_type="writer">La Silla Rota (2023). Brecha digital en personas adultas mayores. https://lasillarota.com/opinion/columnas/2023/7/13/brecha-digital-en-las-personas-adultas-mayores-437982.html</paragraph>
+ <paragraph index="78" node_type="writer">Municipios Puebla / ESET (2025). La soledad y la brecha digital impulsan las estafas a personas mayores. https://m.municipiospuebla.mx/nota/nacion/la-soledad-y-la-brecha-digital-impulsan-las-estafas-personas-mayores</paragraph>
+</indexing>

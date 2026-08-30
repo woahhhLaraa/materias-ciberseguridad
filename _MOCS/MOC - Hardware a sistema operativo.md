@@ -133,7 +133,7 @@ Dentro de un procesador tenemos la unidad lógica, la unidad de control y los re
 
 ### Memoria caché
 
-Intermediario entre la memoria principal y el procesador.
+Intermediario entre la memoria principal (RAM) y el procesador.
 
 - Es **más lenta que el procesador pero más rápida que la memoria principal**
 
