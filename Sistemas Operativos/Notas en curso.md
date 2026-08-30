@@ -7,10 +7,6 @@ tags: [captura, sin-procesar]
 
 # Sistemas Operativos — notas en curso
 
-
-
- Teoricamente un sistema podria ser multiusuario y monotarea, pero cada vez que un usuario haga algo, tomaria el control absoluto del sistema, y solo pasaria al siguiente usuario hasta terminarla
- 
 Tiempo de CPU o Rafaga de CPU:
 Los sistemas con multiprogramacion, llevaron a que un CPU pudiera ejecutar varias tareas de manera simultanea (mediante un cambio de contexto), lo comparten por tiempo quantums.
 
