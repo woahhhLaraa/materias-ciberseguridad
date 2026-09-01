@@ -122,3 +122,4 @@ Espacios de memoria asignados a distintos propósitos:
 - [[Arquitectura de entrada y salida]] — cómo el procesador se comunica con los módulos de E/S
 - [[Tecnicas de entrada y salida]] — E/S programada, interrupciones y DMA: cuánta carga recae en el CPU
 - [[Generaciones de computadoras]] — el microprocesador y la ejecución en paralelo aparecen en la cuarta y quinta generación
+- [[Gestion de procesos]] — el lado software del multinúcleo (sección 7): el paralelismo real necesita varios núcleos; la concurrencia lo simula con cambios de contexto

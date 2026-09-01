@@ -1,16 +1,41 @@
+---
+materia: Sistemas Operativos
+semestre: 3
+tipo: concepto
+tags: [sistemas-operativos, procesos, concurrencia, multiprogramacion]
+---
+#review 
+# Gestión de procesos
 
-Tiempo de CPU o Rafaga de CPU:
-Los sistemas con multiprogramacion, llevaron a que un CPU pudiera ejecutar varias tareas de manera simultanea (mediante un cambio de contexto), lo comparten por tiempo quantums.
+Cómo el sistema operativo reparte el **tiempo de CPU** entre varias tareas. Es la continuación práctica de la multiprogramación que aparece como dato histórico en [[Generaciones de sistemas operativos]].
 
-Quantums de tiempo:
-La cantidad de milisegundos que un cpu puede dar a una tarea
+Proceso: Programa en ejecucion
+## Tiempo de CPU o ráfaga de CPU
 
-Cambio de contexto:
-El momento del cambio de una tarea a otra durante la multiprogramacion con tiempo de cpu, cuando vuelve a la misma tarea que dejo, la inicia desde el momento en que se quedo la ultima vez.
+Los sistemas con **multiprogramación** llevaron a que un CPU pudiera ejecutar varias tareas de manera simultánea, mediante un **cambio de contexto**. Las tareas comparten el procesador por *quantums* de tiempo.
 
-Paralelismo (buscar): 
-Dos o mas procesos se ejecutan exactamente al mismo tiempo, ya sea mediante el uso de varios procesadores, o de varios nucleos de un solo procesador
+### Quantum de tiempo
+
+La cantidad de milisegundos que un CPU puede dar a una tarea.
+
+### Cambio de contexto
+
+El momento del cambio de una tarea a otra durante la multiprogramación con tiempo de CPU. Cuando vuelve a la misma tarea que dejó, la reinicia **desde el momento en que se quedó** la última vez.
+
+## Paralelismo y concurrencia
+
+|                  | Qué ocurre                                                                                                                                 | Qué hace falta                                              |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| **Paralelismo**  | Dos o más procesos se ejecutan **exactamente al mismo tiempo**                                                                             | Varios procesadores, o varios núcleos de un solo procesador |
+| **Concurrencia** | Dos o más procesos se ejecutan **uno por uno**, pero con un cambio de contexto tan rápido y eficiente que da la **ilusión** de paralelismo | Un solo núcleo basta                                        |
 
 
-Concurrencia (Buscar):
-Dos o mas procesos se ejecutan uno por uno, pero con un cambio de contexto tan rapido y efeciente que da la ilusion de paralelismo
+> La diferencia se apoya en hardware: el paralelismo real depende de que existan varios núcleos. Ver [[MOC - Estructura interna de un CPU]], sección 7.
+
+## Relacionadas
+
+- [[Generaciones de sistemas operativos]] — de dónde viene la multiprogramación ⭐ y el tiempo compartido
+- [[Gestion de memoria]] — el otro recurso que el SO reparte: si aquí divide el tiempo, allí divide la memoria
+- [[Definicion y funciones del sistema operativo]] — administrar la CPU y gestionar procesos son dos de las funciones esenciales
+- [[MOC - Estructura interna de un CPU]] — el multinúcleo es la condición de hardware para que haya paralelismo real
+- [[MOC - Hardware a sistema operativo]] — el hilo que esta nota cierra: la espera del procesador frente a los trabajos

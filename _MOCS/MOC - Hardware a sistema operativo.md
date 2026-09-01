@@ -7,6 +7,8 @@ tags:
   - sistemas-operativos
   - historia
   - memoria
+  - procesos
+  - paginacion
 semestres:
   - 1
   - 3
@@ -20,13 +22,17 @@ sr-ease: 270
 
 Documento de estudio corrido. Reúne el contenido completo de las notas del hilo, en orden cronológico de la carrera, para poder estudiarlo como una sola cosa.
 
-**Cadena:** [[Generaciones de computadoras]] (sem. 1) → [[Jerarquia de memoria]] (sem. 1) → [[Tecnicas de entrada y salida]] (sem. 1) → [[Generaciones de sistemas operativos]] (sem. 3)
+**Cadena:** [[Generaciones de computadoras]] (sem. 1) → [[Jerarquia de memoria]] (sem. 1) → [[Tecnicas de entrada y salida]] (sem. 1) → [[Generaciones de sistemas operativos]] (sem. 3) → [[Gestion de memoria]] (sem. 3) → [[Gestion de procesos]] (sem. 3)
 
 > Las notas originales siguen vivas en sus carpetas de materia. Este archivo es una copia consolidada: si corriges algo aquí, corrígelo también en la nota fuente.
 
 ## El arco del hilo
 
-Dos cronologías de la misma historia —hardware en primer semestre, software en tercero— más las dos piezas que explican *por qué* el software tuvo que aparecer. La idea de fondo se repite en las tres notas técnicas: **cada avance del SO existe porque el procesador era más rápido que lo que lo rodeaba y había que dejar de hacerlo esperar.** La caché resuelve la espera frente a la memoria; las interrupciones y el DMA la resuelven frente a los dispositivos; la multiprogramación y el tiempo compartido la resuelven frente a los trabajos.
+Dos cronologías de la misma historia —hardware en primer semestre, software en tercero— más las piezas que explican *por qué* el software tuvo que aparecer. La idea de fondo se repite en todas las notas técnicas: **cada avance del SO existe porque el procesador era más rápido que lo que lo rodeaba y había que dejar de hacerlo esperar.** La caché resuelve la espera frente a la memoria; las interrupciones y el DMA la resuelven frente a los dispositivos; la multiprogramación y el tiempo compartido la resuelven frente a los trabajos.
+
+Las dos últimas secciones cierran el arco volviendo sobre los mismos objetos, ya desde el software. La **gestión de memoria** retoma la memoria virtual que la sección 2 presentó como un truco de hardware y muestra quién la construye: la paginación, el mapa virtual por proceso y la MMU —que existe por el mismo motivo que el DMA de la sección 3, descargar al procesador de trabajo repetitivo—. La **gestión de procesos** hace lo propio con la multiprogramación que la sección 4 dejó como dato histórico ⭐, y explica el mecanismo: quantums y cambio de contexto.
+
+Visto entero, el hilo describe **un solo reparto**. El SO administra dos recursos con la misma estrategia de dividir y simular: divide la memoria y le hace creer a cada programa que la tiene entera; divide el tiempo y le hace creer a cada tarea que tiene el procesador entero. La paginación y la concurrencia son la misma idea aplicada a ejes distintos.
 
 ### Las dos cronologías alineadas
 
@@ -265,10 +271,77 @@ Primeras computadoras eléctricas con **tubos de vacío**.
 
 ---
 
+## 5. Gestión de memoria
+
+*Fuente: [[Gestion de memoria]] — Sistemas Operativos, sem. 3*
+
+Cómo el sistema operativo administra el uso de la memoria principal entre los programas. Es una de las funciones esenciales listadas en [[Definicion y funciones del sistema operativo]].
+
+### Memoria virtual
+
+Es un **concepto**, o una ilusión que crea el sistema operativo para los programas. Sirve para manejar el uso del espacio de la memoria principal, evitando que los programas "se pisen" al escribir en ella.
+
+Además, si esa memoria real se llegase a quedar sin espacio (por un proceso muy complejo, o por múltiples procesos), tiene permitido **asignar un espacio de la memoria secundaria** para su beneficio.
+
+> Este mismo tema aparece en la sección 2 de este documento desde el lado del hardware, donde se le llama *archivo de paginación* y se presenta como un método económico para aumentar el tamaño de la memoria usando disco. Aquí se ve desde el software: quién crea la ilusión y cómo.
+
+### Paginación
+
+Si bien la memoria virtual es un concepto, la **paginación es la técnica** que utiliza para lograr lo que conocemos como memoria virtual.
+
+El sistema operativo le da a cada programa o proceso un **"mapa de apodos"** o mapa virtual propio de la memoria, para hacerle creer que tiene todo el acceso a la memoria para él solo y de forma secuencial.
+
+- El programa usa esos "apodos" para referirse a la memoria real, **sin saber ni cómo se llama de verdad ni dónde está ubicada físicamente**
+- El sistema operativo solo interviene en la creación, la expansión o la resolución de problemas del mapa virtual
+
+### La MMU
+
+La **MMU** (unidad de gestión de memoria) lee esos "apodos" y los **traduce** para meter los datos en los espacios reales de la memoria principal. La escritura sucede directamente en el lugar físico de la memoria, sin un lugar intermedio donde se almacene el dato.
+
+Es un componente de **hardware físico que existe dentro de la propia CPU**, pero que no forma parte de su esquema lógico.
+
+Su razón de existir es **bajar la carga lógica del CPU**: miles de millones de entradas a la memoria le quitarían mucho tiempo y poder de procesamiento.
+
+> Es el mismo argumento que justifica el DMA en la sección 3 de este documento: añadir un módulo dedicado para que el procesador no gaste instrucciones en trabajo repetitivo.
+
+---
+
+## 6. Gestión de procesos
+
+*Fuente: [[Gestion de procesos]] — Sistemas Operativos, sem. 3*
+
+Cómo el sistema operativo reparte el **tiempo de CPU** entre varias tareas. Es la continuación práctica de la multiprogramación que aparece como dato histórico en la sección 4 de este documento.
+
+### Tiempo de CPU o ráfaga de CPU
+
+Los sistemas con **multiprogramación** llevaron a que un CPU pudiera ejecutar varias tareas de manera simultánea, mediante un **cambio de contexto**. Las tareas comparten el procesador por *quantums* de tiempo.
+
+#### Quantum de tiempo
+
+La cantidad de milisegundos que un CPU puede dar a una tarea.
+
+#### Cambio de contexto
+
+El momento del cambio de una tarea a otra durante la multiprogramación con tiempo de CPU. Cuando vuelve a la misma tarea que dejó, la reinicia **desde el momento en que se quedó** la última vez.
+
+### Paralelismo y concurrencia
+
+| | Qué ocurre | Qué hace falta |
+|---|---|---|
+| **Paralelismo** | Dos o más procesos se ejecutan **exactamente al mismo tiempo** | Varios procesadores, o varios núcleos de un solo procesador |
+| **Concurrencia** | Dos o más procesos se ejecutan **uno por uno**, pero con un cambio de contexto tan rápido y eficiente que da la **ilusión** de paralelismo | Un solo núcleo basta |
+
+⚠️ Ambos términos quedaron marcados en clase como "buscar" — conviene contrastarlos con Tanenbaum antes del examen.
+
+> La diferencia se apoya en hardware: el paralelismo real depende de que existan varios núcleos. Ver [[MOC - Estructura interna de un CPU]], sección 7.
+
+---
+
 ## Relacionadas
 
 - [[00 - Indice]] — el índice maestro con todos los hilos
-- [[Definicion y funciones del sistema operativo]] — gestionar memoria y dispositivos son funciones del SO
+- [[Definicion y funciones del sistema operativo]] — gestionar memoria, procesos y dispositivos son funciones del SO
+- [[MOC - Estructura interna de un CPU]] — comparte la jerarquía de memoria, y su sección de multinúcleo es la condición de hardware del paralelismo de la sección 6
 - [[Tipos de sistemas operativos]] — en qué desembocó la quinta generación: sistemas de servidor, escritorio y móviles
 - [[Arquitectura de entrada y salida]] — el módulo de E/S sobre el que operan las tres técnicas de la sección 3
 - [[Buses y estructuras de interconexion]] — el bus compartido cuya frecuencia obliga a que exista la caché

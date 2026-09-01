@@ -14,28 +14,7 @@ El SO es un conjunto de susbsistemas que se comunican entre si para dar la impre
 
 En representaciones las vemos como capas una encima de la otra, pero en la realidad son sistemas que se comunican entre si y no tienen porque estar completamente serparadas
 
-- Nucleo (Kernel) el corazon del sistema operativo, todo se construye encima de este kernel
-	- Nosotros los usuarios no tenemos acceso al kernel, solo a la capa de aplicacion o capa usuario
-	- Linux en realidad es el puro kernel, las distribuciones para usuario final son solo eso, distribuciones hechas encima del kernel
-	- Se encarga de manejar el hardware comunicandose directamente con el
-		- Cpu
-		- Memoria
-		- Discos
-		- Dispositios IO
-- Subsistema de entrada salida
-	- Se encarga de las comunicaciones con otros dispositivos, sus procesos.
-	- Usando BIOS (Investigar)
-	- Discos
-	- Teclado
-	- Raton
-	- Impresoras
-	- Pantallas
-	- Tarjetas de red
-	- El objetivo es proporcionar una forma uniforme de utilizar los dispositivos, ocultando a los programas las particulares de cada hardware
-		- Controlar y coordinar el acceso a dipositios IO
-		- Gestionar los drivers
-		- Administrar solicitudes cuando varios procesos utilizan un solo dispositivo IO
-		- Almacenamiento temporal como buferes y cache (investigar diferencias, y como pueden ser software o hardware) para un mejor rendimiento
+
 - Subsistema de Gestion de procesos
 	- Administra los procesos y proporcionar los servicios necesarios para que puedan ejecutarse
 	- Crea y finaliza procesos
@@ -90,26 +69,6 @@ En representaciones las vemos como capas una encima de la otra, pero en la reali
 		- Facilitar la configuracion y administracion del sistema
 		- Proportcionar notificaciones y gestionar la comunicacion de errores
 
-Dispositivos de entrada/salida E/S
-Aquellos que permiten a la computadora pueda recibir informacion o enviarla hacia el exterior
-Se administra mediante el subsistema de entrada y salida
-
-Los clasificamos como
-- Dispositivos de bloque
-	- Discos de almacenamiento secundario, pues guardan bloques grandes de datos cada uno con su propia direccion
-- Dispositivos de caracter
-	- Mandan un flujo de caracteres
-		- Teclados
-		- Interfaces de red
-		- mouse
-		- Casi todo lo que no sea un disco de almacenamiento
-- Por su funcion
-	- Dispositivos de entrada
-		- Envian informacion pero no lo reciben
-	- Dispositivos de salida
-		- Permiten enviar informacion desde la computadora hacia el exterior
-	- Dispositivos de entrada/salida
-		- Tanto recibir como enviar informacion
 
 Por lo general, las unidades ES consisten en un componenente mecanico y un componente electronico
 - El dispositivo fisico: el aparato real que intractua con un el mundo fisico

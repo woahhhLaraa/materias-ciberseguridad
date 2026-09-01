@@ -27,6 +27,7 @@ Las tres coinciden en el núcleo: **administrar recursos**. Difieren en el énfa
 - Proporcionar interfaz de usuario
 - **Proteger recursos** — de accesos de usuarios y de otros programas a los recursos del sistema
 
+
 ## Características
 
 - **Facilidad de uso** (usabilidad) — las GUI son las más sencillas
@@ -53,3 +54,4 @@ Un OS lo conforma
 - [[Generaciones de sistemas operativos]] — cómo fueron apareciendo estas funciones, generación por generación
 - [[Tipos de sistemas operativos]] — las mismas funciones repartidas según el sistema: servidor, escritorio, móvil
 - [[Jerarquia de memoria]] — cómo el SO gestiona la memoria a nivel hardware
+- [[Capas de un sistema operativo]] - Insight en las funciones de los sistemas operativos

@@ -4,7 +4,7 @@ semestre: 3
 tipo: concepto
 tags: [sistemas-operativos, clasificacion]
 ---
-
+#review 
 # Tipos de sistemas operativos
 
 Tres criterios de clasificación.
