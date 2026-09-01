@@ -97,5 +97,5 @@ Dos formas de ayuda:
 
 
 
-> Índice de la materia: [[Enrutamiento basico]]
+> Índice de la materia: [[Enrutamiento basico (materia)]]
 

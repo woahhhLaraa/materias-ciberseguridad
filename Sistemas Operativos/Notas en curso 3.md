@@ -1,35 +1,15 @@
-Dispositivos entrada salida
+---
+materia: Sistemas Operativos
+semestre: 3
+tipo: captura
+tags: [captura, sin-procesar]
+---
 
-Como se comunica un controlador con la CPU
+# Sistemas Operativos — notas en curso (3)
 
-El controlador o driver es una tarjeta dentro del dispositivo de entrada o salida
-El controlador o driver conecta a la cpu y al dispositivo mediante los componentes de memoria internos del propio chip del controlador
+> Captura sin procesar. Pendiente de extraer a notas propias — ver el procedimiento en [[Notas en curso]].
 
-- Registros de E/S: para hacer lectura y escritura
-	- Registro de datos: El cpu aqui puede escribir o leer datos en el controlador
-	- Registro de estado: Aqui el cpu lee como se encuentra el dispositivo, encendido, apagado, error.
-	- Registro de control: Aqui el cpu le indica que hacer al dispositivo, lee, escribe, enciende el motor
-		- El cpu usa el registro de control (comandos) para poder leer o escribir dentro del registro de datos.
-		- Se usan todos al mismo tiempo para hacer una operacion, no es que se use uno y luego otro
-- Puertos o direcciones de entrada salida:
-	- Sirven como puente para la conexion entre el CPU y el dispositivo E/S.
-	- Dan un nombre especifico y unico a todos los registros que tengan que ver con el dispositivo.
-	- Definen el metodo de acceso que utilizara el procesador para leer o escribir datos. (memoria compartida, o sin memoria compartida[[Tecnicas de entrada y salida]] )
-
-
-
-Paralelismo:
-
-
-Concurrencia: Existencia de mas de una tarea progresando de manera de simultanea en el tiempo
-
-Ofrecne continuidad operativa: No se congela al realizar mas de una tarea
-Optimizacion de recursos: El cpu no se queda inactivo nunca
-Automatizacion fluida: Las actualizaciones del sistema o copias de seguridad ocurren sin detener el trabajo diario
-
-
-
-Consideraciones para instalar un SO
+## Consideraciones para instalar un SO
 Requerimientos de hardware
 Firmware de placa
 Backup
@@ -60,11 +40,15 @@ Hardening
 
 
 
-Investigar diferencia BIOS y UEFI
+## Pendiente de investigar
 
+- Diferencia entre BIOS y UEFI
+- Diferencia entre partición primaria y lógica
+- Particiones en Linux
 
+## Reporte — creación de máquina virtual
 
-reporte creacion de maquina virtual todo lo que hice paso a paso
+Todo lo que hice, paso a paso:
 1. Instale virtualBox en debian
 2. Configuracion de la maquina virtual
 	1. Ponerle un nombre
@@ -110,8 +94,3 @@ reporte creacion de maquina virtual todo lo que hice paso a paso
 	28. Sin entorno de escritorio
 	29. utilidades estandar del sistema y ssh
 	30. SI cargar GRUB
-
-
-
-
-Investigar particiones en linux

@@ -2,7 +2,12 @@
 materia: Sistemas Operativos
 semestre: 3
 tipo: concepto
-tags: [sistemas-operativos, fundamentos]
+tags:
+  - sistemas-operativos
+  - fundamentos
+sr-due: 2026-09-04
+sr-interval: 4
+sr-ease: 274
 ---
 #review 
 # Definición y funciones del sistema operativo
@@ -26,6 +31,7 @@ Las tres coinciden en el núcleo: **administrar recursos**. Difieren en el énfa
 - Gestionar procesos
 - Proporcionar interfaz de usuario
 - **Proteger recursos** — de accesos de usuarios y de otros programas a los recursos del sistema
+
 
 ## Características
 
@@ -53,3 +59,4 @@ Un OS lo conforma
 - [[Generaciones de sistemas operativos]] — cómo fueron apareciendo estas funciones, generación por generación
 - [[Tipos de sistemas operativos]] — las mismas funciones repartidas según el sistema: servidor, escritorio, móvil
 - [[Jerarquia de memoria]] — cómo el SO gestiona la memoria a nivel hardware
+- [[Capas de un sistema operativo]] — el detalle de estas funciones repartido en los ocho subsistemas del SO

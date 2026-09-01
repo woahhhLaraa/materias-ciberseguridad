@@ -2,9 +2,14 @@
 materia: Sistemas Operativos
 semestre: 3
 tipo: concepto
-tags: [sistemas-operativos, clasificacion]
+tags:
+  - sistemas-operativos
+  - clasificacion
+sr-due: 2026-09-03
+sr-interval: 2
+sr-ease: 232
 ---
-
+#review 
 # Tipos de sistemas operativos
 
 Tres criterios de clasificación.

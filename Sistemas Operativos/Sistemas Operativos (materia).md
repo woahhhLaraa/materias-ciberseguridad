@@ -34,15 +34,15 @@ Materia del tercer semestre. Inicio: 17 de agosto de 2026. Fin del semestre: 30 
 - [[Definicion y funciones del sistema operativo]]
 - [[Generaciones de sistemas operativos]]
 - [[Tipos de sistemas operativos]]
+- [[Gestion de memoria]]
+- [[Gestion de procesos]]
+- [[Capas de un sistema operativo]]
+- [[Dispositivos de entrada y salida]]
 
 ## Temas pendientes del temario
 
 Mencionados en clase pero aún sin desarrollar:
-- Capas o subsistemas
-- Entrada y salida
-- Concurrencia y paralelismo
-- Consideraciones para instalación
-
+- Consideraciones para instalación ⚠️ hay captura sin procesar en [[Notas en curso 3]]
 ## Bibliografía
 
 - ![[Fundamentos de Sistemas Operativos - 7ma Edición - Abraham Silberschatz, Peter Baer Galvin & Greg Gagne.pdf]]
@@ -53,3 +53,5 @@ Mencionados en clase pero aún sin desarrollar:
 ## Conexiones
 
 Los temas de memoria y E/S se solapan con [[Organizacion de computadoras]] de primer semestre: [[Jerarquia de memoria]] y [[Tecnicas de entrada y salida]] ya cubren la parte de hardware que aquí se retoma desde el software.
+
+[[Gestion de memoria]] y [[Gestion de procesos]] cierran el hilo [[MOC - Hardware a sistema operativo]]: son la respuesta del software a las esperas que el hardware de primer semestre planteó.

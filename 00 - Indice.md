@@ -25,7 +25,7 @@ Vault de los tres semestres de la carrera. Cada materia tiene una nota índice c
 ## Semestre 3 — Ago–Dic 2026 (en curso)
 
 - [[Sistemas Operativos (materia)]]
-- [[Enrutamiento basico]]
+- [[Enrutamiento basico (materia)]]
 - [[Aspectos sociales de la ciberseguridad]]
 
 ## MOCS
@@ -57,7 +57,7 @@ Cada hilo tiene además un **documento consolidado** en `_MOCS/` que reúne el c
 ### Hardware → sistema operativo
 📄 [[MOC - Hardware a sistema operativo]]
 
-[[Generaciones de computadoras]] (sem. 1) → [[Jerarquia de memoria]] (sem. 1) → [[Tecnicas de entrada y salida]] (sem. 1) → [[Generaciones de sistemas operativos]] (sem. 3)
+[[Generaciones de computadoras]] (sem. 1) → [[Jerarquia de memoria]] (sem. 1) → [[Tecnicas de entrada y salida]] (sem. 1) → [[Generaciones de sistemas operativos]] (sem. 3) → [[Gestion de memoria]] (sem. 3) → [[Gestion de procesos]] (sem. 3)
 
 ### Estructura interna de un CPU
 📄 [[MOC - Estructura interna de un CPU]] ⚠️ en construcción
