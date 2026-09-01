@@ -1,33 +1,5 @@
 Dispositivos entrada salida
 
-Como se comunica un controlador con la CPU
-
-El controlador o driver es una tarjeta dentro del dispositivo de entrada o salida
-El controlador o driver conecta a la cpu y al dispositivo mediante los componentes de memoria internos del propio chip del controlador
-
-- Registros de E/S: para hacer lectura y escritura
-	- Registro de datos: El cpu aqui puede escribir o leer datos en el controlador
-	- Registro de estado: Aqui el cpu lee como se encuentra el dispositivo, encendido, apagado, error.
-	- Registro de control: Aqui el cpu le indica que hacer al dispositivo, lee, escribe, enciende el motor
-		- El cpu usa el registro de control (comandos) para poder leer o escribir dentro del registro de datos.
-		- Se usan todos al mismo tiempo para hacer una operacion, no es que se use uno y luego otro
-- Puertos o direcciones de entrada salida:
-	- Sirven como puente para la conexion entre el CPU y el dispositivo E/S.
-	- Dan un nombre especifico y unico a todos los registros que tengan que ver con el dispositivo.
-	- Definen el metodo de acceso que utilizara el procesador para leer o escribir datos. (memoria compartida, o sin memoria compartida[[Tecnicas de entrada y salida]] )
-
-
-
-Paralelismo:
-
-
-Concurrencia: Existencia de mas de una tarea progresando de manera de simultanea en el tiempo
-
-Ofrecne continuidad operativa: No se congela al realizar mas de una tarea
-Optimizacion de recursos: El cpu no se queda inactivo nunca
-Automatizacion fluida: Las actualizaciones del sistema o copias de seguridad ocurren sin detener el trabajo diario
-
-
 
 Consideraciones para instalar un SO
 Requerimientos de hardware
