@@ -2,7 +2,14 @@
 materia: Sistemas Operativos
 semestre: 3
 tipo: concepto
-tags: [sistemas-operativos, memoria, paginacion, mmu]
+tags:
+  - sistemas-operativos
+  - memoria
+  - paginacion
+  - mmu
+sr-due: 2026-09-03
+sr-interval: 3
+sr-ease: 256
 ---
 #review 
 # Gestión de memoria

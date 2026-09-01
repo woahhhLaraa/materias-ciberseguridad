@@ -36,16 +36,13 @@ Materia del tercer semestre. Inicio: 17 de agosto de 2026. Fin del semestre: 30 
 - [[Tipos de sistemas operativos]]
 - [[Gestion de memoria]]
 - [[Gestion de procesos]]
+- [[Capas de un sistema operativo]]
+- [[Dispositivos de entrada y salida]]
 
 ## Temas pendientes del temario
 
 Mencionados en clase pero aún sin desarrollar:
-- Capas o subsistemas ⚠️ `Capas de un sistema operativo.md` existe pero está vacía
-- Entrada y salida
-- Consideraciones para instalación
-
-> Concurrencia y paralelismo ya quedó cubierto en [[Gestion de procesos]].
-
+- Consideraciones para instalación ⚠️ hay captura sin procesar en [[Notas en curso 3]]
 ## Bibliografía
 
 - ![[Fundamentos de Sistemas Operativos - 7ma Edición - Abraham Silberschatz, Peter Baer Galvin & Greg Gagne.pdf]]

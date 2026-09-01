@@ -43,4 +43,4 @@ Materia de segundo semestre, basada en **Cisco NetAcad / Cisco Networking**.
 
 ## Conexiones
 
-Comparte temario con [[Arquitectura de redes]] (mismo semestre, enfoque en capa física) y prepara [[Enrutamiento basico]] de tercer semestre, donde el direccionamiento IP se desarrolla a fondo.
+Comparte temario con [[Arquitectura de redes]] (mismo semestre, enfoque en capa física) y prepara [[Enrutamiento basico (materia)]] de tercer semestre, donde el direccionamiento IP se desarrolla a fondo.

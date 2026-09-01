@@ -1,7 +1,15 @@
-Dispositivos entrada salida
+---
+materia: Sistemas Operativos
+semestre: 3
+tipo: captura
+tags: [captura, sin-procesar]
+---
 
+# Sistemas Operativos — notas en curso (3)
 
-Consideraciones para instalar un SO
+> Captura sin procesar. Pendiente de extraer a notas propias — ver el procedimiento en [[Notas en curso]].
+
+## Consideraciones para instalar un SO
 Requerimientos de hardware
 Firmware de placa
 Backup
@@ -32,11 +40,15 @@ Hardening
 
 
 
-Investigar diferencia BIOS y UEFI
+## Pendiente de investigar
 
+- Diferencia entre BIOS y UEFI
+- Diferencia entre partición primaria y lógica
+- Particiones en Linux
 
+## Reporte — creación de máquina virtual
 
-reporte creacion de maquina virtual todo lo que hice paso a paso
+Todo lo que hice, paso a paso:
 1. Instale virtualBox en debian
 2. Configuracion de la maquina virtual
 	1. Ponerle un nombre
@@ -82,8 +94,3 @@ reporte creacion de maquina virtual todo lo que hice paso a paso
 	28. Sin entorno de escritorio
 	29. utilidades estandar del sistema y ssh
 	30. SI cargar GRUB
-
-
-
-
-Investigar particiones en linux

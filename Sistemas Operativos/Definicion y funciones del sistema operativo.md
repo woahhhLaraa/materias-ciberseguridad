@@ -2,7 +2,12 @@
 materia: Sistemas Operativos
 semestre: 3
 tipo: concepto
-tags: [sistemas-operativos, fundamentos]
+tags:
+  - sistemas-operativos
+  - fundamentos
+sr-due: 2026-09-04
+sr-interval: 4
+sr-ease: 274
 ---
 #review 
 # Definición y funciones del sistema operativo
@@ -54,4 +59,4 @@ Un OS lo conforma
 - [[Generaciones de sistemas operativos]] — cómo fueron apareciendo estas funciones, generación por generación
 - [[Tipos de sistemas operativos]] — las mismas funciones repartidas según el sistema: servidor, escritorio, móvil
 - [[Jerarquia de memoria]] — cómo el SO gestiona la memoria a nivel hardware
-- [[Capas de un sistema operativo]] - Insight en las funciones de los sistemas operativos
+- [[Capas de un sistema operativo]] — el detalle de estas funciones repartido en los ocho subsistemas del SO

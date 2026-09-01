@@ -1,55 +1,60 @@
-Aquellos que son capaces de recibir un input por parte de un usuario para ser usado por el sistema operativo a traves de [[Capas de un sistema operativo]] Seccion subsistema de entrada y salida, o en su defecto, dar un output para comunicarse con el usuario
+---
+materia: Sistemas Operativos
+semestre: 3
+tipo: concepto
+tags: [sistemas-operativos, entrada-salida, hardware, drivers]
+---
+#review
+# Dispositivos de entrada y salida
 
-Entre ellos se encuentran:
-- Mouse
-- Teclado
-- Dispositivos de almacenamiento secundario
-- Bocinas
-- Pantalla
-- Tarjeta grafica
-- Tarjeta de red
+Aquellos capaces de recibir un input del usuario para ser usado por el sistema operativo — a través del subsistema de entrada y salida descrito en [[Capas de un sistema operativo]] — o, en su defecto, de dar un output para comunicarse con el usuario.
 
-Cada uno de estos dispositivos lo podemos dividir en dos partes
-- Su componente fisico, lo que podemos ver y tocar, en mouse teclado bocinas pantalla y almacenamiento secundario, es un componente mecanico
-- Su componente logico, una tarjeta o chip que funciona como el cerebro donde tiene tanto su logica, como su controlador, y en algunos casos, memoria y buferes.
+Entre ellos se encuentran: mouse, teclado, dispositivos de almacenamiento secundario, bocinas, pantalla, tarjeta gráfica y tarjeta de red.
 
+## Componentes de cada dispositivo
 
+Cada dispositivo se puede dividir en dos partes:
 
-Los dispositivos de entrada y salida los clasificamos como
+- **Componente físico** — lo que se puede ver y tocar: mouse, teclado, bocinas, pantalla, almacenamiento secundario. Es el componente mecánico.
+- **Componente lógico** — una tarjeta o chip que funciona como el "cerebro" del dispositivo: tiene su propia lógica, su controlador y, en algunos casos, memoria y búferes.
 
-### De bloque (legacy)
+## Clasificación
 
-Aquellos dispositivos que mueven cantidades de tamano fijo, normalmente dipositivos de almacenamiento.
-### De caracter (Legacy)
-Aquellos que mueven datos byte por byte, como un teclado o un mouse.
+### Por forma de transferencia (legacy)
 
-### Por su funcion
-Las clasificaciones anteriores, si bien no son incorrectas, han dejado de aplicar a todos los dispositivos ES de la actulidad por lo que se ha empezado a adoptar las siguientes clasificaciones
-#### De entrada
-Aquellos que reciben informacion pero no mandan informacion
-- Teclado
-- Mando
-- Mouse
-#### De salida
-Aquellos que permiten comunicarse con el exterior, sin recibir nada.
-- Pantallas
-- Bocinas
-#### Entrada/Salida
-Aquellos que pueden hacer las dos cosas
-- Tarjetas graficas
-- Discos de almacenamiento
+| Tipo | Descripción | Ejemplos |
+|---|---|---|
+| **De bloque** | Mueve datos en cantidades de tamaño fijo | Dispositivos de almacenamiento |
+| **De carácter** | Mueve datos byte por byte | Teclado, mouse |
 
+### Por función (clasificación actual)
 
-Para poder comunicarse con el sistema operativo de forma bidireccional, todos los dispositivos de entrada y salida utilizan controladores (drivers). Estos se encuentran dentro de su componente logico. 
-En la logica de los drivers se encuentra
-Registros ES:
-- Registro de control
-	- Mediante comandos, el cpu es capaz de controlar el dispositivo ES, escribir y leer.
-- Registro de datos
-	- El lugar de los registros donde se guarda toda la informacion que se quiere leer por parte del dispositivo ES, tambien es el lugar donde se escribe informacion desde la computadora.
-- Registro de estado
-	- Aqui el ES indica cual es su estado actual, suspendido, ocupado, encendido, listo, error
+Las clasificaciones anteriores no son incorrectas, pero han dejado de aplicar a todos los dispositivos de E/S de la actualidad, por lo que se ha adoptado esta otra clasificación:
 
-Puertos o direcciones ES:
-- Tienen la funcion de ser puentes entre el dispositivo ES y el sistema operativo
-- Le dan a cada registro proveniente del ES una direccion unica, para que el sistema operativo sepa con quien esta hablando en todo momento
+| Tipo | Descripción | Ejemplos |
+|---|---|---|
+| **De entrada** | Reciben información, pero no la envían | Teclado, mando, mouse |
+| **De salida** | Permiten comunicarse hacia el exterior, sin recibir nada | Pantallas, bocinas |
+| **De entrada/salida** | Pueden hacer ambas cosas | Tarjetas gráficas, discos de almacenamiento |
+
+## Comunicación con el sistema operativo: drivers
+
+Para comunicarse con el sistema operativo de forma bidireccional, todos los dispositivos de entrada y salida usan **controladores (drivers)**, que se encuentran dentro de su componente lógico.
+
+### Registros E/S
+
+- **Registro de control** — mediante comandos, el CPU controla al dispositivo E/S: escribe y lee
+- **Registro de datos** — donde se guarda toda la información que se quiere leer del dispositivo, y también donde se escribe información hacia él desde la computadora
+- **Registro de estado** — indica el estado actual del dispositivo E/S: suspendido, ocupado, encendido, listo, error
+
+### Puertos o direcciones E/S
+
+- Funcionan como puente entre el dispositivo E/S y el sistema operativo
+- Le dan a cada registro proveniente del E/S una dirección única, para que el sistema operativo sepa con quién está hablando en todo momento
+
+## Relacionadas
+
+- [[Capas de un sistema operativo]] — el subsistema de entrada y salida al que pertenecen estos dispositivos
+- [[Tecnicas de entrada y salida]] — las tres formas en que la CPU mueve datos hacia y desde estos dispositivos, vistas en Organización de computadoras
+- [[Arquitectura de entrada y salida]] — el módulo de E/S del lado del hardware, con el que se comunican estos registros y puertos
+- [[Definicion y funciones del sistema operativo]] — gestionar dispositivos es una de las funciones esenciales del SO

@@ -25,7 +25,7 @@ Vault de los tres semestres de la carrera. Cada materia tiene una nota índice c
 ## Semestre 3 — Ago–Dic 2026 (en curso)
 
 - [[Sistemas Operativos (materia)]]
-- [[Enrutamiento basico]]
+- [[Enrutamiento basico (materia)]]
 - [[Aspectos sociales de la ciberseguridad]]
 
 ## MOCS

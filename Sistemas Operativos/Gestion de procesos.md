@@ -2,7 +2,14 @@
 materia: Sistemas Operativos
 semestre: 3
 tipo: concepto
-tags: [sistemas-operativos, procesos, concurrencia, multiprogramacion]
+tags:
+  - sistemas-operativos
+  - procesos
+  - concurrencia
+  - multiprogramacion
+sr-due: 2026-09-04
+sr-interval: 3
+sr-ease: 256
 ---
 #review 
 # Gestión de procesos
