@@ -1,5 +1,6 @@
-Recordando que un sistema operativo es en realidad un conjunto de capas que funcionan al unisono, podemos reducir los sistemas de un OS en 8 subsistemas 
 #review 
+Recordando que un sistema operativo es en realidad un conjunto de capas que funcionan al unisono, podemos reducir los sistemas de un OS en 8 subsistemas 
+
 ## Kernel o nucleo
 El corazon del sistema, donde (dependiendo del sistema operativo ya sea monolito o microkernel) puede construirse sobre el kernel, o vivir dentro del kernel.
 ##  Subsistema de entrada y salida
@@ -9,29 +10,7 @@ La BIOS (BASIC INPUT OUTPUT SYSTEM) la cual se encuentra integrada directamente 
 
 Luego, el sistema operativo se ocupa de tomar el control de los dispositivos de entrada y salida, con sus propios drivers (o los cargados por el usuario) coordinandolo todo sin que el usuario tenga que lidiar con los programas particulares de cada hardware
 
-Los dispositivos de entrada y salida los clasificamos como
 
-### De bloque (legacy)
-
-Aquellos dispositivos que mueven cantidades de tamano fijo, normalmente dipositivos de almacenamiento.
-### De caracter (Legacy)
-Aquellos que mueven datos byte por byte, como un teclado o un mouse.
-
-### Por su funcion
-Las clasificaciones anteriores, si bien no son incorrectas, han dejado de aplicar a todos los dispositivos ES de la actulidad por lo que se ha empezado a adoptar las siguientes clasificaciones
-#### De entrada
-Aquellos que reciben informacion pero no mandan informacion
-- Teclado
-- Mando
-- Mouse
-#### De salida
-Aquellos que permiten comunicarse con el exterior, sin recibir nada.
-- Pantallas
-- Bocinas
-#### Entrada/Salida
-Aquellos que pueden hacer las dos cosas
-- Tarjetas graficas
-- Discos de almacenamiento
 ## Subsistema de gestion de procesos
 Ver [[Gestion de procesos]]
 La capa del sistema que se ocupa de gestionar como cada proceso interactua en el sistema, ya sea con otros procesos, o de forma solitaria.
@@ -40,32 +19,70 @@ La capa del sistema que se ocupa de gestionar como cada proceso interactua en el
 - Reanuda procesos
 - Cierra procesos
 - Comunicacion y sincronizacion de procesos
+	- Piplines
+	- Paso de mensaje
+	- Memoria compartida
+	- Sockets
 - Gestiona la situacion de interbloqueo (deadlock
 - Aqui se asigna el tiempo de cpu o rafaga de cpu a cada proceso
 - Aqui es donde vive la multiprogramacion, paralelismo y la concurrencia.
 - Mecanismos de seguridad para no matar procesos criticos
+- Planificacion de uso de cpu  (mediante el planificador de cpu)
 
 ## Subsistema de gestion de memoria
 Ver [[Gestion de memoria]]
-Se encarga de orquestar el recurso de la memoria a los diferentes procesos que hay en el sistema operativo debido a que la memoria es un recurso compartido y LIMITADO
+Se encarga de orquestar el recurso de la memoria a los diferentes procesos que hay en el sistema operativo debido a que la memoria es un recurso compartido y LIMITADO. Su hardare es el MMU
 - Asignar espacios de memoria
 - Limpiar espacios de memoria
 - Manejar la memoria virtual
+- Quien usa la memoria en ese momento
 - Proteger la memoria de accesos no autorizados (accidentales o no) por parte de un proceso
+- Planificacion de acceso a memoria
 
 ## Administracion de almacenamiento secundario
 Encargado de manejar como los procesos escriben datos en una memoria persistente, quien cuando como y donde, protegiendo igualmente de accesos no autorizados. Gestiona las solicitudes de acceso.
+- Quien y cuando puede accesar a escribir o leer en almacenamiento secundario
+- Administrar el espacio libre y ocupado
+- Mecanismos de seguridad
+- Planificacion de disco para atender
 
 
 ## Subsistema de archivos
-Para que el usuario se pueda mover en el almacenamiento secundario de una forma fluida y amigable (dependiendo del OS) , se ideo un sistema de archivos, donde cada archivo o dato se puede encontrar en un "lugar especifico" dentro de un explorador de archivos. Protegiendo ciertos archivos (en windows, protegiendo los archivos mas criticos para el funcionamiento del sistema), solicitudes de acceso 
+Para que el usuario se pueda mover en el almacenamiento secundario de una forma fluida y amigable (dependiendo del OS) , se ideo un sistema de archivos, donde cada archivo o dato se puede encontrar en un "lugar especifico (ruta o direccion)" dentro de un explorador de archivos. Protegiendo ciertos archivos (en windows, protegiendo los archivos mas criticos para el funcionamiento del sistema), solicitudes de acceso 
 - Crear y eliminar archivos
 - Leer archivos
 - Modificar archivos
 - Administrar directorios
-- Los 
+- Busqueda de archivos
+- NTFS (New technology file system)
+	- Sistema usado desde windows XP
+	- Tiene journaling
+		- Escribir todos los cambios antes de ser realizados, para tener integridad de archivos en caso de apagones o casos inesperados
+	- Maneja hasta 16 tb de informacion ya sea por archivo o por tamano entero de disco, sin embargo, si lo configuras bien, teoricamente puedes tener archivos de hasta 8 petabytes
+- FAT32
+	- Sistema implementado en los noventas
+	- Legacy
+	- Hasta 32 gb (teoricamente hasta 2 tb)
+	- Tamano maximo de archivo de 4 gb
+- ext4
+	- El sistema mas usado en distribuciones linux
+	- Tiene journaling
+		- Mas complejo que NTFS, integridad de datos robusta
+	- Tamano maximo de archivo de 16 tb (teorico de miles de tbs)
 
 ## Subsistema de gestion de redes y comunicaciones
+Encargado de que la computadora pueda comunicarse con otras computadoras en una misma red, o en una red aparte. Su componente de hardware son las tarjetas de red
 
+- Protocolos TCP IP
+- Proteccion en las comuniaciones
+- Enviar y recibir paquetes de datos
+- administrar interfaces de red (tarjeta de red
+- Gestionar conexiones de red
 
 ## Subsistema de interfaz de usuario 
+Encargado de manejar ya sea la GUI o la CLI,funcionando como el puente entre el SO y el usuario, manteniendo un lenguaje mas comprensible por los humanos.
+- Recibir input por parte del usuario
+- Dar output sobre lo que esta sucediendo dentro de la computadora al usuario
+- Gestionar ventanas e interfaces graficas
+- Facilitar el uso de los servicios y subsistemas anteriores
+- Proporcionar notificaciones y gestioanr la comunicacion de errores
