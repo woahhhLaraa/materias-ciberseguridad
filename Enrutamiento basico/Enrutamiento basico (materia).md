@@ -36,6 +36,11 @@ Materia de tercer semestre. Inicio: 19 de agosto de 2026.
 - [[Tarea 1 - Separar red y host]]
 - [[Tarea 2 - Clases IP y direcciones de red]]
 
+## Prácticas
+
+- [[Practica 1 - Configuracion inicial del router]]
+- [[Practica 3 - VLSM]]
+
 ## Material
 
 - ![[Presentacion 1.pdf]]
