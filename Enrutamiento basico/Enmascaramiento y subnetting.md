@@ -50,9 +50,6 @@ Ese 256 es el numero total de hosts disponibles, sin embargo de esos 256, 2 de e
 
 254 es el numero de hosts a nuestra disposicion para conectar computadoras u otros.
 
-Como
-
-
 
 ## Relacionadas
 

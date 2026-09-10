@@ -4,7 +4,7 @@ semestre: 3
 tipo: concepto
 tags: [redes, enrutamiento, routers]
 ---
-
+1
 # Conceptos fundamentales de enrutamiento
 
 > Clase del 19 de agosto
