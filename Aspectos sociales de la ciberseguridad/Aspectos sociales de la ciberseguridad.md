@@ -19,7 +19,7 @@ Materia de tercer semestre centrada en el **comportamiento humano** dentro de la
 
 ## Captura
 
-- [[Notas en curso]] — bandeja de entrada de la materia
+- [[Aspectos sociales de la ciberseguridad/Notas en curso]] — bandeja de entrada de la materia
 
 ## Notas
 

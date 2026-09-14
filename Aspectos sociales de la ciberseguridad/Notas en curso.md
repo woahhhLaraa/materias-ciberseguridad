@@ -9,6 +9,7 @@ tags: [captura, sin-procesar]
 MODELOS MENTALES 
 
 Modelo de seguridad fisica
+Se basa en conceptos fisicos como puertas, cerraduras, perimetros
 Puertas, cerraduras y permitetros fisicos
 Sus ataques requieren presencia fisica,
 Limitaciones:
@@ -42,10 +43,28 @@ Modelo economico o de mercado
 		- dificultad a asignar costos reales en entornos compartidos
 
 
+En cuanto a temsa de privacidad y segurdida hay recomendaciones
+- Hay diferentes maneras de comunicar riesgos
+- SImplificar demasiado o sol odar datos tecnicos no fucniona para que la gente tome las mejores decisiones
+
+Entonces se propone:
+- Usar la informacion previa de los atajos mentales para ayudar a la gente a comprender un riesgo
+	- Por eso usamos los modelos de seguridad fisica anteriores
+
 Cada modelo mental tiene ventajas y limitaciones, deben ser escogidos segun el usuario o grupo que se trate
 Al final si se utilizan correctamente, puede hacer entender a los usuarios la importancia de la seguridad informatica.
 
-Investigar, que son los cesgos cognitivos, como influyen en las decisiones de ciberseguridad y cinco ejemplos
+
+11 de septiembre 2026
+Presentacion del proyecto
+Propuesta que contribuya a aumentar la conciencia en ciberseguridad, en el contexto de una secundaria mexicana
+
+Un documento que describa toda la propuesta
+Un producto final (triptico, infografia, video, tiktok, juego, presentacion)
+
+Los mejores productos son presentados en escuela tecnica
+
+
 
 
 
