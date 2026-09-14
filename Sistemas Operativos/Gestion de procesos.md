@@ -7,8 +7,8 @@ tags:
   - procesos
   - concurrencia
   - multiprogramacion
-sr-due: 2026-09-04
-sr-interval: 3
+sr-due: 2026-09-22
+sr-interval: 13
 sr-ease: 256
 ---
 #review 

@@ -1,3 +1,15 @@
+---
+materia: Sistemas Operativos
+semestre: 3
+tipo: practica
+tags: [sistemas-operativos, instalacion, linux, debian, kvm, maquina-virtual]
+---
+
+# Reporte de instalacion de un sistema linux maquina virtual
+
+> Practica 1.1 — instalacion de un sistema operativo en maquina virtual (Debian 13 sobre KVM).
+> ![[1.1 Instalacion de un sistema operativo - instrucciones.pdf]] — enunciado de la practica
+> ![[Reporte de instalacion de un sistema linux maquina virtual.pdf]] — version entregada
 
 1. Al estar en un sistema linux debian bare metal, ya tengo cargado un hipervisor KVM por defecto
 2. Instale el gestor grafico de usuario de KVM, por comodidad
@@ -40,3 +52,10 @@
 35. ![[Pasted image 20260901162912.png]]
 36. Sistema cargado
 37. ![[Pasted image 20260901163257.png]]
+
+## Relacionadas
+
+- [[Definicion y funciones del sistema operativo]] — lo que se instala aqui, definido en clase
+- [[Tipos de sistemas operativos]] — el hipervisor KVM y la virtualizacion que hace posible esta practica
+- [[Interfaces Graficas]] — la instalacion se hizo sin entorno grafico, solo utilidades y ssh
+- [[Sistemas Operativos (materia)]] — indice de la materia

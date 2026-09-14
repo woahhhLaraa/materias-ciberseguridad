@@ -8,7 +8,9 @@ tags: [packet-tracer, cisco, vlsm, subnetting, direccionamiento-ip, rip]
 
 # Practica 3 - VLSM
 
-> Practica de VLSM (Mascara de Subred de Longitud Variable). Original en `~/Descargas/Practica 3 VLSM.docx`.
+> Practica de VLSM (Mascara de Subred de Longitud Variable). Originales en esta misma carpeta:
+> ![[Practica 3 - VLSM.docx]] — enunciado del profesor
+> ![[Practica 3 - VLSM (resuelta).pdf]] — entrega resuelta
 > Objetivo: configurar y probar redes VLSM y practicar la asignacion de direcciones IP a las interfaces de un enrutador.
 
 Aplicacion directa de [[CIDR y VLSM]]. La regla que gobierna toda la practica: **asignar las subredes de mayor a menor numero de hosts**. Si se asignan en desorden quedan huecos que ya no alcanzan para las redes grandes.

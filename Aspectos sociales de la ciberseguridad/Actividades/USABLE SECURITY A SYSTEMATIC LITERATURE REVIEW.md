@@ -1,3 +1,14 @@
+---
+materia: Aspectos sociales de la ciberseguridad
+semestre: 3
+tipo: captura
+tags: [usable-security, usabilidad, lectura, captura]
+---
+
+# USABLE SECURITY A SYSTEMATIC LITERATURE REVIEW
+
+> Captura de lectura sin procesar. La version trabajada y entregada es [[Actividad - Usable Security 4.4.2]].
+
 Seccion 4.4.2
 Resumen del articulo:
 

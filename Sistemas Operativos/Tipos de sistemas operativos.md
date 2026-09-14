@@ -5,9 +5,9 @@ tipo: concepto
 tags:
   - sistemas-operativos
   - clasificacion
-sr-due: 2026-09-03
-sr-interval: 2
-sr-ease: 232
+sr-due: 2026-10-05
+sr-interval: 26
+sr-ease: 252
 ---
 #review 
 # Tipos de sistemas operativos

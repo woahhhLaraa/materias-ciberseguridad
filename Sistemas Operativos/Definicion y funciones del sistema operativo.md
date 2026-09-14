@@ -5,8 +5,8 @@ tipo: concepto
 tags:
   - sistemas-operativos
   - fundamentos
-sr-due: 2026-09-04
-sr-interval: 4
+sr-due: 2026-09-27
+sr-interval: 14
 sr-ease: 274
 ---
 #review 

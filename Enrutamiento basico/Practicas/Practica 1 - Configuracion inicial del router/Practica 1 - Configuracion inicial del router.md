@@ -8,7 +8,9 @@ tags: [packet-tracer, cisco, ios, router, configuracion-inicial, contrasenas]
 # Practica 1 - Configuracion inicial del router
 
 > Actividad de Packet Tracer *Configure Initial Router Settings* (CCNA, Cisco NetAcad).
-> Archivos originales en `~/Descargas`: el `.pka` y el PDF de instrucciones.
+> Archivos originales de la actividad, en esta misma carpeta:
+> ![[Practica 1 - Configuracion inicial del router.pdf]] — instrucciones
+> ![[Practica 1 - Configuracion inicial del router.pka]] — topologia de Packet Tracer
 
 Objetivo: verificar la configuracion por defecto de R1, aplicarle la configuracion inicial (nombre, contrasenas, banner) y guardarla en NVRAM.
 

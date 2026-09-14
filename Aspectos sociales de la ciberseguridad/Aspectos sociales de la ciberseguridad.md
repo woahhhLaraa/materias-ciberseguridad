@@ -29,6 +29,7 @@ Materia de tercer semestre centrada en el **comportamiento humano** dentro de la
 ## Actividades
 
 - [[Actividad 1 - Buenas practicas de ciberseguridad]]
+- [[Actividad - Usable Security 4.4.2]] — analisis de la seccion 4.4.2 de la revision sistematica ⚠️ numero de actividad por confirmar
 
 ## Conexiones
 

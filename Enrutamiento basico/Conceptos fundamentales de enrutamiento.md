@@ -2,9 +2,15 @@
 materia: Enrutamiento basico
 semestre: 3
 tipo: concepto
-tags: [redes, enrutamiento, routers]
+tags:
+  - redes
+  - enrutamiento
+  - routers
+sr-due: 2026-09-15
+sr-interval: 2
+sr-ease: 246
 ---
-1
+#review 
 # Conceptos fundamentales de enrutamiento
 
 > Clase del 19 de agosto
@@ -43,6 +49,11 @@ Los primeros protocolos asumían que lo primero que necesitaban saber —y que e
 Protocolos como **RIPv1** solo necesitaban propagar la dirección de red de las rutas conocidas, **sin incluir la máscara**, porque ya sabían de qué clase era la red.
 
 Una década después, con la reducción rápida de direcciones IP, nace **CIDR**. Ver [[CIDR y VLSM]].
+
+
+Tabla de ruteo:
+Cada router, de forma indivual, tiene el conocimiento de los routers que se encuentran de forma inmediata a el, y una tabla que dice algo como: Si recibes un paquete que tiene que ir a un punto final Z, mandala hacia el nodo inmediato C, si va a H, mandalo a J.
+
 
 ## Relacionadas
 

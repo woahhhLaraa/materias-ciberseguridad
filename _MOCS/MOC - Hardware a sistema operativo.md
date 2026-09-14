@@ -12,8 +12,8 @@ tags:
 semestres:
   - 1
   - 3
-sr-due: 2026-09-12
-sr-interval: 14
+sr-due: 2026-10-22
+sr-interval: 39
 sr-ease: 270
 ---
 #review

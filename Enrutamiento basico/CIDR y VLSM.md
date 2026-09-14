@@ -2,8 +2,16 @@
 materia: Enrutamiento basico
 semestre: 3
 tipo: concepto
-tags: [redes, ip, cidr, vlsm]
+tags:
+  - redes
+  - ip
+  - cidr
+  - vlsm
+sr-due: 2026-09-15
+sr-interval: 2
+sr-ease: 246
 ---
+#review 
 
 # CIDR y VLSM
 
@@ -29,6 +37,13 @@ Resuelve el problema del [[Enmascaramiento y subnetting|subnetting clásico]]: p
 
 Con CIDR, la clase ya no está implícita en la dirección. Por eso los protocolos de enrutamiento **classless** (RIPv2, OSPF, EIGRP, BGP) deben propagar **la máscara junto con la dirección de red**, algo que RIPv1 no hacía. Ver [[Conceptos fundamentales de enrutamiento]].
 
+
+
+![[Pasted image 20260826095441.png]]
+
+
+## En resumen
+Básicamente **CIDR es la notación/regla del juego**, y **VLSM es la estrategia de aplicar esa regla con máscaras de distinto tamaño dentro de la misma red para no desperdiciar IPs**
 ## Relacionadas
 
 - [[Capa de red - IPv4 e IPv6]] — CIDR y NAT como parches al agotamiento de IPv4

@@ -2,7 +2,14 @@
 materia: Sistemas Operativos
 semestre: 3
 tipo: concepto
-tags: [sistemas-operativos, entrada-salida, hardware, drivers]
+tags:
+  - sistemas-operativos
+  - entrada-salida
+  - hardware
+  - drivers
+sr-due: 2026-09-16
+sr-interval: 3
+sr-ease: 254
 ---
 #review
 # Dispositivos de entrada y salida

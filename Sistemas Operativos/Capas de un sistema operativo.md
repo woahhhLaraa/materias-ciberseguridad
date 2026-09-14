@@ -7,8 +7,8 @@ tags:
   - arquitectura
   - kernel
   - subsistemas
-sr-due: 2026-09-03
-sr-interval: 3
+sr-due: 2026-09-24
+sr-interval: 15
 sr-ease: 250
 ---
 #review

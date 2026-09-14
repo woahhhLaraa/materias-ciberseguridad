@@ -38,6 +38,11 @@ Materia del tercer semestre. Inicio: 17 de agosto de 2026. Fin del semestre: 30 
 - [[Gestion de procesos]]
 - [[Capas de un sistema operativo]]
 - [[Dispositivos de entrada y salida]]
+- [[Concurrencia y paralelismo]] — documento de referencia externo, no apunte de clase
+
+## Practicas
+
+- [[Reporte de instalacion de un sistema linux maquina virtual]] — practica 1.1, instalacion de Debian 13 sobre KVM
 
 ## Temas pendientes del temario
 
@@ -49,6 +54,11 @@ Mencionados en clase pero aún sin desarrollar:
 - ![[Sistemas_Operativos_Modernos-ATanenbaum.pdf]] — versión en español
 - ![[Modern Operating Systems (4th Edition) ( PDFDrive ).pdf]] — versión en inglés
 - ![[PE Sistemas Operativos 2022.pdf]] — programa de estudios
+
+## Material audiovisual
+
+- ![[Concurrencia y paralelismo.mp4]]
+- ![[Arquitecturas de sistemas.mp4]] ⚠️ sin nota asociada todavia; confirmar a que unidad corresponde
 
 ## Conexiones
 

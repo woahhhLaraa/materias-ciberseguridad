@@ -40,6 +40,8 @@ Materia de tercer semestre. Inicio: 19 de agosto de 2026.
 
 - [[Practica 1 - Configuracion inicial del router]]
 - [[Practica 3 - VLSM]]
+- [[Practica 4 - Rutas estaticas]] ⚠️ solo el enunciado, sin resolver
+- [[Practica 5 - Rutas estaticas flotantes]] ⚠️ solo el enunciado, sin resolver
 
 ## Material
 
