@@ -7,7 +7,7 @@ tags: [captura, sin-procesar]
 
 # Sistemas Operativos — notas en curso (3)
 
-> Captura sin procesar. Pendiente de extraer a notas propias — ver el procedimiento en [[Notas en curso]].
+> Captura sin procesar. Pendiente de extraer a notas propias — ver el procedimiento en [[Sistemas Operativos/Notas en curso]].
 
 ## Consideraciones para instalar un SO
 Requerimientos de hardware

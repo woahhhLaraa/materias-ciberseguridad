@@ -27,7 +27,7 @@ Materia del tercer semestre. Inicio: 17 de agosto de 2026. Fin del semestre: 30 
 
 ## Captura
 
-- [[Notas en curso]] — bandeja de entrada de la materia
+- [[Sistemas Operativos/Notas en curso]] — bandeja de entrada de la materia
 
 ## Notas
 

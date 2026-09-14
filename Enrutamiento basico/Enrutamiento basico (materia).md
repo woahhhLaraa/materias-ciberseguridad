@@ -21,7 +21,7 @@ Materia de tercer semestre. Inicio: 19 de agosto de 2026.
 
 ## Captura
 
-- [[Notas en curso]] — bandeja de entrada de la materia
+- [[Enrutamiento basico/Notas en curso]] — bandeja de entrada de la materia
 
 ## Notas
 
