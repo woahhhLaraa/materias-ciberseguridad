@@ -40,7 +40,7 @@ La capa del sistema que gestiona cómo interactúa cada proceso, ya sea con otro
 - Comunicación y sincronización de procesos: *pipelines*, paso de mensajes, memoria compartida, sockets
 - Gestiona la situación de interbloqueo (*deadlock*)
 - Asigna el tiempo de CPU o ráfaga de CPU a cada proceso
-- Aquí viven la multiprogramación, el paralelismo y la concurrencia
+- Aquí viven la multiprogramación, el [[Concurrencia y paralelismo|paralelismo y la concurrencia]]
 - Mecanismos de seguridad para no matar procesos críticos
 - Planificación de uso de CPU, mediante el planificador de CPU
 
@@ -107,3 +107,4 @@ Encargado de manejar la GUI o la CLI, funcionando como puente entre el SO y el u
 - [[Gestion de procesos]] — desarrolla el subsistema de gestión de procesos
 - [[Gestion de memoria]] — desarrolla el subsistema de gestión de memoria
 - [[Tipos de sistemas operativos]] — la clasificación monolítico/microkernel/híbrido que decide cómo se organizan estas capas dentro del kernel
+- [[Concurrencia y paralelismo]] — desarrolla la multiprogramacion, el paralelismo y la concurrencia de la capa de procesos

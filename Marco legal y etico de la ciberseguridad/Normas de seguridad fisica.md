@@ -71,3 +71,12 @@ Inventario de activos, etiquetado y control de hardware. Ver [[Controles CIS y P
 ## ⚠️ Pendiente de examen
 
 **Investigar sistemas de protección eléctrica** — marcado explícitamente en clase como pregunta de examen.
+
+## Relacionadas
+
+- [[Controles CIS y PCI DSS]] — los controles CIS v8 de inventario y etiquetado de hardware que aqui se aplican
+- [[ISO-IEC 27001]] — la NMX-ISO/IEC 27001 de la tabla es su adopcion mexicana
+- [[LFPDPPP - Ley de proteccion de datos]] — la obligacion legal detras del control de acceso a la informacion
+- [[Estandares de seguridad]] — el panorama de normas donde se ubican estas
+- [[Organismos reguladores en Mexico]] — quien vigila el cumplimiento de las NOM y la LFPDPPP
+- [[Marco legal y etico de la ciberseguridad]] — indice de la materia

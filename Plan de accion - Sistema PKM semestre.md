@@ -1,3 +1,8 @@
+---
+tipo: meta
+tags: [meta, metodo, pkm, plan]
+---
+
 # Plan de acción — Sistema de estudio (Obsidian + NotebookLM)
 
 > Semestre 3, cierra ~30 de noviembre de 2026

@@ -110,7 +110,7 @@ Solo pueden realizar una sola tarea, una sola tarea acapara todo el procesador.
 
 #### Multitareas
 
-Pueden realizar multiples tareas "al mismo tiempo" dependiendo del sistema operativo y de la forma en que maneja la concurrencia
+Pueden realizar multiples tareas "al mismo tiempo" dependiendo del sistema operativo y de la forma en que maneja la [[Concurrencia y paralelismo|concurrencia]]
 
 ### Sistemas por numero de procesadores
 
@@ -131,8 +131,8 @@ OS que tienen mas de un procesador (o un procesador con varios nucleos). Los pue
 
 - **Monolíticos** 
 	- Todos los servicios del sistema:
-		- Planificador de procesos/hilos (scheduler)
-		- Gestión de memoria (memoria virtual, paginación)
+		- [[Gestion de procesos|Planificador de procesos/hilos]] (scheduler)
+		- [[Gestion de memoria|Gestión de memoria]] (memoria virtual, paginación)
 		- Sistema(s) de archivos
 		- Drivers de dispositivos (disco, red, USB, gráficos, etc.)
 		- Pila de red (TCP/IP)
@@ -163,3 +163,7 @@ OS que tienen mas de un procesador (o un procesador con varios nucleos). Los pue
 
 - [[Definicion y funciones del sistema operativo]] — lo que todos comparten por debajo de la clasificación: administrar recursos
 - [[Generaciones de sistemas operativos]] — de dónde viene cada tipo; el de servidor hereda del mainframe de segunda generación
+- [[Capas de un sistema operativo]] — el detalle de los servicios que el monolitico mete al kernel y el microkernel saca a espacio de usuario
+- [[Concurrencia y paralelismo]] — el mecanismo detras de los multitarea y del multiprocesamiento simetrico/asimetrico
+- [[Gestion de procesos]] — el planificador que aparece en la lista de servicios del kernel
+- [[Gestion de memoria]] — la memoria virtual y la paginacion de esa misma lista

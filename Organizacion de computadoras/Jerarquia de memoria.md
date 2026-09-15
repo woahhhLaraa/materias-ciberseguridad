@@ -55,7 +55,7 @@ Espacios de memoria asignados a distintos propósitos:
 - Para el **sistema operativo**
 - Espacio de **usuario** — el que todos los usuarios pueden modificar
 - Espacio de **pila** — variables y datos temporales de los programas
-- Espacios para **dispositivos de entrada y salida**
+- Espacios para **dispositivos de entrada y salida** — ver [[Arquitectura de entrada y salida]]
 
 ## Relacionadas
 
@@ -63,3 +63,5 @@ Espacios de memoria asignados a distintos propósitos:
 - [[Arreglos de discos RAID]] — el disco donde vive la memoria virtual, y cómo se le da redundancia
 - [[MOC - Estructura interna de un CPU]] — los componentes del procesador al que la caché sirve de intermediario
 - [[Generaciones de computadoras]] — la caché L1/L2/L3 aparece en la sexta generación
+- [[Gestion de memoria]] — como el sistema operativo administra esta jerarquia y la memoria virtual, ya en semestre 3
+- [[Tecnicas de entrada y salida]] — el mapeo en memoria de los dispositivos que aparece en el mapa de memoria

@@ -33,3 +33,12 @@ Su objetivo es proteger los datos de los titulares de las tarjetas y prevenir in
 | Gestión general de la información | [[ISO-IEC 27001]] |
 | Gestión de riesgo (sector privado, EE. UU.) | [[NIST CSF]] |
 | Pasos técnicos concretos | Controles CIS |
+
+## Relacionadas
+
+- [[Estandares de seguridad]] — el panorama general de marcos donde estos dos encajan
+- [[ISO-IEC 27001]] — la norma certificable frente a la que se define el contraste norma/control
+- [[Familia ISO 27000]] — la 27002 tambien lista controles, pero mas abiertos que los del CIS
+- [[NIST CSF]] — el otro marco estadounidense de gestion de riesgo, mas flexible que PCI DSS
+- [[Normas de seguridad fisica]] — los controles CIS v8 de inventario y etiquetado de hardware aterrizan ahi
+- [[Marco legal y etico de la ciberseguridad]] — indice de la materia

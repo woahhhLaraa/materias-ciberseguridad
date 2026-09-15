@@ -365,7 +365,7 @@ router rip
  end
 ```
 
-> ⭐ `version 2` y `no auto-summary` son **obligatorios** aqui. RIPv1 no transporta la mascara en sus actualizaciones y resumiria todo a la classful 192.168.1.0/24, con lo que el direccionamiento VLSM de la practica dejaria de funcionar. RIPv2 es *classless*: envia la mascara junto con cada red y por eso soporta subredes de longitud variable. Es exactamente la razon por la que la practica pide RIP **2** y no RIP.
+> ⭐ `version 2` y `no auto-summary` son **obligatorios** aqui. RIPv1 no transporta la mascara en sus actualizaciones y resumiria todo a la [[Direccionamiento IP con clases|classful]] 192.168.1.0/24, con lo que el direccionamiento VLSM de la practica dejaria de funcionar. RIPv2 es *classless*: envia la mascara junto con cada red y por eso soporta subredes de longitud variable. Es exactamente la razon por la que la practica pide RIP **2** y no RIP.
 >
 > `network` se escribe con la direccion de red, no con la de la interfaz. IOS la ajusta sola al limite classful al mostrarla, lo cual es normal.
 
@@ -409,3 +409,4 @@ En `show ip route` deben aparecer entradas marcadas con `R` (aprendidas por RIP)
 - [[Enmascaramiento y subnetting]] — el calculo de mascaras y rangos que sustenta las dos tablas
 - [[Practica 1 - Configuracion inicial del router]] — el bloque de nombre, contrasenas y banner que aqui se reutiliza
 - [[Conceptos fundamentales de enrutamiento]] — por que un router solo conoce sus redes conectadas hasta que se habilita un protocolo como RIP
+- [[Direccionamiento IP con clases]] — el resumen classful que `no auto-summary` desactiva para que VLSM sobreviva

@@ -1,4 +1,11 @@
+---
+materia: Paradigmas de la programacion
+semestre: 3
+tipo: captura
+tags: [captura, sin-procesar, programacion]
+---
 
+# Paradigmas de la programacion — notas en curso
 Paradigma procedural (caso de estudio de C)
 
 Identificadores, tipos de datos, variables y constantes

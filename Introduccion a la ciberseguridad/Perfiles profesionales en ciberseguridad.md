@@ -48,3 +48,11 @@ Se dividen en:
 - **Cuestiones éticas corporativas** — lo que la organización exige o permite
 
 Este hilo se desarrolla completo en [[Marco legal y etico de la ciberseguridad]].
+
+## Relacionadas
+
+- [[Certificaciones en ciberseguridad]] — las credenciales que explican el salto salarial hacia gestion
+- [[Planos de actuacion en ciberseguridad]] — los ambitos de trabajo en que se reparten estos roles
+- [[Tipos de atacantes]] — el pentester y el atacante usan las mismas tecnicas; los separa la autorizacion
+- [[Marco legal y etico de la ciberseguridad]] — desarrolla completo el hilo de las cuestiones eticas del ejercicio profesional
+- [[Introduccion a la ciberseguridad]] — indice de la materia

@@ -50,3 +50,12 @@ Muy relevante para cumplir con **GDPR** y con leyes nacionales de protección de
 - **27002** → controles (el cómo)
 - **27005** → riesgos
 - **27701** → privacidad
+
+## Relacionadas
+
+- [[ISO-IEC 27001]] — la norma central de la familia; las demas la complementan
+- [[Estandares de seguridad]] — donde encaja la familia ISO frente a los otros marcos
+- [[Controles CIS y PCI DSS]] — controles mucho mas prescriptivos que los de la 27002
+- [[Riesgo amenaza y vulnerabilidad]] — el vocabulario de riesgo que usa la 27005
+- [[LFPDPPP - Ley de proteccion de datos]] — la ley nacional que la 27701 ayuda a cumplir
+- [[Marco legal y etico de la ciberseguridad]] — indice de la materia

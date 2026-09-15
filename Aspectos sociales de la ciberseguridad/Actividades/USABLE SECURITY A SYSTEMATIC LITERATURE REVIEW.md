@@ -37,3 +37,10 @@ La seguridad usable consiste en diseñar medidas de seguridad que se adapten a l
 
 
 La utilizacion de una metodologia comun que permita establecer un enfoque estandarizado sobre estsos criterios
+
+## Relacionadas
+
+- [[Actividad - Usable Security 4.4.2]] — la version trabajada y entregada de esta captura
+- [[Comportamiento y conducta]] — el comportamiento del usuario que estas estrategias de diseno intentan influir
+- [[Interfaces Graficas]] — las interfaces claras que el articulo propone como mecanismo de seguridad usable
+- [[Aspectos sociales de la ciberseguridad]] — indice de la materia

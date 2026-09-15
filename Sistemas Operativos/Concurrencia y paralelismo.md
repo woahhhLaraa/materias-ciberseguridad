@@ -151,3 +151,5 @@ Estos modelos no son excluyentes: Go combina canales estilo CSP con goroutines q
 - [[Tipos de sistemas operativos]] — el tiempo compartido y el multiprocesamiento que hacen posible la concurrencia
 - [[Capas de un sistema operativo]] — donde vive el planificador dentro del kernel
 - [[Sistemas Operativos (materia)]] — indice de la materia
+- [[Teoria de grafos]] — el grafo de asignacion de recursos con que se detecta el deadlock es un grafo dirigido
+- [[Riesgo amenaza y vulnerabilidad]] — las race conditions TOCTOU como clase de vulnerabilidad nacida de la concurrencia
