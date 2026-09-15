@@ -6,6 +6,7 @@ tags: [meta, metodo, pkm, plan]
 # Plan de acción — Sistema de estudio (Obsidian + NotebookLM)
 
 > Semestre 3, cierra ~30 de noviembre de 2026
+> Documentos fuente del metodo: ![[Plan_completo_sistema_PKM.pdf]] · ![[Sistema de estudio semestral con TDAH - Obsidian y NotebookLM.pdf]]
 > Materias activas: Enrutamiento básico, Sistemas Operativos, Aspectos sociales de la ciberseguridad, Administración de redes
 
 ---

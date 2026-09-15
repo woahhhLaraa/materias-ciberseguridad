@@ -124,7 +124,13 @@ La imagen de IOS es el archivo `.bin` con nombre del tipo `isr4300-universalk9.1
 
 Guardar el `startup-config` en flash es una copia de respaldo: el router sigue arrancando desde NVRAM, pero si la NVRAM se corrompe se puede restaurar copiando el archivo de vuelta.
 
+## Entrega
+
+- ![[Practica 1 - Respuestas.pdf]] · ![[Practica 1 - Respuestas.docx]]
+
 ## Relacionadas
 
+- [[Practica 1 - Adaptacion a switch fisico]] — la misma secuencia de comandos llevada a un switch Cisco real por consola serial
+- [[Practica 2 - Router fisico Cisco 2514]] — la práctica equivalente sobre un router físico; el inventario de interfaces es lo que cambia
 - [[Conceptos fundamentales de enrutamiento]] — el router que aqui se configura es el dispositivo cuyo funcionamiento describe esa nota
 - [[Enrutamiento basico (materia)]] — indice de la materia a la que pertenece esta practica

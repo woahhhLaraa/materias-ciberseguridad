@@ -36,16 +36,25 @@ Materia de tercer semestre. Inicio: 19 de agosto de 2026.
 - [[Tarea 1 - Separar red y host]]
 - [[Tarea 2 - Clases IP y direcciones de red]]
 
+Enunciados y hojas de respuestas entregadas:
+
+- ![[Tareas 1 y 2 - Direccionamiento IP.pdf]] · ![[Tareas 1 y 2 - Direccionamiento IP.docx]]
+- ![[Tareas 1-3 y Ejercicio 2 - Direccionamiento IP.pdf]] — incluye además la Tarea 3 y el Ejercicio 2 ⚠️ la Tarea 3 no tiene nota propia todavía
+
 ## Prácticas
 
-- [[Practica 1 - Configuracion inicial del router]]
+- [[Practica 1 - Configuracion inicial del router]] — en Packet Tracer, y su [[Practica 1 - Adaptacion a switch fisico|adaptación a switch físico]]
+- [[Practica 2 - Router fisico Cisco 2514]]
 - [[Practica 3 - VLSM]]
 - [[Practica 4 - Rutas estaticas]] ⚠️ solo el enunciado, sin resolver
 - [[Practica 5 - Rutas estaticas flotantes]] ⚠️ solo el enunciado, sin resolver
+- [[Practica 6 - Recuperacion ROMMON]] ⚠️ solo el enunciado, sin resolver
 
 ## Material
 
-- ![[Presentacion 1.pdf]]
+- ![[Presentacion 0 - Introduccion.pptx]] — presentación introductoria del curso
+- ![[Presentacion 1.pptx]] — original editable de la presentación 1
+- ![[Presentacion 1.pdf]] ⚠️ 56 MB, fuera de git (ver `.gitignore`)
 
 ## Conexiones
 

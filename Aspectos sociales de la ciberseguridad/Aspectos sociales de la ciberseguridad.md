@@ -30,6 +30,15 @@ Materia de tercer semestre centrada en el **comportamiento humano** dentro de la
 
 - [[Actividad 1 - Buenas practicas de ciberseguridad]]
 - [[Actividad - Usable Security 4.4.2]] — analisis de la seccion 4.4.2 de la revision sistematica ⚠️ numero de actividad por confirmar
+- ![[Actividad 1 - Sector poblacion.docx]] — original editable de la Actividad 1
+- ![[Actividad 2 - Actor escuela secundaria.docx]] — original editable de la Actividad 2
+
+## Material
+
+- ![[Programa EE Aspectos Sociales de Ciberseguridad.pdf]] — programa de la experiencia educativa
+- ![[Sesgos cognitivos en ciberseguridad.pdf]] — lectura sobre sesgos aplicados al factor humano ⚠️ sin nota propia todavia
+- ![[Usable Security - Di Nocera et al 2023 (Information 14-641).pdf]] — el articulo fuente completo (Information 2023, 14(12), 641)
+- ![[Usable Security - Di Nocera et al 2023 (es-ES).pdf]] — el mismo articulo traducido al espanol
 
 ## Conexiones
 

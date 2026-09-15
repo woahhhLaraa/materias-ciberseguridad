@@ -27,7 +27,7 @@ Vault de los tres semestres de la carrera. Cada materia tiene una nota índice c
 - [[Sistemas Operativos (materia)]]
 - [[Enrutamiento basico (materia)]]
 - [[Aspectos sociales de la ciberseguridad]]
-- [[Paradigmas de la programacion/Notas en curso|Paradigmas de la programacion]] ⚠️ sin nota indice, solo captura
+- [[Paradigmas de la programacion]] ⚠️ solo índice y captura, sin notas por concepto todavía
 
 ## MOCS
 

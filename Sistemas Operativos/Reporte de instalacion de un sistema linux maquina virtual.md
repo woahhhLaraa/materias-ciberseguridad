@@ -9,6 +9,7 @@ tags: [sistemas-operativos, instalacion, linux, debian, kvm, maquina-virtual]
 
 > Practica 1.1 — instalacion de un sistema operativo en maquina virtual (Debian 13 sobre KVM).
 > ![[1.1 Instalacion de un sistema operativo - instrucciones.pdf]] — enunciado de la practica
+> ![[1.1 Reporte de instalacion de SO - plantilla.docx]] — plantilla del reporte que entrega el profesor
 > ![[Reporte de instalacion de un sistema linux maquina virtual.pdf]] — version entregada
 
 1. Al estar en un sistema linux debian bare metal, ya tengo cargado un hipervisor KVM por defecto
