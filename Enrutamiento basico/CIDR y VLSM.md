@@ -7,9 +7,9 @@ tags:
   - ip
   - cidr
   - vlsm
-sr-due: 2026-09-15
+sr-due: 2026-09-18
 sr-interval: 2
-sr-ease: 246
+sr-ease: 226
 ---
 #review 
 
