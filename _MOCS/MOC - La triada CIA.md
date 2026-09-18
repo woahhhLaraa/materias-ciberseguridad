@@ -9,9 +9,9 @@ tags:
 semestres:
   - 1
   - 2
-sr-due: 2026-09-16
-sr-interval: 20
-sr-ease: 250
+sr-due: 2026-11-25
+sr-interval: 70
+sr-ease: 270
 ---
 #review
 # MOC — La tríada CIA

@@ -7,8 +7,8 @@ tags:
   - entrada-salida
   - hardware
   - drivers
-sr-due: 2026-09-16
-sr-interval: 3
+sr-due: 2026-09-25
+sr-interval: 9
 sr-ease: 254
 ---
 #review
