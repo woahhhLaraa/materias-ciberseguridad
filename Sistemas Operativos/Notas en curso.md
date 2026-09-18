@@ -198,6 +198,49 @@ Los permisos pueden ser aplicados a
 - Otros, cualquier otra persona que tenga cuenta en el sistema 
 
 
+
+Clase 17 de septiembre 2026
+
+Permisos en linux
+
+para identiricar los atriutos de un archivo o directorio, detminar cuales son los permisos y propietarios ls -l
+![[Pasted image 20260917092250.png]]
+
+Referencias binarias para configurar permisos en linux
+
+Para deonmiar y configurar permisos 
+el primer numero permisos de propietario
+segundo permisos de gurpo
+y el ultimo representa permiso de otros usuarios
+
+los numeros representan los caracteres rwx asigandno a cada letra un valor
+r=4
+w=2
+x=1
+sumamos los numeros y segun el resultado es el permiso que tiene alguien sobre ese archivo
+
+comando de permiso _Chmod_ (agregar o eliminar un permiso a algo)
+
+chmod [permisos] nombreArchivo
+
+se puede especificar los permisos a traves de representacion binaria, o utiliznaod la letra inicial a quien va dirigido el permiso 
+usuario = u(ser)
+grupo = g(roup)
+otros = o(thers)
+todos = a(ll)
+seguido del signo (+) o (-)
+seguido del permiso correspondinete r/w/x
+seguido del nombre de archivo
+
+
+Gestion de permisos sobre un grupo 
+asignar permisos a nivel de grupo es distinto:
+1.- Primero se requiere crear un grupo (entidad que envuelve a varios usuarios)
+	sudo groupadd licic
+2.- Vincular un directorio o archivo al grupo: se le asigna la carpeta o archivo al gurpo correspondiente (cambio de propietario)
+	sudo chown : licic /ruta/elemento
+3.- Asignar los permisos al directorio
+
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
 >
 > Al estudiar para el parcial: selecciona cada bloque que sea un concepto y usa `Ctrl+P` → **Extraer selección actual**. Obsidian crea la nota y deja el enlace aquí. Cuando este archivo quede solo con enlaces, el parcial está repasado.
