@@ -22,10 +22,16 @@ Temas ya capturados, pendientes de separar:
 - Identificadores, tipos de datos, variables y constantes en C
 - Modificadores de tipo (`short`, `long`, `unsigned`)
 - Alcance de las variables
+- Apuntadores, arreglos, cadenas y arreglos de estructuras (solo en código, sin captura en `Notas en curso`)
+
+## Tareas
+
+- [[Ensayo - Los apuntadores]] — ensayo entregado el 17 de septiembre de 2026
 
 ## Código
 
 - `Codigo/tipos-datos_identificadores_variables_alcance.c` — programa de clase sobre tipos, identificadores y alcance
+- `Codigo/apuntadores_arreglos_cadenas.c` — apuntadores (`&`, `*`, paso por referencia), arreglos, cadenas, estructuras y arreglos de estructuras con apuntadores
 - `Codigo/promedio.py` — acumulador y recorrido con `zip`, en Python
 
 ## Material

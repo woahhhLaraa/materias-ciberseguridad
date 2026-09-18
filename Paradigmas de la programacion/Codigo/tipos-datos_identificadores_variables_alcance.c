@@ -1,5 +1,6 @@
 #include <stdio.h> // Esta directiva le dice al compilador que incluya las declaraciones de funciones para la entrada y salida estándar (como printf() para imprimir en pantalla)
 
+
 //-----------------------------Reglas de los identificadores en C---------------------------------------------------//
 // 1. Deben comenzar con una letra (a-z, A-Z) o un guion bajo (_).
 // 2. Pueden contener letras, números (0-9) y guiones bajos
@@ -23,7 +24,7 @@
 // 5. void: representa la ausencia de valor (usado en funciones que no retornan nada).
 // 6. _Bool: para valores booleanos (0 o 1)
 
-//Ejemplo de uso de tipos de datos en C
+// Ejemplo de uso de tipos de datos en C
 // int main() {
 //     int edad = 25;               // Variable de tipo entero
 //     float pi = 3.141616;        // Variable de tipo flotante
@@ -51,19 +52,19 @@
 // 5. long double: para números de punto flotante de mayor precisión
 // 6  signed: para enteros con signo (valores positivos y negativos, es el predeterminado), ASCII es un conjunto de caracteres que representa texto en computadoras y otros dispositivos. Cada carácter tiene un valor numérico asociado (código ASCII) que va de 0 a 127.
 
-// // Ejemplo de uso de modificadores de tipo
+// Ejemplo de uso de modificadores de tipo
 // int main() {
-    // short int numeroCorto = 32767;          // Rango: -32768 a 32.767
-    // long int numeroLargo = 2147483647;      // Rango: -2.147.483.648 a 2.147.483.647
-    // unsigned int numeroSinSigno = 4294967295; // Rango: 0 a 4.294.967.295
-    // long long int numeroMuyLargo = 9223372036854775807;  // Rango: -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
+//     short int numeroCorto = 32767;          // Rango: -32768 a 32.767
+//     long int numeroLargo = 2147483647;      // Rango: -2.147.483.648 a 2.147.483.647
+//     unsigned int numeroSinSigno = 4294967295; // Rango: 0 a 4.294.967.295
+//     long long int numeroMuyLargo = 9223372036854775807;  // Rango: -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
 
-    // printf("Numero corto: %d\n", numeroCorto);
-    // printf("Numero largo: %ld\n", numeroLargo);
-    // printf("Numero sin signo: %u\n", numeroSinSigno);
-    // printf("Numero muy largo: %lld\n", numeroMuyLargo);
+//     printf("Numero corto: %d\n", numeroCorto);
+//     printf("Numero largo: %ld\n", numeroLargo);
+//     printf("Numero sin signo: %u\n", numeroSinSigno);
+//     printf("Numero muy largo: %lld\n", numeroMuyLargo);
 
-    // return 0;
+//     return 0;
 // }
 
 // ---------------------------------Rangos de los tipos de datos en C-----------------------------------------------//
@@ -71,19 +72,19 @@
 // Sirven para saber los límites de los valores que se pueden almacenar en cada tipo de dato y para evitar errores de desbordamiento o pérdida de datos.
 // Ejemplo de rangos de tipos de datos en C
 // int main() {
-    // // MODIFICADOR: unsigned char
-    // // RANGO: 0 a 255
-    // unsigned char edadPersona = 25;
+//     // MODIFICADOR: unsigned char
+//     // RANGO: 0 a 255
+//     unsigned char edadPersona = 25;
 
-    // printf("La edad guardada correctamente es: %d años.\n", edadPersona);
+//     printf("La edad guardada correctamente es: %d años.\n", edadPersona);
 
-    // // ¿Qué pasa si intentamos romper el rango metiendo un número negativo?
-    // // Como es 'unsigned' (sin signo), la máquina se confunde y da la vuelta al rango.
-    // unsigned char edadInvalida = -1;
+//     // ¿Qué pasa si intentamos romper el rango metiendo un número negativo?
+//     // Como es 'unsigned' (sin signo), la máquina se confunde y da la vuelta al rango.
+//     unsigned char edadInvalida = -1;
 
-    // printf("¡Cuidado! Intentamos guardar -1 y la máquina leyó: %d\n", edadInvalida);
+//     printf("¡Cuidado! Intentamos guardar -1 y la máquina leyó: %d\n", edadInvalida);
 
-    // return 0;
+//     return 0;
 // }
 
 // Nota: Los rangos pueden variar según la implementación del compilador y la arquitectura del sistema.
@@ -177,16 +178,28 @@
 // Son variables locales a una función, pero mantienen su valor entre llamadas a la función.
 // Se declaran con la palabra clave 'static'.
 // Su alcance es local a la función donde se declaran, pero su duración es toda la ejecución del programa.
+// En este sentido, pueden considerarse como una mezcla entre variables locales y globales.
+// Pero nunca podran ser accedidas mediante extern desde otro archivo, ya que su alcance es local o dentro del script donde se declaran, aunque su duración sea global o de todo el programa.
 // Ejemplo de variable estática
+
 // void funcionEjemplo() {
 //     static int contadorLlamadas = 0; // Mantiene su valor entre llamadas
 //     contadorLlamadas++;
 //     printf("La función ha sido llamada %d veces\n", contadorLlamadas);
 // }
+
+// void funcionEjemplo2() {
+//     int contadorLlamadas = 0; // Mantiene su valor entre llamadas
+//     contadorLlamadas++;
+//     printf("La función 2 ha sido llamada %d veces\n", contadorLlamadas);
+// }
 // int main() {
-//     funcionEjemplo(); // Primera llamada
+//     funcionEjemplo(); // Primera llamada|
 //     funcionEjemplo(); // Segunda llamada
 //     funcionEjemplo(); // Tercera llamada
+//     funcionEjemplo2(); // Llamada a la segunda función
+//     funcionEjemplo2(); // Segunda llamada a la segunda función
+//     funcionEjemplo2(); // Tercera llamada a la segunda función
 //     return 0;
 // }
 
@@ -235,18 +248,18 @@
 
 // 2. De asignación: =, +=, -=, *=, /=
 // int main() {
-//     int suma = 10;
+//     int numero = 10;
 
-//     suma += 5; // Es lo mismo que suma = suma + 5; Ahora suma vale 15
-//     printf("El valor de suma es: %d\n", suma);
-//     suma -= 2; // Es lo mismo que suma = suma - 2; Ahora saldo vale 13
-//     printf("El valor de suma es: %d\n", suma);
-//     suma *= 3; // Es lo mismo que suma = suma * 3; Ahora saldo vale 39
-//     printf("El valor de suma es: %d\n", suma);
-//     suma /= 4; // Es lo mismo que suma = suma / 4; Ahora saldo vale 9
-//     printf("El valor de suma es: %d\n", suma);
-//     suma %= 4; // Es lo mismo que suma = suma % 4; Ahora saldo vale 1
-//     printf("El valor de suma es: %d\n", suma);
+//     numero += 5; // Es lo mismo que numero = numero + 5; Ahora numero vale 15
+//     printf("El valor de numero es: %d\n", numero);
+//     numero -= 2; // Es lo mismo que numero = numero - 2; Ahora numero vale 13
+//     printf("El valor de numero es: %d\n", numero);
+//     numero *= 3; // Es lo mismo que numero = numero * 3; Ahora numero vale 39
+//     printf("El valor de numero es: %d\n", numero);
+//     numero /= 4; // Es lo mismo que numero = numero / 4; Ahora numero vale 9
+//     printf("El valor de numero es: %d\n", numero);
+//     numero %= 4; // Es lo mismo que numero = numero % 4; Ahora numero vale 1
+//     printf("El valor de numero es: %d\n", numero);
 
 //     return 0;
 // }
@@ -292,20 +305,21 @@
 // int main() {
 //     int contador = 5;
 //     printf("Valor inicial: %d\n", contador);
-//     contador++; // Incrementa en 1
+//     contador++; // Incrementa en 1, es lo mismo que contador = contador + 1;
 //     printf("Después de incrementar: %d\n", contador);
-//     contador--; // Decrementa en 1
+//     contador--; // Decrementa en 1, es lo mismo que contador = contador - 1;
 //     printf("Después de decrementar: %d\n", contador);
 //     return 0;
 // }
 
 //-------------------------------Condicionales en C-------------------------------------------------//
 
-// int main() {
+
 //     // if, else if, else
 //     // if (condicion) {hacer esto si la condicion es verdadera}
 //     // else if (otra condicion) {hacer esto si la otra condicion es verdadera}
 //     // else {hacer esto si ninguna condicion es verdadera}
+// int main() {
 //     int edad = 20;
 
 //     if (edad < 18) {
@@ -315,12 +329,15 @@
 //     } else {
 //         printf("Eres un adulto mayor.\n");
 //     }
+// }
 
+// int main() {
 //     //switch
 //     // switch (variable) {
 //     // case valor1: hacer esto; break;
 //     // case valor2: hacer esto; break;
 //     // ...}
+//     // Solo se puede usar con variables de tipo entero, char o enumeraciones. No se puede usar con float o double.
 //     printf ("Bucle switch\n");
 //     int mes = 4;
 //     switch (mes)
@@ -368,48 +385,55 @@
 
 //---------------------------------Bucles en C-----------------------------------------------//
 
-// int main() {
-//     // Bucle for se ejecuta un numero determinado de veces
-//     // Si la condicion es falsa desde el inicio, no se ejecuta ninguna vez
-//     // for (inicializacion; condicion; incremento/decremento)
 
+    // Bucle for se ejecuta un numero determinado de veces
+    // Si la condicion es falsa desde el inicio, no se ejecuta ninguna vez
+    // En C tenemos los siguientes bucles: for, while y do-while.
+    // For se utiliza cuando sabemos cuántas veces queremos que se ejecute el bucle,
+    // mientras que while y do-while se utilizan cuando no sabemos cuántas veces se ejecutará el bucle,
+    // pero sí sabemos la condición que debe cumplirse para que se ejecute.
+    // La diferencia entre while y do-while es que do-while se ejecuta al menos una vez,
+    // mientras que while puede no ejecutarse nunca si la condición es falsa desde el inicio.
+
+
+    // for (inicializacion; condicion; incremento/decremento)
+// int main() {
 //     printf("Bucle for:\n");
+
 //     for (int i = 0; i < 5; i++) {
 //         printf("i = %d\n", i);
 //     }
 
-//     // Bucle while, se ejecuta mientras la condicion sea verdadera
-//     // Si la condicion es falsa desde el inicio, no se ejecuta ninguna vez
-//     // while (condicion) {mientras la condicion sea verdadera}
+//     return 0;
+// }
+    // Bucle while, se ejecuta mientras la condicion sea verdadera
+    // Si la condicion es falsa desde el inicio, no se ejecuta ninguna vez
+    // while (condicion) {mientras la condicion sea verdadera}
+    // la diferencia con for es que no se inicializa, incrementa o decrementa, sino que se utiliza una variable externa para controlar la ejecución.
+// int main() {
 //     printf("\nBucle while:\n");
-//     int j = 0;
+//     int j = 4;
 //     while (j < 5) {
 //         printf("j = %d\n", j);
 //         j++;
 //     }
-
-//     // Bucle do-while se ejecuta al menos una vez, y luego mientras la condicion sea verdadera
-//     // Si la condicion es falsa desde el inicio, se ejecuta una vez
-//     // do {hacer esto} while (condicion) {mientras la condicion sea verdadera}
-//     printf("\nBucle do-while:\n");
-//     int numeroSecreto = 7;
-//     int suposicion;
-
-//     // El bucle 'do-while' comienza aquí.
-//     do {
-//         // Se le pide al usuario que ingrese un número.
-//         printf("Adivina el numero (entre 1 y 10): ");
-//         scanf("%d", &suposicion);
-
-//         // Comprobamos si la suposición no es correcta para mostrar un mensaje.
-//         if (suposicion != numeroSecreto) {
-//             printf("¡Incorrecto! Inténtalo de nuevo.\n");
-//         }
-
-//     } while (suposicion != numeroSecreto); // La condición se evalúa al final.
-
-//     // Este mensaje solo se muestra cuando el usuario adivina correctamente.
-//     printf("¡Felicidades! Adivinaste el número secreto: %d\n", numeroSecreto);
-
 //     return 0;
 // }
+
+    // Bucle do-while se ejecuta al menos una vez, y luego mientras la condicion sea verdadera
+    // Si la condicion es falsa desde el inicio, se ejecuta una vez
+    // do {hacer esto} while (condicion) {mientras la condicion sea verdadera}
+
+
+// int main() {
+//     printf("\nBucle do-while:\n");
+//     int k = 6;
+//     do {
+//         printf("k = %d\n", k);
+//         k++;
+//     } while (k < 5);
+//     return 0;
+// }
+
+
+

@@ -48,13 +48,14 @@ Enunciados y hojas de respuestas entregadas:
 - [[Practica 3 - VLSM]]
 - [[Practica 4 - Rutas estaticas]] ⚠️ solo el enunciado, sin resolver
 - [[Practica 5 - Rutas estaticas flotantes]] ⚠️ solo el enunciado, sin resolver
-- [[Practica 6 - Recuperacion ROMMON]] ⚠️ solo el enunciado, sin resolver
+- [[Practica 6 - Recuperacion ROMMON]] — resuelta en router físico Cisco 2901, con evidencia y reporte entregado
 
 ## Material
 
 - ![[Presentacion 0 - Introduccion.pptx]] — presentación introductoria del curso
 - ![[Presentacion 1.pptx]] — original editable de la presentación 1
 - ![[Presentacion 1.pdf]] ⚠️ 56 MB, fuera de git (ver `.gitignore`)
+- ![[Presentacion 2 - Distancia administrativa y FHRP.pptx]] — distancia administrativa, rutas estáticas flotantes y protocolos de redundancia de primer salto (HSRP, VRRP, GLBP)
 
 ## Conexiones
 

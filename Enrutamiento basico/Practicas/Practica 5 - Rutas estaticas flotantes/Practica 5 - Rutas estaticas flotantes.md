@@ -10,6 +10,7 @@ tags: [packet-tracer, cisco, rutas-estaticas, rutas-flotantes, distancia-adminis
 
 > ⚠️ Nota pendiente de desarrollar: solo esta cargado el enunciado, todavia sin resolver ni capturas.
 > Enunciado original en esta misma carpeta: ![[Practica 5 - Rutas estaticas flotantes.docx]]
+> Teoría de respaldo: la ![[Presentacion 2 - Distancia administrativa y FHRP.pptx]] del profesor (distancia administrativa y ruta estática flotante) y la captura del 17 de septiembre en [[Enrutamiento basico/Notas en curso|Notas en curso]].
 
 Practica de laboratorio sobre **rutas estaticas flotantes**: rutas de respaldo que solo entran en la tabla de ruteo cuando la ruta principal cae. El mecanismo es la **distancia administrativa**: se le asigna a la ruta de respaldo un valor mas alto que el de la principal, y el router prefiere siempre la de distancia menor.
 
