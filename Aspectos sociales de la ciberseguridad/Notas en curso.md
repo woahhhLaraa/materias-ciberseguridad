@@ -64,6 +64,78 @@ Un producto final (triptico, infografia, video, tiktok, juego, presentacion)
 
 Los mejores productos son presentados en escuela tecnica
 
+18 de septiembre 2026
+
+Red corporativa moderna
+Una variedad de usuarios entidades que requieren acceso seguro desde distintas ubicaciones
+
+Usuarios humanos
+- Empleados internos
+- Clientes externos
+- Contratistas y terceros
+Usuarios no humanos
+- Agentes de ia
+- Dispositivos IoT
+- Endpoints corporativos
+- Cargas de trabajo automatizadas
+
+Gestion de identidad 
+Disciplina de la ciberseguridad que se ocupa del aprovisionamiento y proteccion de identidades digitales y permisos de acceso a los usuarios de un sistema de TI
+Pretende que
+- Tengas acceso seguro
+- Bloqueo de amenazas
+	- Tanto externos como internos
+- Herramientas IAM
+	- Permiten a los organizaciones crear y eliminar de fomra segura identidades digitales, establcer y aplicar politicas de control de acceso
+
+Que es la identidad digital?
+- Combinacion de atributos y credenciales que representan a una perosna o entidad
+- Conjunto de informacion vinculado a un usuario maquina u otra entidad especifica en un ecosistema de TI
+	- Nombres
+	- Direcciones
+	- Datos biometricos
+	- Historial de navegacion
+	- perfiles en linea
+
+Tipos de identidades
+- Humana
+	- La huella digital que deja un ser humano al usar internet
+- Maquinas
+	- Bots, ias, identificadores unicos, tokens
+- Identidades federadas
+	-  Permiten a las personas usar sus identidades en multiples sistemas y servicios
+		- Logearse con google, o facebook en sitios que ofrecen un servicio distinto al suyo
+
+Metodos de verificacion
+- Credenciales
+- Biometria
+- Certificados
+- Para prevenir robos de identidad y fraude
+
+PILARES DE LA IAM
+
+- Administracion
+	- El proceso de crear mantener y eliminar las identidades de los usuarios
+- Autenticacion
+	- El usuario se identifica enviando crenciales, y el sistema IAM compara las credenciales con la base de datos
+- Autorizacion
+	- El sistema revisa que clase de permisos tiene el usuario anteriormente autenticado
+	- Control de acceso basado en roles
+- Auditoria
+	- Garantiza que el sistema funciona correctamente
+	- Monitoreo continuo de los usuarios
+
+
+Ciclo de vida de la identidad 
+- Joiner
+	- Creacion de la identidad, aprovisionamiento de acceso y asignacion de roles para los nuevos empleados pasantes o contratistas
+- Mover
+	- Ajuste dpermisos cuando se cambian de puestos o equipos o responsabilidades
+- Leaver
+	- Revocacion de acceso, recuperacion de activos y generacion de registro de auditoria al abandonar la organizacion
+
+
+
 
 
 
