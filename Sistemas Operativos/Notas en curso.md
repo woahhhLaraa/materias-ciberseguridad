@@ -198,6 +198,13 @@ asignar permisos a nivel de grupo es distinto:
 	sudo chown : licic /ruta/elemento
 3.- Asignar los permisos al directorio
 
+
+
+existen 3 formas de logearse en el sistema operativo
+- De forma grafica
+- A traves de CLI
+- 
+
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
 >
 > Al estudiar para el parcial: selecciona cada bloque que sea un concepto y usa `Ctrl+P` → **Extraer selección actual**. Obsidian crea la nota y deja el enlace aquí. Cuando este archivo quede solo con enlaces, el parcial está repasado.
