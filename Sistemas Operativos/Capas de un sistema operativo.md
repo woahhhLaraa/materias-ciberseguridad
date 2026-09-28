@@ -74,11 +74,12 @@ Para que el usuario se pueda mover por el almacenamiento secundario de forma flu
 - Administrar directorios
 - Búsqueda de archivos
 
-| Sistema de archivos | Desde | Journaling | Tamaño máximo |
-|---|---|---|---|
-| **NTFS** (*New Technology File System*) | Windows XP | Sí | 16 TB por archivo o disco (teórico hasta 8 PB bien configurado) |
-| **FAT32** | Años 90, legacy | No | 4 GB por archivo; hasta 32 GB de volumen (teórico 2 TB) |
-| **ext4** | — (el más usado en distribuciones Linux) | Sí, más complejo que NTFS | 16 TB por archivo (teórico de miles de TB) |
+| Sistema de archivos                     | Desde                                    | Journaling                | Tamaño máximo                                                   |
+| --------------------------------------- | ---------------------------------------- | ------------------------- | --------------------------------------------------------------- |
+| **NTFS** (*New Technology File System*) | Windows XP                               | Sí                        | 16 TB por archivo o disco (teórico hasta 8 PB bien configurado) |
+| **FAT32**                               | Años 90, legacy                          | No                        | 4 GB por archivo; hasta 32 GB de volumen (teórico 2 TB)         |
+| **ext4**                                | — (el más usado en distribuciones Linux) | Sí, más complejo que NTFS | 16 TB por archivo (teórico de miles de TB)                      |
+|                                         |                                          |                           |                                                                 |
 
 ## Subsistema de gestión de redes y comunicaciones
 
