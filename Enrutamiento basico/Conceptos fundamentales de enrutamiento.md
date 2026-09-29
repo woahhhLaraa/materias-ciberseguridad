@@ -6,8 +6,8 @@ tags:
   - redes
   - enrutamiento
   - routers
-sr-due: 2026-09-23
-sr-interval: 5
+sr-due: 2026-10-15
+sr-interval: 17
 sr-ease: 226
 ---
 #review 
@@ -32,13 +32,31 @@ Esa es la idea que hace escalable a internet: ningún router tiene el mapa enter
 El usuario le dice exactamente al router qué ruta utilizar.
 
 ### Dinámico
+
 El router define la ruta según lo que considere adecuado, siguiendo algún protocolo:
 
-- **RIP**
-- **IGRP** / **EIGRP**
-- **OSPF**
-- **IS-IS**
-- **BGP**
+Existen dos familias de protocolos de enrutamiento dinamico
+
+Interiores:
+	Cuando el trafico se va a dar dentro un sistema autonomo (ejemplo: Dentro de una empresa) donde no va hacia afuera.
+
+- **RIP** - Metrica : vector distancia
+- **OSPF** Metrica: estado enlace
+- **IS-IS** Metrica : estado  de enlace
+- EiGRP metrica: vector distancia
+
+Exteriores:
+	Cuando el trafico se da entre sistemas autonomos (ejemplo: Mandar un paquete dentro de la empresa, hacia el internet, u otra red autonoma)
+- **BGP** : Vector por ruta (una clase de hibrido entre estado enlace y vector)
+
+Vector distancia: Mide el numero de saltos entre un nodo y otro, entre menos saltos, mas preferencia
+Estado de enlace: la metrica de los nodos es la velocidad que manejan entre enlace y enlace, si un enlace es mas rapido aunque tenga mas nodos, lo agarra.
+
+## Enrutado vs enrutamiento
+El protocolo enrutado (podria ser un paquete, que fue hecho siguiento el protcolo ipv4 o ipv6) es lo que viaja a traves de la red.
+El enrutamiento es lo que decide como va a llegar ahi.
+
+
 
 ## Protocolos de enrutamiento y las clases
 

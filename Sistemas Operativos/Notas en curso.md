@@ -11,15 +11,6 @@ tags: [captura, sin-procesar]
 
 10 septiembre 2026
 
-Servicios de red (funciones de un usuario) (investigar)
-SERVIDOR WEB 80
-SSH 22
-FPT 20/21
-SMPTP POP3 IMAP
-DHCP
-DNS
-
-
 Gestion de usuarios o administracion de usuarios
 Un usuario
 	Entidad que puede ser una persona preoceso o dispositvo, que interactua con la computadora y pose una identidad digital especifica. La identidad determina sus permisos, privilegios y niveles de acceso

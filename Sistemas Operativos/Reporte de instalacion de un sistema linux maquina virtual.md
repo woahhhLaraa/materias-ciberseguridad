@@ -58,5 +58,5 @@ tags: [sistemas-operativos, instalacion, linux, debian, kvm, maquina-virtual]
 
 - [[Definicion y funciones del sistema operativo]] — lo que se instala aqui, definido en clase
 - [[Tipos de sistemas operativos]] — el hipervisor KVM y la virtualizacion que hace posible esta practica
-- [[Interfaces Graficas]] — la instalacion se hizo sin entorno grafico, solo utilidades y ssh
+- [[Interfaces graficas]] — la instalacion se hizo sin entorno grafico, solo utilidades y ssh
 - [[Sistemas Operativos (materia)]] — indice de la materia

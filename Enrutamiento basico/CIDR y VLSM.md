@@ -7,8 +7,8 @@ tags:
   - ip
   - cidr
   - vlsm
-sr-due: 2026-09-24
-sr-interval: 6
+sr-due: 2026-10-18
+sr-interval: 20
 sr-ease: 246
 ---
 #review 
@@ -40,6 +40,13 @@ Con CIDR, la clase ya no está implícita en la dirección. Por eso los protocol
 
 
 ![[Pasted image 20260826095441.png]]
+
+
+En una sola frase: 
+VLSM permite dividir redes en subredes y secciones mas pequenas
+CIDR sumariza y agrega redes contiguas con otro sufijo
+
+Es la misma operacion, pero al reves visto desde los bits, aunque se ocupan en contextos distintos. Aunque no siempre es simetrico 
 
 
 ## En resumen

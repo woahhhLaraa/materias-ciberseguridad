@@ -7,8 +7,8 @@ tags:
   - memoria
   - paginacion
   - mmu
-sr-due: 2026-09-23
-sr-interval: 14
+sr-due: 2026-11-09
+sr-interval: 42
 sr-ease: 256
 ---
 #review 

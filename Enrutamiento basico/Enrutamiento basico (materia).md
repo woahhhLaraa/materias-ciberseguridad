@@ -19,6 +19,10 @@ Materia de tercer semestre. Inicio: 19 de agosto de 2026.
 | Exámenes | 50% (se exenta con 6) |
 | Prácticas | 50% |
 
+## Exámenes
+
+- [[Temario primer parcial]] — jueves 8 de octubre de 2026; abarca hasta la Práctica 5
+
 ## Captura
 
 - [[Enrutamiento basico/Notas en curso]] — bandeja de entrada de la materia
