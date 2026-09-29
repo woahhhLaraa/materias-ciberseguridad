@@ -36,5 +36,11 @@ a dos routers con su ip les damos aparte una ip virtual y esos dos routers se po
 reenvio de paquetes:
 proceso de decision despues de que el router decidio cual es la mejor ruta, debe determinar como encapsular el parquete, reenviarlo hacia fuera la interfaz de salida correcta
 
+24 septiembre
+
+
+
+
+
 > Índice de la materia: [[Enrutamiento basico (materia)]]
 

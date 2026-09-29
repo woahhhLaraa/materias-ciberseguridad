@@ -194,9 +194,158 @@ asignar permisos a nivel de grupo es distinto:
 existen 3 formas de logearse en el sistema operativo
 - De forma grafica
 - A traves de CLI
-- 
 
-> **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
+
+
+
+28 de septiembre 2026
+Sistema de archivos (tema pesado)
+Que es?
+Uno de los 8 subsistemas (no confundirse con el sistmea de gestion de almacenamiento secundario) , se encarga de la gestion logica del almacenamiento secundario, es el conjunto de estructuras, metodos, y mecanismos que utiliza un sistema operativo para organizar, almacenar, gestionar, leer, modificar y recuperar informacion de manera logica y estructurada en un dispositivo de almacenamienot como un disco duro, un ssd o una memoria USB, permite organizar los datos en archivos carpetas y directorios, facilianto su localizacion y acceso por partede los usuarios
+Sirve para:
+- Organizar archivos
+- Nos permite copiar, pegar, eliminar archivos
+- Visualizacion de las rutas de los archivos
+- Controlar accesos a los archivos
+- Gestionar el espacio de almacenamiento: asignando y liberando espacio segun las necesiades de los archivos
+- Permitir el uso compartido de archivos entre usuarios y procesos autorizados
+
+Como funcionan?
+Manteniendo informacion sobre aspectos como
+- Donde se encuentra almacenado un arcihvo
+- cuanto espacio ocupa en su dipositivo de almacenamiento
+- Tamaño, tipo y otros datos importantes
+- Si esta siendo utilizado (tabla de archivos)
+- Fecha de creacion y modificacion
+- Permisos de acceso
+- Identificadores necesarios para acceder al archivo
+
+
+Existen diferentes sistemas de archivos
+- EXTFAT32
+	- Considerado el sucesor de fat32
+	- Elimina la restriccion de 4gb de limite de archivo
+	- estrucutra simple y no desgasta las memorias flash
+	- Creado en el 2006 para windows embedded
+	- La volvieron libre y linux ahora lo sporta de manera nativa
+	- Los usos siguen siendo los mismos que su predecesor pero con mas almacenamiento y un flujo de datos mas grande
+	- Teoricamente alcanza 16 exabytes para tamaño de archivo
+	- Tamaño maximo de particion 128 petabytes
+	- Compatibilidad masiva
+	- sin limite de archivos
+	- Falta de journaling
+	- Carece de funciones avanzadas como los permisos de archivos locales de NTFS Y EXT4, el cifrado nativo del sistema de archivos o la compresion automatica
+		- Region de arranque
+		- Region de respaldo
+		- REgion de clusteres
+		- Tabla de asignacion de archivos
+		- Mapa de bits de espacio libre
+		- Directorio raiz y datos
+- FAT32: Alta compatibilidad
+	- De microsoft nacio en el 96 junto a windows 96, evolucion directa de fat16 y fat12
+	- Todavia usado por memorias usb, tarjetas sd, discos externos portatiles, disposiitvos multimedia en automoviles o televisores
+	- El tamaño de los archivos no soportan archivos mayores a 4 gb
+	- Tamaño maximo de particion: 8tb en practica pero en la practica se limita a 32 gb
+	- No tiene journaling, si sufre un apagon es dificil recuperar archivos
+	- Casi cualquier sistema operativo lo soporta (leer y escribir)
+	- Ligero y con bajo consumo de recursos de procesamiento y memoria
+	- Carece de permisos de seguridad avanzados o cifrado nativo.
+		- Estructura
+			- Sector de arranque
+				- primer sector de la particion, con informacion basica como punteros a otras secciones, informacion del volumen y el codigo de inicio
+			- Region FAT
+				- Guarda dos copias de la tabla de asignacion de archivos
+			- Directorio raiz
+				- Estrucutra fija que lista los archivos y subcaperetas principales
+			- Region de datos
+				- Donde se graban el contenido de los archivos y subdirectorios dividios en clústeres, ocupa casi toda la particion.
+- NTFS: solo windows
+	- Por microsoft desde el 93 con windows XP
+	- El estandar de windows SO
+	- Discos duros y de estado solido, principales para sistemas operativos windows.
+	- Tamaño maximo de archivo 16 tb teoricos
+	- tamaño maximo de particion 256 tb
+	- SI tiene journaling
+	- Usa MFT, para contener informaciondetallada de los archivos
+	- Alta seguridad mediante permisos de archivos locales y remotos
+	- soporte nativo para cifrado de datos
+	- resistente a fallas gracias al journaling
+	- arbol binario de alto rendimiento para localizar a los archivos
+	- compatibilidad limitada con mac y linux
+	- consume mayor espacio en metadatos, no es recomendado para unidades de almacenamiento pequeñas
+		- Sector de arranque
+		- MFT (tabla maestra de archivos)
+			- El nucleo de NTFS, base de datos donde cada archivo o directorio tiene al menos un registro que detalla sus atributos, es una lista de todos los contenidos de esta volumen de NTFS
+		- Archivos de sistema
+			- Contiene archivos ocultos que gestionan el espacio libre, la seguridad y el registr de transacciones
+- EXT4: Para linux
+- APFS: Apple, macOS
+
+Estructura en capas de un sistema de archivos
+Estan diseñados bajo un modelo o arqutectura en capas, cada capa tiene sus propias tareas de forma jerarquica para separar las funciones de alte y de bajo nivel.
+Esta dividido asi para reducir la complejidad y facilitar el mantenimiento, y permite que los archivos interactuen con el hardware (mediante drivers)
+Las capas mas altas son de interaccion con el usuario, y las de bajo nivel son de interaccion con el hardware
+
+Capa de aplicacion del usuario
+Es la que inicia cualquier, no forma parte interna del sistema de archivos pero es la que iniica cualquieraccion meidante llamdas al sistema (syscalls) las funciones tipicas son: Open(), read(), write y close()
+
+Capa de archivos logico
+Maneja la estrucutra conceptual del sistema. Administra directorios, los nombres los archivos y los permiso de seguridad (lectura y escritura). Gesitona los metadatos y la estructura de directorios las rutas y el control de acceso
+Contrloa los bloques de control de archivos FCB que guardan los metadatos del archivo pero no su contenido
+
+Capa de modulo de organizacion de archivos
+Puente entre el mundo logico y el mundo fisico, nombres y carpetas con bloques de datos en el medio de almacenamiento. Sabe como estan asignados los archivos en el almacenamiento
+Rastrea el espacio libre en el dispostiivo y decide donde colocar los nuevos datos
+
+Sistema de archivos basico
+Se encarga de emitir comandos genericos hacia el hardware para leer y escribir bloques fisicos de datos
+Envia instrucciones abstractas como "lee el bloque 45092" al controlador de disco correspondiente
+Esto ayuda a administrar los buferes y cache del sistema operativo. Guarda fragmenos de datos de uso frecuente en la memoria RAM para agilizar el rendmiento y evitar leer el disco constantemente
+
+Control de E/S
+Es el nivel mas bajo del software compuesto por los drivers y los controladores de interrupciones
+Traduce los comandos abstractos del sistema basico en instrucciones de bajo nivel, que el circuito de hardware puede entender, como leer corriente electrica en seldas en un ssd o mover el cabezal a un cilindo y sector especificos en un disco mecanico
+
+Capa de hardware
+El componente fisico donde residen los datos de forma permanente. Se encuentran al ifnal de toda la estrucutra de capas y recibe las señales electricas u ordenes directas del controlador de netrada/salida
+Convierte los pulsos electricos y las instrucciones de bajo nivel en almacenamiento real y permanente. Esta capa entiende posiciones fisicas como direcciones de memoria o coordenadas goegraficas de un diso, no datos ni carpetas, ni archivos.
+
+
+
+Se encuentra a nivel alto en el sistema operativo
+
+
+Segun donde se almacenen los datos
+Existen:
+- De disco (locales)
+	- Son los que interactuan directamente con el hardware fiisco y los sectores magneticos
+	- Para SO de usuario final o medios de almacenamiento
+	- Almacenamiento mecanico y discos inteernos
+- En red (distribuidos)
+	- No controlan nada fisicamente de forma directa, funciona con un protocolo de comunicacion para hacerle creer al sistema que un directorio que se encuentra en la red se encuentra montado sobre un disco de almacenamiento local
+		- NFS (para conectar linux con linux) SAMBA/SMB (para conectar windows, mac y linux entre si)
+		- SSHFS para compartir de forma segura y cifrada
+- Virtuales/especiales (utiles en administracion de servidores)
+	- NO son sistemas que se montan sobre un medio de almacenamiento o en una red, existen solo en memoria ram o mientras una computadora esta encendida o mientras un proceso en ejecucion lo mantenga, para manejar tareas internas de un proceso
+		- /proc: un sistema de archivos virtual donde cada "archivo" es en realidad un proces o de la computadora o informacion del procesador
+		- /dev: muestra los ocmponentes del hardware como si fueran archivos de texto para poder interactuar con ellos
+		- el registro de windows, que organiza toda la configuracion del sistema de forma jerarquica en la memoria
+
+Que es un archivo?
+Un conjunto de datos con la intencion de representar algo (fotos, documentos, binarios) nosotros como usuarios lo vemos como una entidad, almacenado en un almacenamiento secundario. Una computadora tiene control sobre el archivo
+
+El meido en el que se almacenan los archivos se divide en bloques de longitud fija, siendo el sistema de archivos el encargado de asignar u numero de bloques a cada archivos
+
+Que es un directorio?
+Un contenedor virtual que me permite administarr archivos y subdirectorios. Normalmente en los GUIS los vemos como carpetas
+
+- Organiza
+- Localiza
+- Da estructura (estructura de arbol): permite crear ramas de directorios dentro de otros y todos parten de un directorio raiz
+
+
+
+> **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocue uparse por la estructura.
 >
 > Al estudiar para el parcial: selecciona cada bloque que sea un concepto y usa `Ctrl+P` → **Extraer selección actual**. Obsidian crea la nota y deja el enlace aquí. Cuando este archivo quede solo con enlaces, el parcial está repasado.
 >
