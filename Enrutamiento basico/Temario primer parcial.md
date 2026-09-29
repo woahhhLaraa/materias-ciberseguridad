@@ -143,11 +143,11 @@ Si te atrasas, usa los colchones para terminar la sesión pendiente, pero haz al
 ### Sesión 1 (lun 28 sep) — Base: binario y clases (temas 1 y 2)
 - [x] Explicar en voz alta, sin notas: salto a salto, estático vs dinámico, enrutado vs de enrutamiento, AS. Después comprobar con [[Conceptos fundamentales de enrutamiento]].
 - [x] Practicar conversión decimal ↔ binario de octetos hasta hacerla de cabeza (128, 192, 224, 240, 248, 252, 254, 255).
-- [ ] Rehacer en papel la [[Tarea 1 - Separar red y host|Tarea 1]] y la [[Tarea 2 - Clases IP y direcciones de red|Tarea 2]] sin mirar la solución.
+- [x] Rehacer en papel la [[Tarea 1 - Separar red y host|Tarea 1]] y la [[Tarea 2 - Clases IP y direcciones de red|Tarea 2]] sin mirar la solución.
 - **Listo si:** dada cualquier IP, dices clase, máscara por defecto y dirección de red en menos de 1 min.
 
 ### Sesión 2 (mar 29 sep) — Subnetting clásico (tema 3, primera mitad)
-- [ ] **Recuperar:** 3 IPs inventadas → clase, máscara por defecto y red; pasar 2 octetos a binario; ¿qué es un AS y qué rango tiene?
+- [x] **Recuperar:** 3 IPs inventadas → clase, máscara por defecto y red; pasar 2 octetos a binario; ¿qué es un AS y qué rango tiene?
 - [ ] Escribir de memoria 2ⁿ subredes, 2ʰ − 2 hosts y cómo se hace el AND lógico; comprobar con [[Enmascaramiento y subnetting]].
 - [ ] Rehacer la Tarea 3 (clase B, 300 subredes → /25, 126 hosts) y el Ejercicio 2 (178.224.123.5/20 → subred 178.224.112.0, host 0.0.11.5).
 - [ ] Inventar 3 ejercicios más de cada tipo y resolverlos **alternando** Tarea 3 / Ejercicio 2, no todos los de un tipo seguidos.
