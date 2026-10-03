@@ -11,8 +11,8 @@ semestres:
   - 1
   - 2
   - 3
-sr-due: 2026-09-30
-sr-interval: 39
+sr-due: 2027-01-02
+sr-interval: 92
 sr-ease: 230
 ---
 #review

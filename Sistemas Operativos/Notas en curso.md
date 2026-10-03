@@ -7,6 +7,8 @@ tags: [captura, sin-procesar]
 
 # Sistemas Operativos — notas en curso
 
+## Usuarios y gestión de usuarios
+
 
 
 10 septiembre 2026
@@ -71,8 +73,6 @@ Creacion de usuarios
 Modificacion
 eliminacion
 
-Administracion de permisos
-
 14 de sep 2026
 
 Que clase de servicios podemos meter en u nsistema operativo linux?
@@ -127,6 +127,10 @@ añadir o eliminar usuarios del grupo
 usermod -a(dd)G(roup) nombreDelGrupo NombreDelUsuario
 gpasswd -d nombreUsuario nombreGrupo (para sacarlo)
 
+
+## Gestión de permisos
+
+Administracion de permisos
 
 gestion de permisos en linux
 los permisos son un mecanismo de seguridad que controla que acciones puede realizar un usuario, proceso o programa sobre un recurso del sistema
@@ -191,12 +195,16 @@ asignar permisos a nivel de grupo es distinto:
 
 
 
+## Inicio de sesión
+
 existen 3 formas de logearse en el sistema operativo
 - De forma grafica
 - A traves de CLI
 
 
 
+
+## Sistema de archivos
 
 28 de septiembre 2026
 Sistema de archivos (tema pesado)
