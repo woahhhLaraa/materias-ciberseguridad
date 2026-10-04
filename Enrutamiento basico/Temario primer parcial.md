@@ -148,8 +148,8 @@ Si te atrasas, usa los colchones para terminar la sesión pendiente, pero haz al
 
 ### Sesión 2 (mar 29 sep) — Subnetting clásico (tema 3, primera mitad)
 - [x] **Recuperar:** 3 IPs inventadas → clase, máscara por defecto y red; pasar 2 octetos a binario; ¿qué es un AS y qué rango tiene?
-- [ ] Escribir de memoria 2ⁿ subredes, 2ʰ − 2 hosts y cómo se hace el AND lógico; comprobar con [[Enmascaramiento y subnetting]].
-- [ ] Rehacer la Tarea 3 (clase B, 300 subredes → /25, 126 hosts) y el Ejercicio 2 (178.224.123.5/20 → subred 178.224.112.0, host 0.0.11.5).
+- [x] Escribir de memoria 2ⁿ subredes, 2ʰ − 2 hosts y cómo se hace el AND lógico; comprobar con [[Enmascaramiento y subnetting]].
+- [x] Rehacer la Tarea 3 (clase B, 300 subredes → /25, 126 hosts) y el Ejercicio 2 (178.224.123.5/20 → subred 178.224.112.0, host 0.0.11.5).
 - [ ] Inventar 3 ejercicios más de cada tipo y resolverlos **alternando** Tarea 3 / Ejercicio 2, no todos los de un tipo seguidos.
 - **Listo si:** resuelves un ejercicio tipo Ejercicio 2 sin calculadora y sin errores.
 

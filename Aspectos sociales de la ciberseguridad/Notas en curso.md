@@ -126,7 +126,7 @@ PILARES DE LA IAM
 	- Monitoreo continuo de los usuarios
 
 
-Ciclo de vida de la identidad 
+Ciclo de vida de la identidad del modelo JLM
 - Joiner
 	- Creacion de la identidad, aprovisionamiento de acceso y asignacion de roles para los nuevos empleados pasantes o contratistas
 - Mover
@@ -134,7 +134,117 @@ Ciclo de vida de la identidad
 - Leaver
 	- Revocacion de acceso, recuperacion de activos y generacion de registro de auditoria al abandonar la organizacion
 
+30 de septiembre de 2026
+Cuatro pilares de la gestion del ciclo de vida de la identidad
+- Aprovisionamiento
+	- Establece la identidad y otorga acceso basico
+	- Creacion de cuenta definicion de rol inicial y asginacion de persmios
+- Gestion y modificacion de accesos
+	- Cambio de rol de una entidad 
+	- adaptacion de permisos
+	- revision y actualizacion cotinua de drechos de accesos de acuerdo con el principio de minimo privilegio
+- Seguimiento y auditoria
+	- Visibildiad continua de todas las actividades de la entidad y solicitudes de acceso
+	- Auditorias periodicas 
+- Desabastecimiento
+	- Eliminacion sistemica del acceso a una entidad
+------
+Autenticacion de personas:
+La autenticacion puede ser:
+- Algo que sabes
+- Algo que tienes
+- Algo que eres
+- Algo que haces
 
+
+
+- Cualquier factor de autenticacion que se base en u nsecreto que el usuario conoce
+
+Contraseñas
+- Metodo mas coun de autenticacion
+- Objeto de robo a traves de phishing
+- Adivinables
+- Filtradas
+- el robo de cuentas validas fue uno de los vectores de ataque presentes en el 32% de los ataques
+
+Preguntas de seguridad
+- Descubribles mediante ingenieria social o espionaje en redes sociales.
+
+Factores de autenticacion passwordless
+Tokens de hardware
+biometricos
+etc
+
+Claves de acceso (passkeys) y FIDO/FIDO2
+Basadas en criptografia de clave publica
+Implementadas de acuerdo con los estandares FIDO o FIDO2
+
+FIDO (FAST IDENTITY ONLINE)
+Conjunto de estandares abiertos para la autenticacion sin contrasñea para sitios web, aplicaciones, y servicios en linea
+Reemplaza la cntrasña tradicional con claves criptograficas
+Clave publica y privada
+Una clave publica compartida con el servicio y una clave privada almacneada en el dispositivo del usuario
+La clave privada no se comparte
+La clave privada esta protegida mediante un pin o un metood de verificacion viometirca
+
+
+Factores biometricos
+Caracteristicas fisicas dle uusario
+Su origen son intrinsiceos de la vida del usuario
+	Estatico
+		REconocimiento de huellsa
+		lectura de mano
+		lectura de iris
+		retina
+	DImanico
+		Dinamica de dfirmas
+		Reconocimiento del habla
+Requisitos generales:
+- Universalidad
+	- Cada persona debe tener la caracteristica
+- Singularidad
+	- Dos personas no debn tener la misma caracteristica
+- Permanencia
+	- No dbee cambiar ni ser alterada
+- Coleccionabilidad
+	- La caracteristica deb ser medible
+- Rendimiento
+	- Debe poder medirse en terminos de precision, velocidad, robustez y recursos necesarios
+- Aceptabilidad
+	- La caracteristica deb ser aceptable por el publico
+- Elusion
+	- No debe ser facil de engañar
+
+Contrasenas de un solo uso:
+Se consideran factores se posesion, no de conocimiento
+No son de larga duracion
+Cada vez que se quiere iniciar sesion genera una nueva OTP
+
+
+TOPT y HOTP
+TOPT time based one time password
+HOTP: Hash based one time password
+
+
+Tokens de hardware
+Dispositivos dedicadoes a menudo en forma de usb
+
+Magic links
+Enlaces especiales que contienen tokens de autenticacion
+
+Notificaciones PUSH 
+
+Funnciona similar a los enlaces magicos
+El usuario debe tocar aprobar en la notificacion push para obtener el acceso
+Susceptible a fatiga MFA
+	Un actor de amenazas navega hsata el servicio, ingresa el id del usuario y solicita repetidamente autenticacion mediatne la notificacion de push
+
+ codigos QR
+ El usuario escanea el codigo, generalmente con una aplicacion de autenticacion o una aplicacion especifica del servicio al que esta accediendo
+
+Autenticacion multi factor
+Factor 1. Usario + contrasena
+Factor 2. Algo que se tiene o se es
 
 
 

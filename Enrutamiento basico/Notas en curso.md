@@ -39,6 +39,7 @@ proceso de decision despues de que el router decidio cual es la mejor ruta, debe
 24 septiembre
 
 
+1 de octubre
 
 
 
