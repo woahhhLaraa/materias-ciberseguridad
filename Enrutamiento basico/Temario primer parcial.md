@@ -283,7 +283,7 @@ Si te atrasas, usa los colchones para terminar la sesión pendiente, pero haz al
   - [x] 1 VLSM corto (172.31.50.0/24: 62/31/6 + enlace). Sin errores.
   - [x] Configuración básica de un router, escrita de memoria.
   - [x] Pregunta ⭐.
-- [ ] [[Practica 4 - Rutas estaticas|Práctica 4]] en Packet Tracer, versión compacta (~1 h): rutas por siguiente salto, una por interfaz de salida (comparar `show ip route`), sumarización a /22, ruta por defecto y `clock rate` solo en el DCE.
+- [x] [[Practica 4 - Rutas estaticas|Práctica 4]] en Packet Tracer, versión compacta (~1 h): rutas por siguiente salto, una por interfaz de salida (comparar `show ip route`), sumarización a /22, ruta por defecto y `clock rate` solo en el DCE.
 - [ ] **SSH (oficial):** en el mismo router, configurar `ip domain-name`, `crypto key generate rsa`, `username … secret`, `ip ssh version 2`, y en `line vty 0 4` poner `login local` y `transport input ssh`. Probar desde una PC con `ssh -l <usuario> <ip>` y comprobar que Telnet queda rechazado.
 - **Listo si:** hay ping extremo a extremo, sabes leer cada línea `S`, `C` y `L`, y entras por SSH pero no por Telnet.
 
