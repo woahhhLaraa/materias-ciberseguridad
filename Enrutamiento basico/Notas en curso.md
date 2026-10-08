@@ -30,7 +30,7 @@ dar mayor seguridad siempre teniendo un segundo enrutador, basados en la idea de
 
 La redundancia de routers
 
-a dos routers con su ip les damos aparte una ip virtual y esos dos routers se ponen dea acuerdo para funcionar o no segun si el otro funciona o no, a las pcs se les de el default getaway con ip dirigida a la direccio nvirutal de los router. a los ojos de los hosts, siempre mandan paquetes a la misma ip
+a dos routers con su ip les damos aparte una ip virtual y esos dos routers se ponen dea acuerdo para funcionar o no segun si el otro funciona o no, a las pcs se les de el default getaway con ip dirigida a la direccion !virutal de los router. a los ojos de los hosts, siempre mandan paquetes a la misma ip
 
 
 reenvio de paquetes:

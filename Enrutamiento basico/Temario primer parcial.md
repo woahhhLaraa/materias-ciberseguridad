@@ -284,30 +284,30 @@ Si te atrasas, usa los colchones para terminar la sesión pendiente, pero haz al
   - [x] Configuración básica de un router, escrita de memoria.
   - [x] Pregunta ⭐.
 - [x] [[Practica 4 - Rutas estaticas|Práctica 4]] en Packet Tracer, versión compacta (~1 h): rutas por siguiente salto, una por interfaz de salida (comparar `show ip route`), sumarización a /22, ruta por defecto y `clock rate` solo en el DCE.
-- [ ] **SSH (oficial):** en el mismo router, configurar `ip domain-name`, `crypto key generate rsa`, `username … secret`, `ip ssh version 2`, y en `line vty 0 4` poner `login local` y `transport input ssh`. Probar desde una PC con `ssh -l <usuario> <ip>` y comprobar que Telnet queda rechazado.
+- [x] **SSH (oficial):** en el mismo router, configurar `ip domain-name`, `crypto key generate rsa`, `username … secret`, `ip ssh version 2`, y en `line vty 0 4` poner `login local` y `transport input ssh`. Probar desde una PC con `ssh -l <usuario> <ip>` y comprobar que Telnet queda rechazado.
 - **Listo si:** hay ping extremo a extremo, sabes leer cada línea `S`, `C` y `L`, y entras por SSH pero no por Telnet.
 
 ### Sesión 6 (dom 4 oct) — Teoría de routers + AD compacta (temas 3, 4 y 6)
-- [ ] **Recuperar:** los comandos de SSH de memoria; 1 ruta estática, 1 por defecto y 1 sumarización de 4 redes /24; qué hay en RAM, NVRAM y flash.
-- [ ] Ventajas de las subredes: explicarlas sin mirar (subnetting, VLSM y CIDR); después comprobar con el tema 3.
-- [ ] Funciones del router (mejor ruta + reenvío; MAC por salto, IP de extremo a extremo) y del IOS (seguridad, enrutamiento, QoS, direccionamiento, administración de recursos, interfaz): primero sin mirar, después comprobar con el tema 4.
-- [ ] Archivos imagen: descifrar `c1900-universalk9-mz.SPA.152-4.M3.bin` parte por parte; diferencia entre `universalk9` y `universalk9_npe`; trenes EM y T; requisitos de memoria del ISR G2.
-- [ ] **Tarea «Tipos de enrutadores»:** investigar y redactar media página (cierra el pendiente de arriba).
-- [ ] AD compacta (30 min): la tabla de memoria (0, 1, 90, 110, 120, 255) y una flotante. La [[Practica 5 - Rutas estaticas flotantes|Práctica 5]] completa, solo si el profesor confirma que entra.
+- [x] **Recuperar:** los comandos de SSH de memoria; 1 ruta estática, 1 por defecto y 1 sumarización de 4 redes /24; qué hay en RAM, NVRAM y flash.
+- [x] Ventajas de las subredes: explicarlas sin mirar (subnetting, VLSM y CIDR); después comprobar con el tema 3.
+- [x] Funciones del router (mejor ruta + reenvío; MAC por salto, IP de extremo a extremo) y del IOS (seguridad, enrutamiento, QoS, direccionamiento, administración de recursos, interfaz): primero sin mirar, después comprobar con el tema 4.
+- [x] Archivos imagen: descifrar `c1900-universalk9-mz.SPA.152-4.M3.bin` parte por parte; diferencia entre `universalk9` y `universalk9_npe`; trenes EM y T; requisitos de memoria del ISR G2.
+- [x] **Tarea «Tipos de enrutadores»:** investigar y redactar media página (cierra el pendiente de arriba).
+- [x] AD compacta (30 min): la tabla de memoria (0, 1, 90, 110, 120, 255) y una flotante. La [[Practica 5 - Rutas estaticas flotantes|Práctica 5]] completa, solo si el profesor confirma que entra.
 - **Listo si:** descifras un nombre de imagen IOS sin mirar y escribes la tabla de AD completa dos veces seguidas.
 
 ### Sesión 7 (lun 5 oct) — FHRP a fondo (tema 7)
-- [ ] **Recuperar:** la tabla de AD y 1 ruta flotante (principal OSPF); 1 nombre de imagen IOS; las funciones del IOS; las ventajas de las subredes.
+- [x] **Recuperar:** la tabla de AD y 1 ruta flotante (principal OSPF); 1 nombre de imagen IOS; las funciones del IOS; las ventajas de las subredes.
 - [ ] FHRP sin mirar: el problema que resuelve, el router virtual (IP y MAC), los pasos de la conmutación por error y las **7 opciones** en una línea cada una. Después, comprobar con el tema 7.
 - [ ] HSRP: prioridad (100, 0–255, desempate por IP más alta), preempt, Hello 3 s / Hold 10 s (mínimos 1 s / 4 s) y estados. Resolver el caso R1=150 con preempt / R2=100: ¿quién es el activo y qué pasa si R1 cae y vuelve? ¿Y sin preempt?
 - [ ] HSRP en Packet Tracer: 2 routers en la misma LAN, `standby 1 ip`, `priority`, `preempt`, `show standby brief`, y apagar el activo con `ping -t` corriendo.
 - **Listo si:** listas las 7 opciones de FHRP y explicas preempt con el caso R1/R2 sin mirar.
 
 ### Colchón B (mar 6 oct) — Pendientes + serie mezclada 1–7
-- [ ] Primero, lo pendiente: terminar una sesión atrasada o repetir un «listo si» fallido.
-- [ ] Rehacer sin apuntes todo lo del [[#Registro de fallos]].
-- [ ] ARP (20 min, peso bajo): las 5 preguntas de «Verifica tu comprensión» del tema 8.
-- [ ] Serie mezclada de 45 min, en orden aleatorio:
+- [x] Primero, lo pendiente: terminar una sesión atrasada o repetir un «listo si» fallido.
+- [x] Rehacer sin apuntes todo lo del [[#Registro de fallos]].
+- [x] ARP (20 min, peso bajo): las 5 preguntas de «Verifica tu comprensión» del tema 8.
+- [x] Serie mezclada de 45 min, en orden aleatorio:
   - 1 VLSM y 1 ejercicio tipo Ejercicio 2.
   - Ventajas de las subredes.
   - 1 nombre de imagen IOS, la configuración de SSH y los tipos de routers.
@@ -328,6 +328,9 @@ Si te atrasas, usa los colchones para terminar la sesión pendiente, pero haz al
 
 Anota aquí cada pregunta o ejercicio que falles en un calentamiento, un «listo si» o el simulacro. Los colchones empiezan rehaciéndolos; borra una línea cuando te salga bien en dos días distintos.
 
-- 
+- (4 oct) **Sumarización — prefijo:** de dónde sale el /22. Cada octeto idéntico suma 8, y luego se cuentan los bits comunes del primer octeto que difiere. Rehacer: 10.20.64.0/24 – 10.20.67.0/24 → /22, máscara 255.255.252.0.
+- (4 oct) **Sumarización — red resumen:** de dónde sale el .8 de 172.16.8.0/22. Es la dirección de red del bloque: bits comunes y el resto a 0, o el múltiplo del tamaño de bloque (256 − máscara). Rehacer: 192.168.36.0 – 39.0/24 → 192.168.36.0/22.
+- (4 oct) **Sumarización — alineación:** cuatro redes seguidas solo caben en una /22 si la primera es múltiplo de 4. Rehacer: ¿se pueden resumir limpiamente 172.16.9.0 – 12.0/24? → No: el mínimo común es 172.16.8.0/21, que abarca de .8 a .15 e incluye redes ajenas.
+- (4 oct) **Sumarización — condiciones:** no es "redes de la misma subred". Son redes contiguas, en bloque alineado **y que salen por el mismo siguiente salto**. Rehacer el apartado e) de [[Ejercicios sesion 6 - extra 2.pdf]]: 192.168.40.0/21 mezcla R2 y R3 → /22 hacia R2 y /23 hacia R3.
 
 > Índice de la materia: [[Enrutamiento basico (materia)]]
