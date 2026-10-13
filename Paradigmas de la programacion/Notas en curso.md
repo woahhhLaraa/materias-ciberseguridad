@@ -32,3 +32,40 @@ los datos pueden ser alterados con modificadores de tipos
 - long int
 - unsigned int
 - long long int
+
+
+8 de octubre
+Ciclo de vida de desarrollo de software
+Planificar
+	Entender y documentar que debe hacer un software
+		Reuniones, entrevistas
+Analizar
+Diseño
+Implementacion
+Pruebas e implementacion
+Mantenimiento y documentacion
+
+
+Programacion orientada a objetos
+Paradigma de programacion mas usado
+Basado en abstraer objetos como si fueran del mundo real a sus atributos, estados y funciones mas simples
+
+Abstraccion, el pilar de la programacion orientada a objetos, implica enfocarse en los aspectos escenciales de un objeto.
+
+Encapsulamiento: Ocultar las caracteristicas anteriomente abstraidas exponiendo solo lo necesario para uso externo
+
+Herencia: Heredar de una clase mas arriba las abstracciones que tuvieron.
+
+Polimorfismo: Usar un meto instanciado a una clase, de forma distinta dependiendo del objeto
+
+Atributos
+	Variables que pertenecen a una clase y describen sus propiedas o caracteristicas. Sustantivo o adjetivo que definen a cuaquier objeto de esa clase.
+
+Metodos:
+	Lo que el objeto puede hacer, ademas existiendo los metodos que modifican las propiedades y caracteristicas de ese objeto (getters y setters).
+
+
+Diagrama de clases UML
+![[Pasted image 20261008074954.png]]
+
+![[Pasted image 20261008075415.png]]

@@ -446,6 +446,12 @@ SSHFS (secure shell filesystem)
 			Alta sensibildiad a la latencia, si la conexion a internet fluctua o tiene mucha latencia, el explorador de archivos o finder local para congelarse temporalmente esperando la respuesta del servidor
 
 
+----------------------
+12 de octubre 2026
+Operaciones con archivos en C
+
+
+
 
 
 
