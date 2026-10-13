@@ -25,6 +25,11 @@ Materia del tercer semestre. Inicio: 17 de agosto de 2026. Fin del semestre: 30 
 - Las prácticas se suben todas en Eminus
 - Fechas de examen y unidades: **por definir**
 
+## Examen
+
+- [[Temario primer parcial - Sistemas Operativos]] — lunes 19 de octubre de 2026; lo visto en clase hasta el 1 de octubre
+- [[Banco de preguntas - parcial 1]] — preguntas de autoevaluación por tema, con soluciones
+
 ## Captura
 
 - [[Sistemas Operativos/Notas en curso]] — bandeja de entrada de la materia
@@ -53,7 +58,7 @@ Mencionados en clase pero aún sin desarrollar:
 ## Bibliografía
 
 - ![[Fundamentos de Sistemas Operativos - 7ma Edición - Abraham Silberschatz, Peter Baer Galvin & Greg Gagne.pdf]]
-- ![[Sistemas_Operativos_Modernos-ATanenbaum.pdf]] — versión en español
+- ![[Sistemas_Operativos_Modern Sistemas Operativos os-ATanenbaum.pdf]] — versión en español
 - ![[Modern Operating Systems (4th Edition) ( PDFDrive ).pdf]] — versión en inglés
 - ![[PE Sistemas Operativos 2022.pdf]] — programa de estudios
 
