@@ -246,8 +246,73 @@ Autenticacion multi factor
 Factor 1. Usario + contrasena
 Factor 2. Algo que se tiene o se es
 
+----------------------------------------------------
+Control de acceso a la red (NAC)
+Proceso de restringir el acceso de usuarios y dispositivos no autorizados a una red informatica corporativa
+Tipos de dispositivios considerados
+- De un usuario fina
+- Medicos
+- iOt
+- BYOD
+- Impresoras y camaras
+- Otros
+
+Confianza cero (zero trust)
+Conjunto de paradigmas de ciberseguridad en evolucion
+
+Principios basicos
+	La empresa supervisa y mide la integridad y la postura de seguridad de todos los activos
+	Toda la comunicacion debe protegerse
+	El acceso a los recuros individuales de la empresa se concede por sesion
+	La politica de acceso a los rescursos dbee ser dinamica e incuir:
+		Estado de la identifdad del cliente
+		Estado de la aplicacion o servicio
+		Estado del activo solicitante
+	Toda la autenticacion y autorizacion se aplica de forma estricta antes de permitir el acceso
+	La empresa recopila toda la informacion posible sobre el estado actual de los activos
 
 
+Asume que no hay ocnfianza implicita concedida a activos o cuentas de usuario basada unicamente en su ubicacion fisica o de red
+Implica atenticacion y autorizacion de sujetos y dipositivos
+Nunca confies, siempre verfiica.
+Se centra en proteger los recursos, no los segmentos de red
+Parte de la base de que el atacante esta presente en el entorno y que el ambiente de la compañia no es diferente a cualquier otro que no sea de la organizacion
+Se deben analizar y evaluar continuamente los riesgos para los activos y actividades corporativas y luego definir protecciones para mitigarlos
+La implementacion de zero trust es gradual: Implica cambios en los procesos y soluciones tecnologicas, evaluacion de la ocngianza en cada transacciones, analisis y evaluacion continua de solicitudes de acceso de forma dinamica
+
+Tipos de modelos de zero trust
+Confianza cero basada en la identidad
+	Herramientas IAM
+
+Confianza cero basada en la red
+	Herramientas NAC
+
+Confianza cero basada en datos
+	Proteger los datos confidenciales, cifrado, ofuscacion.
+
+Confianza cero basada en aplicaciones
+	Proteger las aplicaciones y sus datos asociados
+	Contenedores
+Confianza cero basada en dispositivos
+	Protege los dispositivos en si
+	Asume que los dipositivos pueden ver comprometidos ydeben vertificar antes de acceder a datos confidenciales
+
+Servicio de directorio corporativos
+Almacenan cuentas de usuario, grupos y permisos de recursos en toda la red, con requisitos de seguridad especificas para cada enfoque de implementacion
+
+LDAP
+	Permite buscar, gesgiontar y autenticar informacion de usuarios, contraseñas, grupos y dispositiovs de forma centralizada en una red
+	Requiere un servidor central
+Controles de seguridad de LDAP
+Listas de control de acceso para restringir las consultas de directorio a palicaciones autorizadas
+
+Active directory
+Un inventario de recursos donde integras usaurios, dispositivos
+Implementa LDAP junto con las extensiones propietarias de microsoft para admnistrar dominios de windows
+
+
+
+Mitigacion de riesgos
 
 
 

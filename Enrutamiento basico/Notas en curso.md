@@ -41,6 +41,39 @@ proceso de decision despues de que el router decidio cual es la mejor ruta, debe
 
 1 de octubre
 
+9 de octubre
+Criterios de decision para determinar la mejor ruta
+Longitud de la mascara
+	Entre mas larga sea la mascara, mas probable es que su distancia administrativa sea menor
+Distancia administrativa
+Metrica
+
+
+Los componentes principales de los protocolos de routing dinamico
+Estrucutura de datos:
+	Tablas o bases de datos guardadas en la ram
+Mensajes de protoclo de routing
+	Hellos, intercambio de informacion de routing entre otros
+Algoritmo
+	Lista pasos para llevar a cabo la tarea de seleccionar una mejor ruta segun el criterio
+
+
+
+Los protocolos de estado de enlace
+Pueden crear una idea o una vista completa de la topologia de la red con la informacion de los routers, como tener un mapa completo, ese mapa es la convergencia, no se usan actualizaciones periodicas, y solo pasa cuando sucede un cambio en la topologia
+
+Criterios comunes para las metricas
+	Conteo de saltos
+	Ancho de banda
+	Carga
+	Retardo
+	Confiabilidad
+	Costo
+	
+
+Concepto local
+Ajustable
+Distincion de metrica
 
 
 > Índice de la materia: [[Enrutamiento basico (materia)]]
