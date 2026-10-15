@@ -314,6 +314,24 @@ Implementa LDAP junto con las extensiones propietarias de microsoft para admnist
 
 Mitigacion de riesgos
 
+---------------------------------------
+Vectores de ataque a la identidad
+La ingenieria social es la principal fuente de ataques hoy en dia principalmente a traves de phisihing
+Intercepcion man in the middle
+Malware para robo de credenciales
+SIM swapping: Transferencia de la tarjeta sim, suplantar la identidad, es casi como clonar una SIM
+Credential stuffing, utiliza listas de usuarios y contraseñas, generalmente obtenidas de filtraciones previas, para automatizar el intento de inicio de sesion en diferentes sitios o servicios
+
+Tecnicas de grupos APT
+Amenazas persistentes avanzadas (APT)
+- ciberataque oculto, prolongado y que permanece sin ser detectado por largo tiempo
+- Generalmente patrocinado por los estados con fines de espionaje
+- Vishing (o phishing por voz)
+	- Metodo prinicpal de acceso inicial potenciado por ia generativa
+- Suplantacion de identidad en el servicio de asistencia técnica
+	- Para Generar un restablecimiento de contraseña o que el usuario eluda el MFA
+- Operaciones de intemediarios de acceso
+	- Venta de credenciales robadas.
 
 
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
