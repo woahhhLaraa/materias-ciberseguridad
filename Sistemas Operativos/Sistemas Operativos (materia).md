@@ -27,7 +27,7 @@ Materia del tercer semestre. Inicio: 17 de agosto de 2026. Fin del semestre: 30 
 
 ## Examen
 
-- [[Temario primer parcial - Sistemas Operativos]] — lunes 19 de octubre de 2026; lo visto en clase hasta el 1 de octubre
+- [[Temario primer parcial - Sistemas Operativos]] — lunes 19 de octubre de 2026; lo visto en clase hasta el 12 de octubre
 - [[Banco de preguntas - parcial 1]] — preguntas de autoevaluación por tema, con soluciones
 
 ## Captura
