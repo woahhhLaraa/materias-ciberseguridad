@@ -452,6 +452,140 @@ Operaciones con archivos en C
 
 
 
+-----------------------------------
+19 OCTUBRE 2026
+Gestion de espacio y almacenamiento
+Como hace el OS para gestionar el espacio libre, y como hace el OS para gestionar el espacio ocupado.
+
+que es? Es el conjunto de mecaniscmos y algoritmos para organizar y controlar el espacio disponible de almacenamiento
+- Asignar espacio para guardar archivos
+- Registrar que espacio esta ocupado y cual esta disponible
+- Liberar espacio en disco
+Con tal de aprovechar eficientemente el almacenamiento.
+
+Esto va de la mano con sistemas de archivos, el sistema operativo usa el sistema de archivos para localizar datos.
+
+Conceptos fundamentales
+- Dispositivo de almacenamiento
+- Sistema de archivos
+- Bloque de asignacion: unidadd de espacio que el sistem ade archivos asigna para almacenar los datos de un archivo
+- Espacio ocupado
+- Espacio libre
+
+
+Sectores y bloques de almacenamiento
+Sector :Se separa el disco en varios sectores, esos sectores tienen un tamaño fijo, normalmente son de 512 bytes o 4097 bytes
+Bloque de asignacion: unidad que utiliza el sistema de archivos para asignar espacio a los archivos. Generalmente esta formado por uno o varios sectores
+
+El tamaño de un archivo no es solo su tamaño, tambien hay que sumarlo con el tamaño desperdiciado de los bloques 
+Fragmentacion interna: Perdida de secciones de bloques
+Fragamentacion externa: Perdida completa de bloques (aqui nace fragmentar y desfragmentar el disco)
+
+Metodos de asignacion bases:
+- Contigua: Los bloques van juntos
+	- Es el mas simple
+	- Puede ser dificil encontrar un espacio contigua
+	- Si el arcihvo crece hay que reubicarlo
+	- Util como modelo conceptual, y se relaciona con l aasignacion de regiones contiguas. por ejemplo, en ciertos formatos de archivosy y sistemas de almacenamiento
+- Enlazada: Los bloques estan en diferentes partes del disco y se enlazan mediante referencia
+	- No requieren espacio contiguo para almacenar un archivo
+	- Los archivos crecen utilizando bloques libres disponibles
+	- Reduce el problema de la fragmentacion externa
+	- Puede ser mas lento para buscar todos los bloques de un archivo
+	- Las referencias ocupan espacio
+	- Si se daña un enlace, puede dificultarse el acceso a los bloques posteriores
+- Indexada: Un bloque indice almacena las referencias a los bloques que contienen los datos del archivo
+	- Facilita el acceso directo a los bloques de archivos
+	- No requiere almacenar los datos en posiciones consecutivas
+	- Evita la fragmentacion externa asociada a la necesidad de reservar bloqlues contiguos
+	- Requiere espacio adicionar para el indice
+	- Los archivos pequeños pueden desperdiciar espacio en estructuras de indexacion
+	- Los archivos grandes pueden necesitar indices adicionales o estrucutras mas complejas
+
+Metodos de asignacion en los sistemas operativos.
+- windows(NTFS): Utiliza los master file table MFT que almacena registros con informacion sobre los archivos y sus ubicaciones
+- Utiliza inodos para almacenar metadatos y referencias a los datos. Tambien emplea extents para grupos de bloques contiguos
+- macOS (APFS): utiliza estructuras de datos e nlos arboles b+ para organizar metadatos y administrar informacion del sistema de archivos
+
+Gestion de espacio LIBRE:
+Mapa de bits: Secuencia de bits para representar los espacios que estan siendo usados y los que no
+- Cada bit representa un bloque del sistema de archivos
+- Un valor 0 indica que e bloque esta libre, un valor 1 indica que esta ocupado
+- El sistema consulta el mapa para identificar los bloques disponibles y asignarlos a nuevos archivos
+- Cuando un archivo se elimina, los bits correspondientes se actualizan para indicar que esos bloques estan libres
+- El sistema consulta el mapa de bits
+- Busca los bits que indican bloques libres
+- Selecciona los bloques necesarios para guardar un archivo
+- cambia los bits correspondientes para marcarlos como ocupados
+- Permite identificar rapidamente los bloques libres
+- Facilita la busqueda de bloques consecutivos
+- Su estructura es sencilla de consultar y actualizar
+- El mpaa requiere memoria proporcionar al numero total de bloques
+- En discos muy grandes, el mapa puede ocupar una cantidad considerable de espacio
+Lista enlazada de bloques libres: Los bloques libres pueden almacenar una referencia al siguiente bloque disponible
+	El sistema lcaliza el primer bloque de la lista
+	Cuando necesita espacio, retira uno o varios bloques de la lista
+	Actualiza el puntero para señalar el siugiente bloque libre
+	No necesita un mapa que represente todos los bloques del disco
+	Su estructura puede ser sencilla de implementar
+	Puede ser lento
+	Se requiere espacio para almacenar los enlaces
+Agrupamiento y conteo de bloques libre: Dos tecnicas que permiten administrar el espacio libre de forma mas eficiente, reduciendo lanecesidad de registrar cada bloque individualmente, como el metodo de indexacion de asignacion de datos libres, pero para conocer ese mismo espacio libre.
+- Consultar varias direcciones en un sola operacion
+- El conteo reduce la cantidad de registros cuando existen secuencias de bloques consecutivos
+- Ambos metodos pueden disminuir el espacio requerido para registrar bloques libre
+
+Mecanismos de proteccion de archivos.
+La proteccion de archivos comprende los mecanismos que utiliza un sistema operativo para controlar quien puede acceder a los archivos y que operaciones puede realizar sobre ellos
+Objetivos principales
+- Conficencialidd: Solo la persona autorizada puede verlo
+- Integridad: No se cambian los archivos porque si
+- Disponibilidad: SIempre estan disponibles para la persona autorizada
+- Control de acceso:
+
+Modelo de tradicionales de proteccion y control de acceso:
+- DAC: El propietario del recurso puede conceder o retirar permisos
+- MAC: Una politica centralizada establece los permisos segun reglas de seguridad y niveles de clasificiacion
+	- El sistema identifica al usuario o preoceso
+	- idntifica el archivo solicitado
+	- consulta los permisos correspondientes
+	- autoriza o rechaza la operacion
+	- La representacion de las relaciones entre sujetos y objetos es clara
+	- Sirve como base conceptual para otros mecanismos de control de acceso
+	- Puede volverse grande cuando existen muchos usuarois y archivos
+	- Mantener una matriz completa puede resultar costoso
+	- Normalmente se implementa mediante estructuras mas practicas como ACL o listas de capacidades
+- RBAC: Los permisos se asignan a roles, como administrador, profesor o alumno
+
+Lista de control de acceso(ACL):
+- Es una estructura asociada a un archivo o directorio que especifica que usuarios o grupos pueden realizar determinadas operaciones:
+Cada entrada puede indicar:
+	Usuario o grupo
+	Tipo de permiso
+	Reglas de acceso aplicables al recurso
+
+Lista de control implementacion en linux
+- sudo apt install acl
+- setfacl -m u:ana:rw proyecto.txt (crear la acl y conceder a la usuaria permisos de lectura y escritura sobre un archivo
+
+Dominios de proteccion.
+Un dominio de proteccion es el conjunto de recursos y operaciones a los que un usuario o proceso tiene permitido acceder
+Un dominio puede definir permisos para
+- leer archivos
+- modificar argumentos
+- ejecutar programas
+- acceder a determinados dispositivos o recursos
+Como funciona:
+El sistema establece un conjunto de permisos para un usuario o proceso
+Cuando el proceso solicita una operacion, el sistema verifica si pertenece a su dominio autorizado
+si la operacion esta permitida se ejecuta, de lo contrario se recaza
+Ventajas:
+limita el acceos a los recursos
+Reduce el impacto de errores y acciones maliciosas
+permite separar privilegios administrativos y ordinarios
+
+
+
 
 
 
