@@ -17,6 +17,10 @@ Materia de tercer semestre centrada en el **comportamiento humano** dentro de la
 | Actividades | 20% |
 | Proyecto final | 50% |
 
+## Exámenes
+
+- [[Aspectos sociales de la ciberseguridad/Temario primer parcial|Temario primer parcial]] — Unidades 1 y 2; examen el 16 de octubre de 2026
+
 ## Captura
 
 - [[Aspectos sociales de la ciberseguridad/Notas en curso]] — bandeja de entrada de la materia
