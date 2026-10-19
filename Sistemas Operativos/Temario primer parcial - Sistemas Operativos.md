@@ -10,7 +10,7 @@ tags: [examen, parcial, sistemas-operativos]
 
 **Examen: lunes 19 de octubre de 2026.**
 
-Abarca **solo lo visto en clase** hasta el 1 de octubre, la última clase con apuntes. Está armado con [[Sistemas Operativos/Notas en curso|Notas en curso]], las notas de concepto, los apuntes de agosto (`Sistemas Operativos Parcial 1.odt`) y la Práctica 1.1. Los libros (Tanenbaum y Silberschatz) y la investigación de [[Concurrencia y paralelismo]] se usan solo como referencia, para verificar datos o rellenar un hueco. Cuando algo sale de un libro, se cita con su página.
+Abarca **solo lo visto en clase** hasta el 12 de octubre, la última clase con apuntes. Está armado con [[Sistemas Operativos/Notas en curso|Notas en curso]], las notas de concepto, los apuntes de agosto (`Sistemas Operativos Parcial 1.odt`), la Práctica 1.1 y el programa en C de la clase del 12 de octubre (`Operaciones Archivos/`). Los libros (Tanenbaum y Silberschatz) y la investigación de [[Concurrencia y paralelismo]] se usan solo como referencia, para verificar datos o rellenar un hueco. Cuando algo sale de un libro, se cita con su página.
 
 Preguntas para ponerte a prueba: [[Banco de preguntas - parcial 1]].
 
@@ -18,20 +18,20 @@ Preguntas para ponerte a prueba: [[Banco de preguntas - parcial 1]].
 
 Numeración y nombres del programa oficial ![[PE Sistemas Operativos 2022.pdf]], que tiene 13 temas. En clase se ha llegado hasta el 10.
 
-| # | Tema del programa | Clase | Estado |
-|---|---|---|---|
-| 1 | Introducción a los SO | 17 ago | Completo |
-| 2 | Historia | 17 ago | Completo; ⭐ multiprogramación y spooling |
-| 3 | Tipos de SO | 20 ago | Completo; los mainframes se rellenan desde el libro; ⚠️ simétrico/asimétrico corregido |
-| 4 | Capas o subsistemas | — | Completo, con lo básico de procesos y memoria |
-| 5 | Consideraciones para la instalación | Práctica 1.1, entrega 3 sep | ⚠️ Teoría no capturada; va lo de la práctica |
-| 6 | Dispositivos de E/S | — | Completo |
-| 7 | Concurrencia y paralelismo | — | Versión compacta; ⚠️ vídeo de clase sin revisar |
-| 8 | Interfaces de usuario | — | Completo; la parte de GUI es escueta |
-| 9 | Manejo de usuarios | 10, 14 y 17 sep | Completo; ⚠️ falta la 3.ª forma de iniciar sesión |
-| 10 | Sistema de archivos | 28 sep y 1 oct | Lo visto en clase |
+| #   | Tema del programa                   | Clase                       | Estado                                                                                 |
+| --- | ----------------------------------- | --------------------------- | -------------------------------------------------------------------------------------- |
+| 1   | Introducción a los SO               | 17 ago                      | Completo                                                                               |
+| 2   | Historia                            | 17 ago                      | Completo; ⭐ multiprogramación y spooling                                               |
+| 3   | Tipos de SO                         | 20 ago                      | Completo; los mainframes se rellenan desde el libro; ⚠️ simétrico/asimétrico corregido |
+| 4   | Capas o subsistemas                 | —                           | Completo, con lo básico de procesos y memoria                                          |
+| 5   | Consideraciones para la instalación | Práctica 1.1, entrega 3 sep | ⚠️ Teoría no capturada; va lo de la práctica                                           |
+| 6   | Dispositivos de E/S                 | —                           | Completo                                                                               |
+| 7   | Concurrencia y paralelismo          | —                           | Versión compacta; ⚠️ vídeo de clase sin revisar                                        |
+| 8   | Interfaces de usuario               | —                           | Completo; la parte de GUI es escueta                                                   |
+| 9   | Manejo de usuarios                  | 10, 14 y 17 sep             | Completo; ⚠️ falta la 3.ª forma de iniciar sesión                                      |
+| 10  | Sistema de archivos                 | 28 sep, 1 oct y 12 oct      | Lo visto en clase; ⚠️ del 12 oct solo está el programa en C, no la teoría              |
 
-**No entra:** el resto del programa, que no se ha visto. Son los temas 11 (procesos a fondo), 12 (comunicación entre procesos) y 13 (memoria y almacenamiento), y los subtemas del 10 que no salieron en clase (rutas, operaciones con archivos y directorios, gestión de espacio, protección).
+**No entra:** el resto del programa, que no se ha visto. Son los temas 11 (procesos a fondo), 12 (comunicación entre procesos) y 13 (memoria y almacenamiento), y los subtemas del 10 que no salieron en clase (rutas, operaciones con directorios, gestión de espacio, protección). Las operaciones con archivos sí entran desde la clase del 12 de octubre.
 
 «—»: la nota no tiene fecha de clase.
 
@@ -385,6 +385,44 @@ Ver [[Sistemas Operativos/Notas en curso|Notas en curso]].
 
 > Todos se ven en clase como ejemplos de sistemas de archivos **en red/distribuidos**, dentro de la clasificación de la sección anterior.
 
+### 12 de octubre — operaciones con archivos en C
+
+> ⚠️ De esta clase solo hay un encabezado en [[Sistemas Operativos/Notas en curso|Notas en curso]] y el programa que se hizo: `Operaciones Archivos/operacionesArchivos.c`, más `archivoPrueba.txt` para probarlo. Lo que sigue sale del código. La lista de operaciones viene de Tanenbaum, porque la teoría de la clase no se capturó.
+
+- **Qué hace el programa:** es un menú que lee o escribe un archivo de texto de tres maneras: por carácter, por palabra o por línea.
+
+| | Leer (modo `"r"`) | Escribir (modo `"a"`) |
+|---|---|---|
+| **Por carácter** | `fgetc(archivo)` hasta `EOF` | `getchar()` del teclado → `fputc(c, archivo)`, hasta el Enter |
+| **Por palabra** | `fscanf(archivo, "%29s", cadena)` mientras devuelva 1 | `scanf("%29s", palabra)` → `fprintf(archivo, "%s ", palabra)`, hasta escribir `fin` |
+| **Por línea** | `fgets(linea, sizeof(linea), archivo)` hasta que devuelva `NULL` | `fgets(linea, sizeof(linea), stdin)` → `fprintf(archivo, "%s ", linea)` |
+
+- **Todas las funciones siguen el mismo patrón:**
+  1. `fopen(nombre, modo)`, que devuelve un `FILE *`.
+  2. Comprobar que no sea `NULL`. Lo es si el archivo no existe o si no hay permiso, lo que conecta con los permisos del tema 9.
+  3. Leer o escribir en un bucle hasta la marca de fin: `EOF` para `fgetc`, `NULL` para `fgets`, o que `fscanf` deje de devolver 1.
+  4. Llamar a `fclose` **una sola vez**, después del bucle.
+- **Modos de apertura usados:**
+  - `"r"` abre para leer. El archivo tiene que existir.
+  - `"a"` (*append*) abre para escribir **al final**, sin borrar lo que ya había. Si el archivo no existe, lo crea.
+  - Complemento que no sale en el código: `"w"` también escribe, pero **vacía** el archivo antes.
+- **Tamaños de búfer:** `char cadena[30]` guarda hasta 29 caracteres más el `'\0'` de fin de cadena. Por eso se usa `%29s`: evita escribir fuera del arreglo. Lo mismo pasa con `linea[255]`.
+- **Relación con las capas del 28 de septiembre:** estas funciones viven en la **capa de aplicación de usuario**. `fopen`, `fgetc`, `fprintf` y `fclose` son de la biblioteca estándar de C (`stdio.h`). Por debajo hacen las llamadas al sistema `open`, `read`, `write` y `close`, que son las que reciben las capas internas del sistema de archivos.
+- **Operaciones de archivos según Tanenbaum** (pp. 264–265). Son las llamadas al sistema más comunes:
+
+| Operación | Qué hace |
+|---|---|
+| **Create / Delete** | Crea el archivo vacío y fija algunos atributos / lo elimina para liberar espacio en disco |
+| **Open** | Lleva los atributos y la lista de direcciones de disco a memoria principal, para acceder rápido en las llamadas siguientes |
+| **Close** | Libera espacio en la tabla interna y obliga a escribir el último bloque del archivo, aunque no esté lleno |
+| **Read / Write** | Lee o escribe en la posición actual. Si se escribe a la mitad del archivo, se sobrescriben los datos |
+| **Append** | Una forma restringida de write: solo agrega al final. Es lo que hace el modo `"a"` |
+| **Seek** | Mueve el apuntador del archivo a una posición concreta (acceso aleatorio) |
+| **Get / Set attributes** | Lee o cambia atributos, como el modo de protección |
+| **Rename** | Cambia el nombre del archivo |
+
+> ⚠️ **Error en `escribirArchivoPorPalabra`:** el `fclose(archivo)` está **dentro** del `while`. El archivo se cierra después de la primera palabra, y las siguientes se escriben en un archivo ya cerrado, lo que es comportamiento indefinido. Además, si la primera palabra es `fin`, el archivo nunca se cierra. El `fclose` debe ir una sola vez, después del bucle. Si en el examen te piden escribir código, es el error que hay que evitar.
+
 ## ⭐ Marcado por el profesor como «tema de examen»
 
 > Multiprogramación y spooling (3.ª generación).
@@ -395,9 +433,10 @@ Ver [[Sistemas Operativos/Notas en curso|Notas en curso]].
 
 ## Pendientes antes del examen
 
-- [ ] **Preguntar al profesor** qué abarca el parcial: ¿hasta sistema de archivos? ¿Entra lo que se vea en las clases del 12 al 16 de octubre?
+- [ ] **Preguntar al profesor** qué abarca el parcial: ¿hasta sistema de archivos? ¿Entran las operaciones con archivos en C del 12 de octubre, y lo que se vea el jueves 15?
 - [ ] **Preguntar al profesor:** ¿cuál es la 3.ª forma de iniciar sesión (tema 9)? ¿Simétrico/asimétrico como en el apunte o como en Tanenbaum (tema 3)?
-- [ ] **Apuntes después del 1 de octubre:** si hubo clase el 5 o el 8 de octubre, capturarla en [[Sistemas Operativos/Notas en curso|Notas en curso]] y añadirla aquí.
+- [ ] **Teoría de la clase del 12 de octubre:** en [[Sistemas Operativos/Notas en curso|Notas en curso]] solo está el encabezado «Operaciones con archivos en C». Si se dio teoría o se dictaron los modos de apertura, capturarlos y contrastarlos con el tema 10.
+- [ ] **Apuntes del 5 y el 8 de octubre:** no hay nada en [[Sistemas Operativos/Notas en curso|Notas en curso]]. Confirmar si hubo clase.
 - [ ] **Consideraciones para la instalación (tema 5):** la teoría no se capturó. Pedir los apuntes o las diapositivas de esa clase.
 - [ ] Ver el vídeo `Concurrencia y paralelismo.mp4` (tema 7) y anotar lo que no esté en el tema.
 - [ ] Ver `Arquitecturas de sistemas.mp4`: probablemente es el tema 3 (estructura interna) o el 4. Anotar lo que falte.
@@ -421,7 +460,7 @@ Ocho sesiones de 1–2 h y dos colchones, en orden: cada sesión usa lo de la an
 | Mar 13 oct     | Colchón A: serie mezclada 1–6                      | Registro de fallos        |
 | Mié 14 oct     | Sesión 5: concurrencia e interfaces (temas 7 y 8)  | Sesiones 3 y 4            |
 | Jue 15 oct     | Sesión 6: usuarios y permisos en la VM (tema 9)    | Sesiones 4 y 5            |
-| Vie 16 oct     | Sesión 7: sistema de archivos (tema 10)            | Sesiones 5 y 6            |
+| Vie 16 oct     | Sesión 7: sistema de archivos y operaciones en C (tema 10) | Sesiones 5 y 6     |
 | Sáb 17 oct     | Colchón B: pendientes + serie mezclada 1–10        | Registro de fallos        |
 | Dom 18 oct     | Sesión 8: simulacro                                | —                         |
 | **Lun 19 oct** | **Examen**                                         |                           |
@@ -451,22 +490,22 @@ Si te atrasas, usa los colchones para terminar la sesión pendiente, pero haz al
 - **Listo si:** los 8 subsistemas salen de memoria y distingues memoria virtual / paginación / MMU en tres frases.
 
 ### Sesión 4 (lun 12 oct) — Instalación y E/S (temas 5 y 6)
-- [ ] **Recuperar:** los 8 subsistemas; quantum y cambio de contexto; monolítico vs microkernel.
-- [ ] Contar en orden la Práctica 1.1: requisitos → hipervisor → máquina virtual → instalación → particiones → software → post-instalación. Comprobar con el tema 5.
-- [ ] Hipervisor de tipo 1 vs tipo 2, con un ejemplo de cada uno.
-- [ ] Clasificar 6 dispositivos (teclado, disco, bocinas, tarjeta de red, mouse, pantalla) en las dos clasificaciones del tema 6.
-- [ ] Registros de control, datos y estado, y para qué sirven los puertos de E/S.
+- [x] **Recuperar:** los 8 subsistemas; quantum y cambio de contexto; monolítico vs microkernel.
+- [x] Contar en orden la Práctica 1.1: requisitos → hipervisor → máquina virtual → instalación → particiones → software → post-instalación. Comprobar con el tema 5.
+- [x] Hipervisor de tipo 1 vs tipo 2, con un ejemplo de cada uno.
+- [x] Clasificar 6 dispositivos (teclado, disco, bocinas, tarjeta de red, mouse, pantalla) en las dos clasificaciones del tema 6.
+- [x] Registros de control, datos y estado, y para qué sirven los puertos de E/S.
 - **Listo si:** describes la instalación sin mirar, con las particiones, y clasificas cualquier dispositivo en ambas clasificaciones.
 
 ### Colchón A (mar 13 oct) — Serie mezclada de los temas 1–6
-- [ ] Primero, lo pendiente: terminar una sesión atrasada o repetir un «Listo si» fallido.
-- [ ] Rehacer sin apuntes todo lo del [[#Registro de fallos]].
-- [ ] Serie mezclada de 45 min, en orden aleatorio: 2 preguntas de cada tema 1–6 del banco, la tabla de generaciones, 1 SO para clasificar y la pregunta ⭐. Antes de contestar cada una, di de qué tema es.
+- [x] Primero, lo pendiente: terminar una sesión atrasada o repetir un «Listo si» fallido.
+- [x] Rehacer sin apuntes todo lo del [[#Registro de fallos]].
+- [x] Serie mezclada de 45 min, en orden aleatorio: 2 preguntas de cada tema 1–6 del banco, la tabla de generaciones, 1 SO para clasificar y la pregunta ⭐. Antes de contestar cada una, di de qué tema es.
 
 ### Sesión 5 (mié 14 oct) — Concurrencia e interfaces (temas 7 y 8)
-- [ ] **Recuperar:** los 3 registros de E/S; tipo 1 vs tipo 2; memoria virtual vs paginación.
-- [ ] Concurrencia vs paralelismo sin mirar: qué ocurre en cada uno, qué hardware hace falta y qué es el pseudoparalelismo. Relacionarlo con la multiprogramación y el cambio de contexto.
-- [ ] Si da tiempo, ver el vídeo de clase `Concurrencia y paralelismo.mp4` y anotar lo nuevo (pendiente de arriba).
+- [x] **Recuperar:** los 3 registros de E/S; tipo 1 vs tipo 2; memoria virtual vs paginación.
+- [x] Concurrencia vs paralelismo sin mirar: qué ocurre en cada uno, qué hardware hace falta y qué es el pseudoparalelismo. Relacionarlo con la multiprogramación y el cambio de contexto.
+- [x] Si da tiempo, ver el vídeo de clase `Concurrencia y paralelismo.mp4` y anotar lo nuevo (pendiente de arriba).
 - [ ] Terminal vs emulador de terminal vs shell; qué hace la shell con un comando antes de ejecutarlo; POSIX.
 - [ ] La tabla de shells de memoria: BASH, ZSH, FISH, KSH y TCSH, con su cercanía a POSIX y su uso.
 - **Listo si:** explicas concurrencia y paralelismo con un ejemplo de un solo núcleo y otro de varios, y ubicas los cinco shells.
@@ -479,29 +518,33 @@ Si te atrasas, usa los colchones para terminar la sesión pendiente, pero haz al
 - [ ] `useradd` vs `adduser` y `userdel` vs `userdel -r` vs `userdel -f`.
 - **Listo si:** conviertes rwx ↔ octal sin pensarlo y das el comando correcto para crear, modificar o borrar un usuario o un grupo.
 
-### Sesión 7 (vie 16 oct) — Sistema de archivos (tema 10)
+### Sesión 7 (vie 16 oct) — Sistema de archivos y operaciones en C (tema 10)
 - [ ] **Recuperar:** 3 conversiones octales; el comando para meter a un usuario en un grupo sin sacarlo de los demás; para qué es `/etc/shadow`.
 - [ ] Las 6 capas del sistema de archivos, de memoria y en orden.
 - [ ] La tabla FAT32 / exFAT / NTFS / ext4 / APFS: origen, límites, journaling y rasgo distintivo.
 - [ ] Casos: USB para Windows, Mac y Linux con archivos de más de 4 GB; servidor Linux; red mixta Windows/Linux; editar código en un servidor por SSH.
 - [ ] SMB/Samba vs NFS vs SSHFS en una frase cada uno. En la VM, `ls /proc` y `ls /dev` para ver los sistemas de archivos virtuales.
-- **Listo si:** dibujas las 6 capas, eliges el sistema de archivos correcto para cada caso y explicas SMB, NFS y SSHFS en una frase.
+- [ ] **Operaciones en C (12 oct):** en papel y sin mirar, escribe la función que lee un archivo por línea, con los 4 pasos: `fopen`, comprobar `NULL`, bucle, `fclose`. Después compárala con `operacionesArchivos.c`.
+- [ ] Qué función se usa para cada combinación de leer o escribir por carácter, palabra o línea, y con qué se detecta el fin en cada caso (`EOF`, `NULL`, `fscanf` ≠ 1). Diferencia entre `"r"`, `"a"` y `"w"`.
+- [ ] Compila el programa con `gcc operacionesArchivos.c -o operacionesArchivos` y pruébalo con `archivoPrueba.txt`. Encuentra y corrige el `fclose` mal puesto en `escribirArchivoPorPalabra`.
+- [ ] Une las dos partes: qué llamada al sistema hay debajo de `fopen`, `fgetc`, `fprintf` y `fclose`, y en qué capa vive el programa. Qué hacen *open* y *close* según Tanenbaum.
+- **Listo si:** dibujas las 6 capas, eliges el sistema de archivos correcto para cada caso, explicas SMB, NFS y SSHFS en una frase y escribes sin errores una lectura por línea en C, con `fclose` fuera del bucle.
 
 ### Colchón B (sáb 17 oct) — Pendientes + serie mezclada de los temas 1–10
 - [ ] Primero, lo pendiente: terminar una sesión atrasada o repetir un «Listo si» fallido.
-- [ ] Si el profesor confirmó que entra material de las clases del 12 al 16 de octubre, procesarlo hoy (30–45 min).
+- [ ] Si el profesor confirmó que entra lo de la clase del jueves 15 de octubre, procesarlo hoy (30–45 min).
 - [ ] Rehacer sin apuntes todo lo del [[#Registro de fallos]].
 - [ ] Serie mezclada de 45 min, en orden aleatorio:
   - 1 pregunta de cada tema 1–8.
   - 3 de usuarios y permisos, con 2 conversiones octales y 1 comando.
-  - 3 de sistema de archivos, con 1 caso de elección.
+  - 4 de sistema de archivos: 1 caso de elección y 1 función en C de leer o escribir.
   - La pregunta ⭐.
 
 ### Sesión 8 (dom 18 oct) — Simulacro
 - [ ] Sin apuntes, 60 min, **mezclados, no por tema**:
   - **Un tercio de teoría base (temas 1–4):** generaciones con la ⭐, clasificar un SO, subsistemas y memoria virtual.
   - **Un tercio de los temas 5–8:** instalación, E/S, concurrencia vs paralelismo y shells.
-  - **Un tercio práctico (temas 9 y 10):** comandos de usuarios y grupos, permisos en octal, capas y elección de sistema de archivos.
+  - **Un tercio práctico (temas 9 y 10):** comandos de usuarios y grupos, permisos en octal, capas, elección de sistema de archivos y una función en C que lea o escriba un archivo.
 - [ ] Corregir con este temario y volver solo a lo que fallaste.
 - [ ] Repaso final de 15 min: contestar otra vez sin mirar solo lo que fallaste hoy y lo que quede en el registro. Y a dormir temprano.
 
