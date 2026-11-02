@@ -107,3 +107,59 @@ La materia no tiene ninguna nota de concepto; todo lo que sigue es ⚠️.
 - [[Examen segundo parcial - Redes]]: es material del examen de junio de 2026, del semestre pasado.
 - [[Proyecto final - Lineamientos]] de Probabilidad: es del semestre 2.
 - [[Lo que no se ve WRITEUP]]: el CTF está resuelto y la flag fue aceptada.
+
+## 📅 Plan de la semana (lunes 2 – domingo 8 de noviembre)
+
+**Reglas**
+- **Cosecha justo antes de practicar:** EIGRP antes de la Práctica 11, redistribución antes de la 12 y la 13, tipos en C antes del examen de Paradigmas. Así cada nota sirve en el momento.
+- **Una sesión, un concepto** (20–25 min), como pide el plan de recuperación. Los 3–4 conceptos de cada día son sesiones separadas, no un bloque seguido.
+- **Fechas:** si un profesor da una fecha de entrega más cercana, ese bloque se adelanta y se reacomoda lo demás.
+- **Si se atrasa,** lo que puede esperar a la semana siguiente son las cosechas sin ⚠️ (ya están en los temarios) y el mantenimiento. Los entregables y los ⚠️ no.
+
+### Lunes 2 (hoy, ~1 h)
+- [ ] Mandar 4 mensajes:
+  - Enrutamiento: fecha del 2.º parcial y Presentación 4.
+  - Aspectos: fecha del proyecto final y del 2.º parcial.
+  - Paradigmas: fecha del examen en C y de los ejercicios de apuntadores.
+  - SO: diapositivas del tema 5, si hubo clase el 5 y el 8 oct, y fecha del 2.º parcial.
+- [ ] Práctica 8: confirmar que está entregada, actualizar su nota y borrar el lock.
+- [ ] Limpiar los archivos sobrantes (15 min).
+- [ ] Cosecha ⚠️ **Ingeniería social**
+
+### Martes 3 (~3 h) — RIP y C
+- [ ] Cosecha ⚠️ **Protocolos dinámicos: componentes y métricas** → luego **Práctica 9**
+- [ ] Cosecha ⚠️ **Identificadores, tipos y variables en C** → luego empezar el **examen parcial 1 de Paradigmas** (struct `Persona`, `procesarBono`)
+- [ ] SO: poner los `##` que faltan en Notas en curso → cosecha ⚠️ **Estados y ciclo de vida de un proceso**
+- [ ] Cosecha **Gestión de permisos en Linux**
+
+### Miércoles 4 (~3 h)
+- [ ] **Práctica 10** (RIPv2 + VLSM)
+- [ ] Terminar el **examen de Paradigmas** (`modificarDatos`, `main`, compilar y probar)
+- [ ] De paso con el C: escribir la teoría del 12 oct (operaciones con archivos) a partir de `operacionesArchivos.c` y el temario
+- [ ] Cosechas: ⚠️ **POO**, **Distancia administrativa**, **Protección de archivos**, **Modelos mentales**
+- [ ] Repaso espaciado vencido: [[Tipos de sistemas operativos]], [[Gestion de procesos]], [[Dispositivos de entrada y salida]] (20 min)
+
+### Jueves 5 (~3 h) — EIGRP y apuntadores
+- [ ] Cosecha ⚠️ **EIGRP** → luego **Práctica 11** (`.pka`)
+- [ ] **Ejercicios de apuntadores** (motor de juego y zoológico con `char**`); renombrar `Sin título 2.odt`
+- [ ] Cosechas: ⚠️ **Diagrama de clases UML**, **Sistema de archivos**, **IAM y gestión de identidad**
+
+### Viernes 6 (~3–4 h) — redistribución y NAC
+- [ ] Cosecha ⚠️ **Redistribución de rutas** → luego **Práctica 12** y **Práctica 13** (es el mismo tema)
+- [ ] Responder las preguntas abiertas del 28 oct (MD5, secuencia de un enrutador)
+- [ ] Cosecha **NAC** → con eso, añadir las **2 soluciones NAC** que faltan a la comparativa IAM/NAC
+- [ ] Cosechas: **FHRP / HSRP**, **Gestión de espacio y almacenamiento**
+
+### Sábado 7 (~4–5 h) — proyecto final de Aspectos
+- [ ] Releer el `Borrador_v3`, elegir el formato del producto final y **hacerlo** (3 h). La nota de ingeniería social del lunes sirve como base.
+- [ ] Notas de cierre: proyecto de deepfakes y matriz IAM; confirmar las entregas de Sesgos, Sector población y Actividad 2
+- [ ] Terminar el apunte cortado del 28 oct y hacer la nota de «Bridging the Gap»
+- [ ] Cosechas: **Sesgos cognitivos**, **Autenticación de personas**, ⚠️ **Ciclo de vida del software**
+- [ ] Repaso espaciado: [[Definicion y funciones del sistema operativo]]
+
+### Domingo 8 (~3 h) — cierre
+- [ ] Cosechas: **Zero Trust**, **Servicios de directorio y federación**, **Vectores de ataque a la identidad**, **Sistemas de archivos en red**
+- [ ] Unificar las dos notas de usuarios y cosechar en ellas **Usuarios y grupos**
+- [ ] Actualizar los índices de las 4 materias (prácticas 8–13, notas nuevas) y las «Materias activas» del plan PKM
+- [ ] Repasar esta nota: marcar lo hecho, pasar lo que quede a la semana siguiente y respaldar el vault en git
+- [ ] *Si sobra tiempo:* nota de la Tarea 3, ver `Arquitecturas de sistemas.mp4`
