@@ -332,7 +332,81 @@ Amenazas persistentes avanzadas (APT)
 	- Para Generar un restablecimiento de contraseña o que el usuario eluda el MFA
 - Operaciones de intemediarios de acceso
 	- Venta de credenciales robadas.
+-----------------------------
+28 de octubre 2026
 
+Ingenieria social
+Es la tendencia de los atacantes para manipular y contruir una relacion de confianza
+
+El arte de manipular a las personsas para que revelen informacion confidencial o realicen aciones que comprometen su seguridad digital o fisica
+
+Cualquier acto que influya a una persona para que realice una accion que puede o no ser de su interes
+
+Existe desde antes de la ingeniera digital
+Antiguos estafadores (vendedores), manipuadores psicologicos
+
+Kevin Mitnic
+	En los arños 80 y 90 logro tener acceso a sistemsa corporativos y gubernamentales
+		Estrategias
+			Llamadas telefonicas simulando ser personal de soporte
+			Engaños por fax
+			Uso de informacion minima para ganarse la confianza de empleados
+Masificiacion de internet - Aumenta el impacto
+	Actualmante
+		Parte de camapñas del crimen organizado
+		Espionaje estatal
+		Hacktivismo
+		Internet como centro para el intercambio de informacion
+		Intercambio de informacion sensible a traves de distintas herramientas
+
+Ingenieria social o SE de social engineering
+Herramientas mas poderosas utilizadas por los atacantes
+No requiere grandes conocimientos tecnicos
+
+
+Siempre hay ciertas etapas necesarias:
+Reunir informacion
+- Trabajo fiisico
+- Acumulacion de informacion publica
+- Uso de informacion publica
+- Interaccion fisica
+Construccion de relacion con la victima
+Explotacion
+- Persuacion
+- manipulacion
+- Errores por parte de la victima
+Ejecucion
+- Implementacion del ataque
+- Adquisicion de la informacion necesaria
+- Eliminacion de evidencias
+
+Clasificacion de atques de ingenieria social (legacy)
+- Basados en humanos
+- Basados en tecnolocia
+
+Clasificacion moderna de ataques de ingenieria social
+- Fisico
+	- Implica trabajo fisico del atacante
+- Tecnicos
+	- Bsados en el uso de internet
+- Social
+	- Basados en tecnicas de psicologia social
+- Socio-tecnico
+	- Combinaciones de enfoque social y técnico
+
+Medios y operadores de ataques:
+- En persona
+	- Resal and fake impersonation
+- Basados en computadora
+	- Email
+	- Website
+	- Malware
+	- Social network
+
+
+------------------------------
+Sistemas operativos
+P
 
 > **Bandeja de entrada de la materia.** Todo lo de clase entra aquí, bajo el encabezado de la fecha, sin preocuparse por la estructura.
 >

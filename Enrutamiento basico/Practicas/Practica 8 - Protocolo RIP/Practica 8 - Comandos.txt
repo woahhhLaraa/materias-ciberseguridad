@@ -1,0 +1,67 @@
+PRÁCTICA 8 - PROTOCOLO RIP: COMANDOS UTILIZADOS
+================================================
+
+MODOS Y NAVEGACIÓN
+------------------
+enable                          Entra al modo privilegiado (R1>  ->  R1#).
+configure terminal              Entra al modo de configuración global (R1(config)#).
+end                             Regresa directo al modo privilegiado desde cualquier modo.
+exit                            Sube un nivel (de interfaz a configuración global).
+hostname ISP                    Cambia el nombre del router.
+
+
+CONFIGURACIÓN DE INTERFACES
+---------------------------
+interface s0/0/0                Entra a configurar una interfaz (g0/0, s0/0/0, s0/0/1...).
+ip address 192.168.2.1 255.255.255.0
+                                Asigna dirección IP y máscara a la interfaz.
+no shutdown                     Enciende la interfaz (por defecto vienen apagadas).
+clock rate 64000                Pone la velocidad de reloj en el extremo DCE de un enlace serial.
+copy running-config startup-config  (copy run start)
+                                Guarda la configuración para que sobreviva a un reinicio.
+
+
+RIP: HABILITAR Y ANUNCIAR REDES
+-------------------------------
+router rip                      Activa RIP y entra a su modo de configuración (RIPv1 por defecto).
+no router rip                   Detiene RIP y borra toda su configuración.
+network 192.168.1.0             Anuncia esa red (con clase) y habilita RIP en sus interfaces.
+
+
+RIP: VERSIÓN Y SUMARIZACIÓN
+---------------------------
+version 2                       Cambia a RIPv2: envía y recibe solo v2, incluye la máscara.
+version 1                       Fuerza RIPv1 únicamente.
+no version                      Vuelve al default: envía v1 y acepta v1 y v2.
+no auto-summary                 Desactiva la sumarización automática a la red con clase.
+
+
+RIP: INTERFACES PASIVAS
+-----------------------
+passive-interface g0/0          Deja de enviar actualizaciones RIP por esa interfaz,
+                                pero su red se sigue anunciando a los demás routers.
+
+
+RUTA POR DEFECTO
+----------------
+ip route 0.0.0.0 0.0.0.0 s0/0/1 Crea una ruta estática por defecto hacia el ISP
+                                (todo lo que no esté en la tabla sale por ahí).
+default-information originate   Hace que RIP propague la ruta por defecto a los demás routers.
+
+
+VERIFICACIÓN
+------------
+show ip interface brief         Resumen de interfaces: IP y estado (up/down).
+show running-config             Muestra la configuración actual en memoria.
+show ip protocols               Detalles de RIP: versión, timers, redes, vecinos,
+                                sumarización e interfaces pasivas.
+show ip route | begin Gateway   Tabla de ruteo desde la línea "Gateway of last resort".
+                                R = aprendida por RIP, C = conectada, L = local,
+                                S = estática, * = ruta por defecto.
+                                [120/2] = [distancia administrativa / saltos].
+show ip protocols | section X   Filtra una sección de la salida. NO funciona en Packet Tracer.
+
+
+DESDE LA PC (Command Prompt)
+----------------------------
+ping 192.168.5.10               Prueba conectividad con otro equipo.

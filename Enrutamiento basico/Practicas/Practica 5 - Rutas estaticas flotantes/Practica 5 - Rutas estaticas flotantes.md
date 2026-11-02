@@ -10,8 +10,7 @@ tags: [packet-tracer, cisco, rutas-estaticas, rutas-flotantes, distancia-adminis
 
 > ✅ Resuelta (7 de octubre de 2026). Reporte con las tres tablas llenas y las conclusiones: ![[Practica 5 - Rutas estaticas flotantes (resuelta).docx]]
 > Enunciado original en esta misma carpeta: ![[Practica 5 - Rutas estaticas flotantes.docx]]
-> Topologia en Packet Tracer: `practica5.pkt` — capturas de los `running-config` de R0..R3 en `Documentos/Practica 5 - Rutas estaticas flotantes (entrega)/Capturas/`.
-> Pendiente: pegar en el reporte las salidas de los `ping` (hay marcadores `[ PEGAR AQUI LA CAPTURA ]` en cada paso de verificacion).
+> Topologia en Packet Tracer: `practica5.pkt` — capturas de los `running-config` de R0..R3 en `Capturas/`, en esta misma carpeta.
 > Teoría de respaldo: la ![[Presentacion 2 - Distancia administrativa y FHRP.pptx]] del profesor (distancia administrativa y ruta estática flotante) y la captura del 17 de septiembre en [[Enrutamiento basico/Notas en curso|Notas en curso]].
 
 Practica de laboratorio sobre **rutas estaticas flotantes**: rutas de respaldo que solo entran en la tabla de ruteo cuando la ruta principal cae. El mecanismo es la **distancia administrativa**: se le asigna a la ruta de respaldo un valor mas alto que el de la principal, y el router prefiere siempre la de distancia menor.
