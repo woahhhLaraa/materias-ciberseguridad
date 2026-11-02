@@ -1,0 +1,189 @@
+#!/usr/bin/expect -f
+#
+# rommon_break.exp - Entra a modo ROMMON en un switch Cisco via picocom
+#
+# Uso:
+#   ./rommon_break.exp              # auto-detecta puerto y usa 9600
+#   ./rommon_break.exp auto 9600    # auto-detecta puerto con baudrate específico
+#   ./rommon_break.exp /dev/ttyUSB0 9600  # puerto y baudrate manuales
+#
+
+# ── Parámetros ──────────────────────────────────────────────
+set port  [lindex $argv 0]
+set baud  [lindex $argv 1]
+
+if {$baud eq ""} { set baud "9600" }
+
+set break_attempts 60
+set timeout 3
+
+# ── Auto-detectar puertos seriales ──────────────────────────
+proc detect_ports {} {
+    set ports {}
+    # Buscar todos los puertos seriales comunes
+    foreach pattern {
+        /dev/ttyUSB*
+        /dev/ttyACM*
+        /dev/ttyS0
+        /dev/ttyS1
+        /dev/ttyAMA*
+        /dev/serial/by-id/*
+    } {
+        foreach p [glob -nocomplain $pattern] {
+            # Evitar ttyS con números altos (no suelen ser reales)
+            if {![regexp {ttyS[2-9]|ttyS\d{2}} $p]} {
+                lappend ports $p
+            }
+        }
+    }
+    return $ports
+}
+
+# ── Función principal: intentar conectar y enviar break ─────
+proc try_rommon {port baud break_attempts} {
+    set timeout 3
+
+    puts ""
+    puts "----------------------------------------------"
+    puts "  Intentando: $port @ ${baud}bps"
+    puts "----------------------------------------------"
+
+    spawn picocom -b $baud $port
+
+    set picocom_id $spawn_id
+
+    expect {
+        "Terminal ready" {
+            puts ">>> CONECTADO en $port"
+        }
+        "FATAL" {
+            puts ">>> FALLO: No se pudo abrir $port"
+            catch {close -i $picocom_id}
+            catch {wait -i $picocom_id}
+            return 0
+        }
+        "is locked" {
+            puts ">>> FALLO: $port bloqueado por otro proceso"
+            catch {close -i $picocom_id}
+            catch {wait -i $picocom_id}
+            return 0
+        }
+        timeout {
+            puts ">>> FALLO: Timeout en $port"
+            catch {close -i $picocom_id}
+            catch {wait -i $picocom_id}
+            return 0
+        }
+    }
+
+    puts ""
+    puts "=============================================="
+    puts ">>> CONECTADO en $port"
+    puts ">>> REINICIA O HAZ POWER-CYCLE AL SWITCH AHORA"
+    puts ">>> Enviando break cada segundo..."
+    puts "=============================================="
+    puts ""
+
+    # ── Enviar break con múltiples métodos ──────────────────
+    set found 0
+
+    for {set i 1} {$i <= $break_attempts} {incr i} {
+        # Método 1: picocom break (Ctrl-a + Ctrl-\)
+        send -i $picocom_id "\x01\x1c"
+
+        # Pequeña pausa y enviar Enter por si ya está en ROMMON
+        after 200
+        send -i $picocom_id "\r"
+
+        expect {
+            -re {rommon\s*\d*\s*>} {
+                set found 1
+            }
+            -re {switch:\s*} {
+                set found 1
+            }
+            -re {loader>\s*} {
+                set found 1
+            }
+            timeout {}
+        }
+
+        if {$found} {
+            puts ""
+            puts "=============================================="
+            puts ">>> ROMMON/BOOT MODE DETECTADO en $port!"
+            puts ">>> Tienes control interactivo"
+            puts "=============================================="
+            puts ""
+            puts "Comandos útiles:"
+            puts "  confreg 0x2142   - Ignorar startup-config al bootear"
+            puts "  confreg 0x2102   - Boot normal"
+            puts "  reset            - Reiniciar el switch"
+            puts "  boot             - Bootear IOS"
+            puts "  dir flash:       - Ver archivos en flash"
+            puts ""
+            puts "Para salir de picocom: Ctrl-a + Ctrl-x"
+            puts ""
+            interact -i $picocom_id
+            return 1
+        }
+
+        puts -nonewline "  Break #$i/$break_attempts enviado...\r"
+        flush stdout
+    }
+
+    # No se detectó ROMMON, pero la conexión funciona
+    puts ""
+    puts ">>> No se detectó prompt ROMMON en $port"
+    puts ">>> Puede que el switch no haya reiniciado"
+    puts ""
+    puts "¿Quieres quedarte en esta sesión? (control manual)"
+    puts "  - Envía break manualmente: Ctrl-a + Ctrl-\\"
+    puts "  - Para salir de picocom:   Ctrl-a + Ctrl-x"
+    puts ""
+    interact -i $picocom_id
+    return 1
+}
+
+# ── Main ────────────────────────────────────────────────────
+puts "=============================================="
+puts "  ROMMON Break Script (Auto-detect)"
+puts "=============================================="
+
+if {$port eq "" || $port eq "auto"} {
+    set ports [detect_ports]
+
+    if {[llength $ports] == 0} {
+        puts ""
+        puts "ERROR: No se encontraron puertos seriales"
+        puts "  - Conecta el cable USB-serial"
+        puts "  - Verifica con: ls /dev/ttyUSB* /dev/ttyACM*"
+        puts "  - Verifica permisos: sudo usermod -aG dialout \$USER"
+        exit 1
+    }
+
+    puts ""
+    puts "Puertos detectados:"
+    foreach p $ports {
+        puts "  → $p"
+    }
+    puts ""
+    puts "Probando cada puerto..."
+
+    foreach p $ports {
+        if {[try_rommon $p $baud $break_attempts]} {
+            exit 0
+        }
+    }
+
+    puts ""
+    puts "ERROR: No se pudo conectar en ningún puerto"
+    exit 1
+
+} else {
+    # Puerto manual
+    if {[try_rommon $port $baud $break_attempts]} {
+        exit 0
+    }
+    exit 1
+}

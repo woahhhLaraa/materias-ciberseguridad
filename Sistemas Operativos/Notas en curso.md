@@ -585,7 +585,51 @@ Reduce el impacto de errores y acciones maliciosas
 permite separar privilegios administrativos y ordinarios
 
 
+-------------------------
+rocesos
+- Conceptos fundamentales
+	- Definicion de proceso
+		- Un proceso es una instancia de un programa en ejecucion junto con su estado actual y los recursos que necesita para ejecutarse
+		- Un programa es un conjunto de instrucciones  (inactivo) almacenada y un proceso es la instancia de ese programa
+		- Los procesos incluyen codigo, contador de programa, pila de proceso, seccion de datos, y un cumulo de memoria, identificador, estado, prioridad
+		- Un programa se vuelve proceso cuando lo cargamos en memoria
+	- Estado de un proceso y PCB
+		- Todos los procesos pasan por diferentes estados, el estado de un proceso se define la actividad del proceso, segun lo que esta haciendo.
+		- El modelo clasico de 5 estados menciona:
+			- Nuevo: El proceso esta siend ocreado
+			- Preparado o listo: El proceso esta a la espera de que se le asigne tiempo de cpu
+			- Ejecucion: Se estan ejecutando las intrucciones del proceso
+			- Espera o bloqueado: El proceso espera a que se produzca un suceso 
+			- Terminado o finalizado: Ha terminado la ejecucion
+				- Actualmente windows, macos y unix, tienen modelos mas complejos, pero contemplan al menos estos 5 estados
+				- En unix añaden un modelo de jerarquia de procesos: Padre e hijo. No existe un proceso que no tenga un padre
+				- Un proceso zombie es aquel proceso que ya termino, pero su padre todavia no reconoce que lo ha hecho
+	- Identificador de procesos
+		- Para mantener el modelo de procesos el SO mantiene una tabla, que es un arreglo de estructuras, llamada tabla de procesos, con solo una entrada por cada proceso (algunos autores llaman a estas entradas bloques de control)
+			- Informacion asociados a un proceso:
+				- Estado del proceso
+				- Contador de programa: indica la siguiente instruccion que va a ejecutar dicho proceso
+				- Registros de la cpu: Informacion de los registros que la cpu que esta ocupando
+				- Informacion de planifiacion de las cpu
+				- Informacion de gestion de memoria
+				- Informacion contable
+				- Informacion del estado de e/s
+	- Jerarquia de procesos
+		- La jerarquia de procesos padre hijo es muy estricta, unix es muy jerarquico
+			- De hecho, en linux existe un proceso padre de todos los demas desde donde empieza a bifucarse todo (systemd o init {tiene identificador 1})
+		- Windows no tiene un concepto de jerarquia de procesos (su modelo es, creador creado). Todos los procesos son iguales. la única sugerencia de una jerarquia de procesos es que cuando se cre un proceso, el padre recibe un indicaro especial que puede utilizar para controlar a sus hijos
+		- Si un proceso hijo muere antes que el padre, puede convertirse en un proceso zombie, porque el padre todavia no ha aceptado su proceso (no se ha quitado de la tabla de proceso)
+		- Un proceso huerfano son aquellos procesos donde su padre murio antes que el, entonces se le reasigna un nuevo padre. No todos los procesos pueden adoptar otro proceso. Solamente los subreapers pueden
+	- Forking
+		- Un proceso padre se duplica a si mismo mediante la llamada al sistema fork(). El nuevo proceso hijo hereda una copia identica del entorno los permisos y las variables de su padre, y luego puede reemplazarla con otro programa usando exec()
 
+| PID | PPID | Usuario | estado      | prioridad | contador de programa | memoria asignada | nombre del proceso |
+| --- | ---- | ------- | ----------- | --------- | -------------------- | ---------------- | ------------------ |
+| 1   | 0    | root    | ejecuntando | alta      | 0x7FFFF5234          | 2.2 mb           | systemd            |
+
+
+
+Una interrupción en el sistema operativo es una señal que le dice al sistema operativo que deje de ejecutar el proceso actual para que atienda al proceso o al evento que genero la interrupción
 
 
 

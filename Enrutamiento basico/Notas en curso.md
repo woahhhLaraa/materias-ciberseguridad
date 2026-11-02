@@ -76,5 +76,25 @@ Ajustable
 Distincion de metrica
 
 
+28 de octubre de 2026
+EIGRP
+Aqui tenemos 4 parametros para calcular la metrica
+- Ancho de banda
+- Retardo
+- La carga
+- Confiabilidad
+
+
+Como se pueden comunicar dos redes con diferente protocolo?
+Comunicacion entre RIP e EIGRP
+Se configuran los enrutadores con rip, de modo que los routers se puedan comunicar y en principio lo que se hace con RIP, se configura en su router solamente la interfaz ethernet y un puerto serial
+
+1) Se configuran los protocolos RIP y EIGRP en sus redes correspondientes incluyendo el anuncio de sus redes usando el comando network
+2) Cada uno de los routers que hacen la frontera se configura la redistribucion de protocolores, es da de alta el segundo protocolo y se anunca la red que los interconecta
+
+Que es MD5 y como se configura en los routers cisco
+Cual es la secuencia de un enrutador
+
+
 > Índice de la materia: [[Enrutamiento basico (materia)]]
 
