@@ -43,11 +43,50 @@ Ya pasaron los primeros parciales de las cuatro materias (Enrutamiento el 8 oct,
 - [ ] Terminar el apunte del 28 oct: [[Aspectos sociales de la ciberseguridad/Notas en curso|Notas en curso]] se corta en «Sistemas operativos / P».
 - [ ] Hacer la nota de la lectura «Bridging the Gap in Computer Security Warnings».
 
-## 🟢 Mantenimiento del vault (pasar a notas)
+## 🔵 Cosecha de Notas en curso
 
-- [ ] SO: pasar el bloque de **Procesos** de Notas en curso (estados, PCB, fork, zombie, huérfano) a [[Gestion de procesos]].
-- [ ] SO: unificar [[Usuarios y gestion de usuarios]] y [[Usuarios y su gestion]]. Lo habías dejado para después del examen.
-- [ ] Paradigmas: la materia sigue sin notas por concepto. Dividir [[Paradigmas de la programacion/Notas en curso|Notas en curso]] (identificadores, tipos, POO).
+Según el [[_Plan recuperacion|plan de recuperación]]: abrir la Notas en curso de la materia con el parcial más cercano, cosechar **un** concepto y cerrar. Están en orden de prioridad dentro de cada materia. Los marcados con ⚠️ **solo existen en Notas en curso**: no están ni en el temario, así que se pierden si no se cosechan. El resto ya está elaborado en el «Temario primer parcial» de la materia, que sirve como segunda fuente.
+
+### Sistemas Operativos — [[Sistemas Operativos/Notas en curso|Notas en curso]]
+- [ ] ⚠️ **Estados y ciclo de vida de un proceso** (5 estados, PCB, padre/hijo, zombie, huérfano, `fork`/`exec`): ampliar [[Gestion de procesos]] o crear una nota nueva. ← L588-634
+- [ ] **Gestión de permisos en Linux** (rwx, octal, `chmod`, `chown`; meter aquí el apunte casi vacío de «Inicio de sesión»). ← L131-205
+- [ ] **Protección de archivos y control de acceso** (DAC/MAC/RBAC, ACL, `setfacl`, dominios de protección). ← L538-586
+- [ ] **Sistema de archivos** (definición, exFAT/FAT32/NTFS/ext4/APFS, capas, local/red/virtual). ← L209-404
+- [ ] **Gestión de espacio y almacenamiento** (bloques, fragmentación, asignación contigua/enlazada/indexada, mapa de bits). ← L456-537
+- [ ] **Sistemas de archivos en red** (SMB/Samba, NFS, SSHFS), o fusionarla con la anterior. ← L407-446
+- [ ] **Usuarios y grupos:** al unificar [[Usuarios y gestion de usuarios]] con [[Usuarios y su gestion]], añadir los comandos (`useradd`, `usermod`, `userdel`, `groupadd`…), los archivos `passwd`/`shadow`/`group` y las funciones del SO. ← L10-129
+- [ ] Antes de cosechar: desde la L449 los bloques no tienen encabezado `##`. Ponérselo a Operaciones con archivos en C, Gestión de espacio, Protección y Procesos para que funcione «Extraer selección».
+
+### Enrutamiento básico — [[Enrutamiento basico/Notas en curso|Notas en curso]]
+- [ ] ⚠️ **EIGRP** (parámetros de métrica; apoyarse en la Presentación 5 y la Práctica 11). ← L80-85
+- [ ] ⚠️ **Redistribución de rutas** (RIP↔EIGRP; los comandos ya están en las prácticas 12 y 13). ← L88-93
+- [ ] **FHRP / HSRP**: fue un tercio del 1.er parcial y no tiene nota propia. ← L25-33
+- [ ] **Distancia administrativa** ← L10-23
+- [ ] ⚠️ **Protocolos de enrutamiento dinámico: componentes, criterios y métricas** (convergencia, saltos, BW, carga, retardo…): ampliar [[Conceptos fundamentales de enrutamiento]]. ← L45-77
+- [ ] Responder las preguntas abiertas del 28 oct (MD5 en routers, secuencia de un enrutador). MD5 ya está resuelto en la Práctica 13. ← L95-96
+- [ ] Los bloques del 24 sep y del 1 oct están vacíos: completarlos o anotar por qué.
+
+### Aspectos sociales — [[Aspectos sociales de la ciberseguridad/Notas en curso|Notas en curso]]
+Nada está cosechado: las únicas notas de concepto, [[Comportamiento y conducta]] y [[CyBOK]], vienen de otra fuente.
+- [ ] ⚠️ **Ingeniería social** (Mitnick, etapas del ataque, clasificación clásica y moderna; clase del 28 oct). ← L336-405
+- [ ] **Sesgos cognitivos en ciberseguridad**: nunca se capturaron en Notas en curso; la fuente es el temario §7 y el PDF de la carpeta.
+- [ ] **Modelos mentales de seguridad** (con la corrección del profesor al modelo económico). ← L9-55
+- [ ] **IAM y gestión de identidad** (tipos de identidad, pilares, ciclo JML; en el apunte aparece mal como «JLM»). ← L69-150
+- [ ] **Autenticación de personas** (factores, passwordless, FIDO2/passkeys, biometría, TOTP/HOTP, fatiga MFA). ← L152-247
+- [ ] **NAC e identidad de dispositivos** (el temario §11 añade X.509, TPM y mTLS). ← L250-258
+- [ ] **Zero Trust** ← L260-298
+- [ ] **Servicios de directorio y federación** (LDAP, AD, Kerberos, Entra ID, OAuth/OIDC). ← L300-311
+- [ ] **Vectores de ataque a la identidad y mitigación** (SIM swapping, credential stuffing, APT, RBAC/ABAC, ISPM). ← L315-334
+
+### Paradigmas de la programación — [[Paradigmas de la programacion/Notas en curso|Notas en curso]]
+La materia no tiene ninguna nota de concepto; todo lo que sigue es ⚠️.
+- [ ] **Identificadores, tipos de datos y variables en C** (apoyarse en `Codigo/tipos-datos_identificadores_variables_alcance.c`). ← L8-34
+- [ ] **Programación orientada a objetos** (abstracción, encapsulamiento, herencia, polimorfismo). ← L49-65
+- [ ] **Diagrama de clases UML** (en el apunte solo hay 2 imágenes; el diagrama del zoológico sirve de ejemplo). ← L68-71
+- [ ] **Ciclo de vida del desarrollo de software**: el apunte es mínimo, conviene completarlo con material de clase. ← L37-46
+
+## 🟢 Mantenimiento del vault
+
 - [ ] Aspectos sociales: dar nota de cierre a la matriz IAM (`Matriz_Final`) y al proyecto de deepfakes. Ninguno aparece en el índice de la materia.
 - [ ] Enrutamiento: la Tarea 3 no tiene nota propia, aunque viene en el PDF combinado.
 - [ ] Repaso espaciado vencido: [[Tipos de sistemas operativos]] (5 oct), [[Gestion de procesos]] (24 oct) y [[Dispositivos de entrada y salida]] (26 oct). Próximos: [[Definicion y funciones del sistema operativo]] (7 nov), [[Gestion de memoria]] (9 nov) y [[Capas de un sistema operativo]] (10 nov).
